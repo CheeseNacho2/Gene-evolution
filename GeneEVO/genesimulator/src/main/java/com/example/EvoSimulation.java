@@ -58,6 +58,7 @@ class EvoSimulation {
         newickformat.put(gene, toNewick(gene) + ";");
     }
 
+    //Class for getting a variable-sized array with Gamma Distributed values 
     public static double[] gammaDistributeArray(double shape, int element_count){
         double scale = 1/shape;
         GammaDistribution gamma = new GammaDistribution(shape, scale);
@@ -69,6 +70,8 @@ class EvoSimulation {
         return gamma_distributed_array;
     }
 
+
+    //This method converts fasta files into Gene objects using the upper most sequence
     public static Gene fastafile(String filename, String model) throws IOException {
 
     InputStream filestream = EvoSimulation.class.getClassLoader().getResourceAsStream(filename);
@@ -126,12 +129,12 @@ class EvoSimulation {
     // we will need to make
     // a method to calculate the mutation rates
     public static Gene simulateOne(Gene SimulGene, double branch_length) {
-        String evolvedGC = "";
+        StringBuilder evolvedGC = new StringBuilder();
         double og_branch_length = branch_length;
         double[] gamma_distributed_array = gammaDistributeArray(0.6, SimulGene.getSequence().length());
+        Random rand = new Random();
         for (int k = 0; k < (SimulGene.getSequence()).length(); k++) {
             branch_length = gamma_distributed_array[k];
-            Random rand = new Random();
             int randomValue = rand.nextInt(101);
             double transition = randomValue;
             Map<Double, String> transitMap = ((SimulGene.getMutationPattern())
@@ -149,15 +152,15 @@ class EvoSimulation {
 
             //add error handling for null values
             if(transition != 100.0){
-                evolvedGC += transitMap.get((Math.round(transition/((0.25 - 0.25*Math.exp((-4/3)*branch_length*1))*100)*10.0))/10.0); //This is to prevent errors with floating point numbers
+                evolvedGC.append(transitMap.get((Math.round(transition/((0.25 - 0.25*Math.exp((-4/3)*branch_length*1))*100)*10.0))/10.0)); //This is to prevent errors with floating point numbers
             }
 
             else{
-                evolvedGC += transitMap.get(transition);
+                evolvedGC.append(transitMap.get(transition));
             }
 
         }
-        Gene evolvedGene = new Gene(SimulGene.getName() + "-" + Integer.toString(SimulGene.getChildren().size()), evolvedGC, SimulGene.getMutationPattern(),og_branch_length, SimulGene);
+        Gene evolvedGene = new Gene(SimulGene.getName() + "-" + Integer.toString(SimulGene.getChildren().size()), evolvedGC.toString(), SimulGene.getMutationPattern(),og_branch_length, SimulGene);
         SimulGene.addChild(evolvedGene);
         return evolvedGene;
     }
@@ -172,8 +175,8 @@ class EvoSimulation {
         return newGenes;
     }
 
+    //Method to create a string that represents a tree in Newick format - without the root
     public static String toNewick(Gene gene) {
-
     if (gene.getChildren().isEmpty()) {
         return gene.getName() + ":" + String.format(Locale.UK, "%.3f", gene.getParental_distance());
     }
@@ -225,6 +228,7 @@ class EvoSimulation {
         return mutationRates;
     }
 
+    //HKY method for the initial rate matrix - it is purely a rate matrix and is not used in actual simulation due to high complexity of matrix exponentials
     public static Map<String, Map<Double, String>> HKY85(String sequence){
         Map<String, Map<Double, String>> mutationRates = new HashMap<>();
         Map<String, Double> base_frequencies = new HashMap<>();
@@ -267,8 +271,10 @@ class EvoSimulation {
         return mutationRates;
     }
 
+
+//Method for simulating via HKY85 method - uses equations for each transition
 public static Gene simulateOne(Gene evolving_gene, double branch_length, double transition_bias){
-    String evolvedGC = "";
+    StringBuilder evolvedGC = new StringBuilder();
     Map<String, Map<Double, String>> mutationRates = new HashMap<>();
     Map<String, Double> base_frequencies = new HashMap<>();
     String[] nucleotides = {"A", "C", "T", "G"};
@@ -323,9 +329,9 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
                 
             }
         }
-
-            for (int k = 0; k < (evolving_gene.getSequence()).length(); k++) {
             Random rand = new Random();
+            for (int k = 0; k < (evolving_gene.getSequence()).length(); k++) {
+            
             int randomValue = rand.nextInt(101);
             double transition = randomValue;
             Map<Double, String> transitMap = (mutationRates.get(Character.toString((evolving_gene.getSequence()).charAt(k))));
@@ -336,13 +342,13 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
                     prevKey = probNumber;
                 }
             }
-            evolvedGC += transitMap.get(transition);
+            evolvedGC.append(transitMap.get(transition));
         } 
         
     
     
     Gene evolvedGene = new Gene(evolving_gene.getName() + "-" + Integer.toString(evolving_gene.getChildren().size()),
-    evolvedGC, evolving_gene.getMutationPattern(),branch_length, evolving_gene);
+    evolvedGC.toString(), evolving_gene.getMutationPattern(),branch_length, evolving_gene);
     System.out.println(evolvedGC);
     evolving_gene.addChild(evolvedGene);
     return evolvedGene;
@@ -416,8 +422,8 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         //in_scanner.close();
 
         Gene evolvingGene = TestingSample;
+        Random rand = new Random();
         /*for (int i = 0; i < 5; i++){
-            Random rand = new Random();
             double randomBranch = rand.nextInt(50)/10.0;
             double randomBranch2 = rand.nextInt(50)/10.0;
             Gene child_one = simulateOne(evolvingGene, randomBranch);
@@ -431,7 +437,7 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
             }
         }
         */
-
+        
         TreeBuilder.binaryTree( 0, 5, TestingSample);
         tester.newick(TestingSample);
         System.out.println(tester.getNewickFormat().get(TestingSample));
@@ -443,9 +449,26 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         Gene Sars_Cov_19 = fastafile("sequence (1).fasta", "HKY");
         System.out.println(Sars_Cov_19.getName());
         System.out.println(Sars_Cov_19.getSequence());
+        
         Gene streptococcus = fastafile("sequence (2).fasta", "HKY");
         System.out.println(streptococcus.getName());
         //System.out.println(streptococcus.getSequence());
+
+        tester.createRootGene(influenza.getName(), influenza);
+        tester.createRootGene(Sars_Cov_19.getName(), Sars_Cov_19);
+        tester.createRootGene(streptococcus.getName(), streptococcus);
+
+        TreeBuilder.binaryTree( 0, 5, influenza);
+        tester.newick(influenza);
+        System.out.println(tester.getNewickFormat().get(influenza));
+
+        TreeBuilder.binaryTree( 0, 5, Sars_Cov_19);
+        tester.newick(Sars_Cov_19);
+        System.out.println(tester.getNewickFormat().get(Sars_Cov_19));
+
+        TreeBuilder.binaryTree( 0, 5, streptococcus);
+        tester.newick(streptococcus);
+        System.out.println(tester.getNewickFormat().get(streptococcus));
         
     }
 }
