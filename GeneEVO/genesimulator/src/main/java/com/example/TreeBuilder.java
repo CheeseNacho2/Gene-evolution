@@ -1,6 +1,10 @@
-/*public class TreeBuilder {
+package com.example;
+import java.util.Random;
 
-    public static void growTree(int currentGeneration, int maxGenerations, Gene rootGene) {
+
+public class TreeBuilder {
+
+    public static void binaryTree(int currentGeneration, int maxGenerations, Gene rootGene) {
 
         if (currentGeneration > maxGenerations) {
             return;
@@ -8,8 +12,12 @@
 
         Gene currentGene = rootGene;
 
-        node.left = growTree(currentGeneration + 1, maxGenerations,currentGene);
-        node.right = growTree(currentGeneration + 1, maxGenerations, currentGene);
+        Random rand = new Random();
+        double randomBranch = rand.nextInt(50)/10.0;
+        double randomBranch2 = rand.nextInt(50)/10.0;
+
+        binaryTree(currentGeneration + 1, maxGenerations, EvoSimulation.simulateOne(currentGene, randomBranch));
+        binaryTree(currentGeneration + 1, maxGenerations, EvoSimulation.simulateOne(currentGene, randomBranch2));
 
     }
-}*/
+}

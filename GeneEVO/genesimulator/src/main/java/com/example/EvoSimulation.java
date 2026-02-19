@@ -6,6 +6,15 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.File;   
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import org.apache.commons.math3.distribution.GammaDistribution;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -49,12 +58,79 @@ class EvoSimulation {
         newickformat.put(gene, toNewick(gene) + ";");
     }
 
+    public static double[] gammaDistributeArray(double shape, int element_count){
+        double scale = 1/shape;
+        GammaDistribution gamma = new GammaDistribution(shape, scale);
+        double[] gamma_distributed_array = new double[element_count];
+        for (int i = 0; i < element_count; i++ ){
+            gamma_distributed_array[i] = gamma.sample();
+        }
+
+        return gamma_distributed_array;
+    }
+
+    public static Gene fastafile(String filename, String model) throws IOException {
+
+    InputStream filestream = EvoSimulation.class.getClassLoader().getResourceAsStream(filename);
+
+        if (filestream == null) {
+            throw new RuntimeException("File not found in resources!");
+    }
+    if (!"Jukes-Cantor".equals(model) && !"HKY".equals(model)) {
+        model = "Jukes-Cantor";
+        System.out.println("Gene was created using Jukes-Cantor model due to unknown model input.");
+    }
+     try (BufferedReader reader = new BufferedReader(new InputStreamReader(filestream))) {
+
+        StringBuilder sequence = new StringBuilder();
+        String name = null;
+        String readingline;
+
+        while ((readingline = reader.readLine()) != null) {
+
+            if (readingline.startsWith(">")) {
+
+                if (name == null) {
+
+                    int dot = readingline.indexOf('.');
+
+                    if (dot == -1 || dot + 2 >= readingline.length()) {
+                        throw new IOException("Wrong header format");
+                    }
+
+                    name = readingline.substring(dot + 2, readingline.indexOf(","));
+
+                } else {
+                    break;
+                }
+
+            } else {
+                sequence.append(readingline.trim());
+            }
+        }
+
+        if (name == null) {
+            throw new IOException("Wrong file format.");
+        }
+
+        String seq = sequence.toString();
+
+        if ("Jukes-Cantor".equals(model)) {
+            return new Gene(name, seq, JukesCantor(seq));
+        } else {
+            return new Gene(name, seq, HKY85(seq));
+        }
+    }
+}
     // One instance of simulation - making one time step - it is a general method,
     // we will need to make
     // a method to calculate the mutation rates
-    public Gene simulateOne(Gene SimulGene, double branch_length) {
+    public static Gene simulateOne(Gene SimulGene, double branch_length) {
         String evolvedGC = "";
+        double og_branch_length = branch_length;
+        double[] gamma_distributed_array = gammaDistributeArray(0.6, SimulGene.getSequence().length());
         for (int k = 0; k < (SimulGene.getSequence()).length(); k++) {
+            branch_length = gamma_distributed_array[k];
             Random rand = new Random();
             int randomValue = rand.nextInt(101);
             double transition = randomValue;
@@ -81,14 +157,14 @@ class EvoSimulation {
             }
 
         }
-        Gene evolvedGene = new Gene(SimulGene.getName() + "-" + Integer.toString(SimulGene.getChildren().size()), evolvedGC, SimulGene.getMutationPattern(),branch_length, SimulGene);
+        Gene evolvedGene = new Gene(SimulGene.getName() + "-" + Integer.toString(SimulGene.getChildren().size()), evolvedGC, SimulGene.getMutationPattern(),og_branch_length, SimulGene);
         SimulGene.addChild(evolvedGene);
         return evolvedGene;
     }
 
     // Making multiple time steps - try make it work for different time steps each
     // time
-    public List<Gene> simulateMany(Gene SimuGene, double[] branch_lengths) {
+    public List<Gene> simulateMany(Gene SimuGene, double[] branch_lengths, String model) {
         List<Gene> newGenes = new ArrayList<Gene>();
         for (int k = 0; k < branch_lengths.length; k++) {
             newGenes.add(simulateOne(SimuGene, branch_lengths[k]));
@@ -129,7 +205,7 @@ class EvoSimulation {
         return rootGenes.get(name);
     }
 
-    public Map<String, Map<Double, String>> JukesCantor(String sequence) {
+    public static Map<String, Map<Double, String>> JukesCantor(String sequence) {
         Map<String, Map<Double, String>> mutationRates = new HashMap<>();
         double JC_rate = 1.0;
         String[] nucleotides = { "A", "C", "T", "G" };
@@ -147,6 +223,129 @@ class EvoSimulation {
         }
 
         return mutationRates;
+    }
+
+    public static Map<String, Map<Double, String>> HKY85(String sequence){
+        Map<String, Map<Double, String>> mutationRates = new HashMap<>();
+        Map<String, Double> base_frequencies = new HashMap<>();
+        double transition_bias = 5.0;
+         String[] nucleotides = { "A", "C", "T", "G" };
+        base_frequencies.put("A", 0.0);
+        base_frequencies.put("C", 0.0);
+        base_frequencies.put("T", 0.0);
+        base_frequencies.put("G", 0.0);
+        for(int x = 0; x < sequence.length() - 1; x++){
+            base_frequencies.put(String.valueOf(sequence.charAt(x)), base_frequencies.get(String.valueOf(sequence.charAt(x))) + 1);
+        }
+        base_frequencies.put("A",base_frequencies.get("A")/sequence.length());
+        base_frequencies.put("C",base_frequencies.get("C")/sequence.length());
+        base_frequencies.put("T",base_frequencies.get("T")/sequence.length());
+        base_frequencies.put("G",base_frequencies.get("G")/sequence.length());
+         for (String x : nucleotides) {
+            mutationRates.put(x, new HashMap<>());
+            double probability_handler = 100.0;
+            
+            for (String y : nucleotides) {
+                if (x.equals(y)) {
+                    mutationRates.get(x).put(1.0 * 100, y);
+                } 
+                else if(((x == ("A") || x == "G" ) && (y == "A" || y == "G")) || ((x == ("C") || x == "T" ) && (y == "C" || y == "T"))){
+                    probability_handler += base_frequencies.get(y) * transition_bias;
+                    mutationRates.get(x).put(probability_handler * 100, y);
+                }
+                else {
+                    probability_handler += base_frequencies.get(y);
+                    mutationRates.get(x).put(probability_handler * 100, y);
+                    
+                }
+                
+            }
+             mutationRates.get(x).put(probability_handler, x);
+            
+        }
+        
+        return mutationRates;
+    }
+
+public static Gene simulateOne(Gene evolving_gene, double branch_length, double transition_bias){
+    String evolvedGC = "";
+    Map<String, Map<Double, String>> mutationRates = new HashMap<>();
+    Map<String, Double> base_frequencies = new HashMap<>();
+    String[] nucleotides = {"A", "C", "T", "G"};
+    for (String nucleotide : nucleotides){
+    base_frequencies.put(nucleotide, 0.0);
+    }
+    for(int x = 0; x < evolving_gene.getSequence().length() - 1; x++){
+        base_frequencies.put(String.valueOf(evolving_gene.getSequence().charAt(x)), base_frequencies.get(String.valueOf(evolving_gene.getSequence().charAt(x))) + 1);
+    }
+    for (String nucleotide : nucleotides){
+     base_frequencies.put(nucleotide,base_frequencies.get(nucleotide)/evolving_gene.getSequence().length());
+    }
+
+    double beta = 1/(2*(base_frequencies.get("A") + base_frequencies.get("G")) * (base_frequencies.get("C") + base_frequencies.get("T")) + 
+                  2*transition_bias*((base_frequencies.get("A")*base_frequencies.get("G")) +(base_frequencies.get("C")*base_frequencies.get("T"))));
+
+    for (String x : nucleotides) {
+            mutationRates.put(x, new HashMap<>());
+            double probability_handler = 0.0;
+            
+            for (String y : nucleotides) {
+                String[] transversion_nucleotides = new String[2];
+                if (x.equals(y)) {
+                    mutationRates.get(x).put(1.0 * 100, y);
+                    System.out.println("unchanged");
+                } 
+                else if(((x == ("A") || x == "G" ) && (y == "A" || y == "G")) || ((x == ("C") || x == "T" ) && (y == "C" || y == "T"))){
+                    if(x == ("A") || x == "G" ){
+                        transversion_nucleotides[0] = "C";
+                        transversion_nucleotides[1] = "T";
+                    }
+                    else
+                    {
+                        transversion_nucleotides[0] = "A";
+                        transversion_nucleotides[1] = "G";
+                    }
+                    double transition_rate = (base_frequencies.get(y)*
+                    (base_frequencies.get(x) + base_frequencies.get(y) + 
+                    (base_frequencies.get(transversion_nucleotides[0])+base_frequencies.get(transversion_nucleotides[1]))*Math.exp(-beta*branch_length))
+                    - base_frequencies.get(y)*Math.exp(-(1+(base_frequencies.get(x) + base_frequencies.get(y))*(transition_bias - 1))*beta*branch_length))/
+                    (base_frequencies.get(x) + base_frequencies.get(y));
+                    mutationRates.get(x).put(transition_rate * 100 + probability_handler, y);
+                    probability_handler += transition_rate * 100;
+                    System.out.println(transition_rate + "  transition from " + x + " to " + y);
+                }
+                else {
+                    double transition_rate = base_frequencies.get(y)*(1.0 - Math.exp(-beta*branch_length));
+                    mutationRates.get(x).put(transition_rate * 100 + probability_handler, y);
+                    probability_handler += transition_rate * 100;
+                    System.out.println(transition_rate + "  transversion from"+ x + " to " + y);
+                }
+                
+            }
+        }
+
+            for (int k = 0; k < (evolving_gene.getSequence()).length(); k++) {
+            Random rand = new Random();
+            int randomValue = rand.nextInt(101);
+            double transition = randomValue;
+            Map<Double, String> transitMap = (mutationRates.get(Character.toString((evolving_gene.getSequence()).charAt(k))));
+            Double prevKey = 101.0;
+            for (Double probNumber : transitMap.keySet()) {
+                if (randomValue < probNumber && prevKey > probNumber) {
+                    transition = probNumber;
+                    prevKey = probNumber;
+                }
+            }
+            evolvedGC += transitMap.get(transition);
+        } 
+        
+    
+    
+    Gene evolvedGene = new Gene(evolving_gene.getName() + "-" + Integer.toString(evolving_gene.getChildren().size()),
+    evolvedGC, evolving_gene.getMutationPattern(),branch_length, evolving_gene);
+    System.out.println(evolvedGC);
+    evolving_gene.addChild(evolvedGene);
+    return evolvedGene;
     }
 
     //Copied JFReeChart library for charting
@@ -175,10 +374,10 @@ class EvoSimulation {
         frame.setVisible(true);
     }
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException{
         EvoSimulation tester = new EvoSimulation();
         Gene TestingSample = new Gene("Test", "ATACGTAGCATCGATCGATCGATCGACATCGATCGATCGATCGACTGCATCGATCGACTGCATCGACTACGATCGACTAGCTAAATCGCGTCGATCGATGCTAGTCAGCTGATCGATCGATCGAGCTAGCATCGATCAGCTAG",
-                tester.JukesCantor("ATACGTAGCATCGATCGATCGATCGACATCGATCGATCGATCGACTGCATCGATCGACTGCATCGACTACGATCGACTAGCTAAATCGCGTCGATCGATGCTAGTCAGCTGATCGATCGATCGAGCTAGCATCGATCAGCTAG"));
+                JukesCantor("ATACGTAGCATCGATCGATCGATCGACATCGATCGATCGATCGACTGCATCGATCGACTGCATCGACTACGATCGACTAGCTAAATCGCGTCGATCGATGCTAGTCAGCTGATCGATCGATCGAGCTAGCATCGATCAGCTAG"));
         
         //MANUAL BRANCH INPUT
         //Scanner in_scanner = new Scanner(System.in);
@@ -195,7 +394,7 @@ class EvoSimulation {
         for (double k = 0; k < 10; k += 0.01){
         double branch_length = k;
         b_lengths[(int) Math.round(k*100)] = Math.round(k*100)/100.0;
-        String new_gen = tester.simulateOne(TestingSample, branch_length).getSequence();
+        String new_gen = simulateOne(TestingSample, branch_length).getSequence();
         String root_gen = TestingSample.getSequence();
         double hamming_distance = 0;
             for (int i = 0; i < (root_gen.length()); i++){
@@ -217,12 +416,12 @@ class EvoSimulation {
         //in_scanner.close();
 
         Gene evolvingGene = TestingSample;
-        for (int i = 0; i < 5; i++){
+        /*for (int i = 0; i < 5; i++){
             Random rand = new Random();
             double randomBranch = rand.nextInt(50)/10.0;
             double randomBranch2 = rand.nextInt(50)/10.0;
-            Gene child_one = tester.simulateOne(evolvingGene, randomBranch);
-            Gene child_two = tester.simulateOne(evolvingGene, randomBranch2);
+            Gene child_one = simulateOne(evolvingGene, randomBranch);
+            Gene child_two = simulateOne(evolvingGene, randomBranch2);
             
             if (i % 2 == 0){
                 evolvingGene = child_one;
@@ -231,9 +430,22 @@ class EvoSimulation {
                 evolvingGene = child_two;
             }
         }
+        */
 
-        tester.newick(TestingSample.getChildren().get(0));
-        System.out.println(tester.getNewickFormat().get(TestingSample.getChildren().get(0)));
+        TreeBuilder.binaryTree( 0, 5, TestingSample);
+        tester.newick(TestingSample);
+        System.out.println(tester.getNewickFormat().get(TestingSample));
 
+        simulateOne(TestingSample, 3, 5);
+        Gene influenza = fastafile("sequences.fasta", "Jukes-Cantor");
+        System.out.println(influenza.getName());
+        System.out.println(influenza.getSequence());
+        Gene Sars_Cov_19 = fastafile("sequence (1).fasta", "HKY");
+        System.out.println(Sars_Cov_19.getName());
+        System.out.println(Sars_Cov_19.getSequence());
+        Gene streptococcus = fastafile("sequence (2).fasta", "HKY");
+        System.out.println(streptococcus.getName());
+        //System.out.println(streptococcus.getSequence());
+        
     }
 }
