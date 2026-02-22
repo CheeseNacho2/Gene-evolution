@@ -101,7 +101,7 @@ class EvoSimulation {
                         throw new IOException("Wrong header format");
                     }
 
-                    name = readingline.substring(dot + 2, readingline.indexOf(","));
+                    name = readingline.substring(dot + 3, readingline.indexOf(","));
 
                 } else {
                     break;
@@ -160,7 +160,7 @@ class EvoSimulation {
             }
 
         }
-        Gene evolvedGene = new Gene(SimulGene.getName() + "-" + Integer.toString(SimulGene.getChildren().size()), evolvedGC.toString(), SimulGene.getMutationPattern(),og_branch_length, SimulGene);
+        Gene evolvedGene = new Gene(SimulGene.getName() + "-" + (char)('A' + (SimulGene.getChildren().size())), evolvedGC.toString(), SimulGene.getMutationPattern(),og_branch_length, SimulGene);
         SimulGene.addChild(evolvedGene);
         return evolvedGene;
     }
@@ -195,7 +195,8 @@ class EvoSimulation {
     newickform.append(")");
 
     if (gene.getName() != null && !gene.getName().isEmpty()) {
-        newickform.append(gene.getName());
+        newickform.append(//gene.getName() + 
+        ":" + String.format(Locale.UK, "%.3f", gene.getParental_distance()));
     }
 
     return newickform.toString();
@@ -347,9 +348,9 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         
     
     
-    Gene evolvedGene = new Gene(evolving_gene.getName() + "-" + Integer.toString(evolving_gene.getChildren().size()),
+    Gene evolvedGene = new Gene(evolving_gene.getName() + "-" + (char)('A' + (evolving_gene.getChildren().size())),
     evolvedGC.toString(), evolving_gene.getMutationPattern(),branch_length, evolving_gene);
-    System.out.println(evolvedGC);
+    //System.out.println(evolvedGC);
     evolving_gene.addChild(evolvedGene);
     return evolvedGene;
     }
@@ -438,10 +439,10 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         }
         */
         
-        TreeBuilder.binaryTree( 0, 5, TestingSample);
+        /*TreeBuilder.binaryTree( 0, 5, TestingSample);
         tester.newick(TestingSample);
         System.out.println(tester.getNewickFormat().get(TestingSample));
-
+        */
         simulateOne(TestingSample, 3, 5);
         Gene influenza = fastafile("sequences.fasta", "Jukes-Cantor");
         System.out.println(influenza.getName());
@@ -458,15 +459,15 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         tester.createRootGene(Sars_Cov_19.getName(), Sars_Cov_19);
         tester.createRootGene(streptococcus.getName(), streptococcus);
 
-        TreeBuilder.binaryTree( 0, 5, influenza);
+        TreeBuilder.binaryTree( 0, 6, influenza);
         tester.newick(influenza);
         System.out.println(tester.getNewickFormat().get(influenza));
 
-        TreeBuilder.binaryTree( 0, 5, Sars_Cov_19);
+        TreeBuilder.binaryTree( 0, 6, Sars_Cov_19);
         tester.newick(Sars_Cov_19);
         System.out.println(tester.getNewickFormat().get(Sars_Cov_19));
 
-        TreeBuilder.binaryTree( 0, 5, streptococcus);
+        TreeBuilder.binaryTree( 0, 6, streptococcus);
         tester.newick(streptococcus);
         System.out.println(tester.getNewickFormat().get(streptococcus));
         
