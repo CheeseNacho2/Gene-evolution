@@ -1,0 +1,107 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: Streptococcus_pneumoniae_D39.fasta
+User tree file name: Streptococcus_pneumoniae_D39.newick
+Type of analysis: tree reconstruction
+Random seed number: 272145
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 sequences with 2046116 nucleotide sites
+Number of constant sites: 636031 (= 31.0848% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 636031 (= 31.0848% of all sites)
+Number of parsimony informative sites: 1410085
+Number of distinct site patterns: 16
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 4.9302
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 4.9302
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3022
+  pi(C) = 0.1979
+  pi(G) = 0.202
+  pi(T) = 0.2979
+
+Rate matrix Q:
+
+  A   -0.8862    0.1176    0.5916     0.177
+  C    0.1795    -1.172      0.12    0.8727
+  G    0.8851    0.1176     -1.18     0.177
+  T    0.1795    0.5797      0.12   -0.8792
+
+Model of rate heterogeneity: Uniform
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -5555684.4574 (s.e. 481.3872)
+Unconstrained log-likelihood (without tree): -5555630.1369
+Number of free parameters (#branches + #model parameters): 9
+Akaike information criterion (AIC) score: 11111386.9149
+Corrected Akaike information criterion (AICc) score: 11111386.9150
+Bayesian information criterion (BIC) score: 11111499.6980
+
+Total tree length (sum of branch lengths): 2.8556
+Sum of internal branch lengths: 0.0000 (0.0000% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Streptococcus_pneumoniae_D39-A-A-A-A' is drawn at root
+
++**Streptococcus_pneumoniae_D39-A-A-A-A
+|
++**Streptococcus_pneumoniae_D39-A-A-A-B
+|
+|                                                          +**Streptococcus_pneumoniae_D39-B-A-A-A
++----------------------------------------------------------|
+                                                           +**Streptococcus_pneumoniae_D39-B-A-A-B
+
+Tree in newick format:
+
+(Streptococcus_pneumoniae_D39-A-A-A-A:0.0000001413,Streptococcus_pneumoniae_D39-A-A-A-B:0.0000001301,(Streptococcus_pneumoniae_D39-B-A-A-A:0.0000001070,Streptococcus_pneumoniae_D39-B-A-A-B:0.0000001212):2.8555836628);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Streptococcus_pneumoniae_D39.fasta.treefile -m "HKY{4.93023}+F{0.302171,0.197909,0.201988,0.297932}" --length 2046116
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Streptococcus_pneumoniae_D39.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Streptococcus_pneumoniae_D39.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Mar 03 18:08:29 2026
+Total CPU time used: 0.03125 seconds (0h:0m:0s)
+Total wall-clock time used: 0.1482639 seconds (0h:0m:0s)
+

@@ -1,4 +1,10 @@
 package com.example;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -57,7 +63,7 @@ class Gene{
 
     //Constructors
     public Gene(String name,String sequence, Map<String, Map<Double, String>> mutationPattern){
-        this.name = name;
+        this.name = name.replaceAll("[^A-Za-z0-9_.-]", "_");
         this.sequence = sequence;
         this.mutationPattern = mutationPattern;
         this.parental_distance = 0;
@@ -66,7 +72,7 @@ class Gene{
     }
 
     public Gene(String name,String sequence, Map<String, Map<Double, String>> mutationPattern,double parental_distance, Gene parent){
-        this.name = name;
+        this.name = name.replaceAll("[^A-Za-z0-9_.-]", "_");
         this.sequence = sequence;
         this.mutationPattern = mutationPattern;
         this.parental_distance = parental_distance;
@@ -78,5 +84,63 @@ class Gene{
     public void addChild(Gene child){
         children.add(child);
     }
+
+    public void writeLeavesToFasta(Gene root, String path) throws IOException {
+
+    Path outputFile = Path.of(path);
+    Files.createDirectories(outputFile.getParent());
+    try (BufferedWriter w = Files.newBufferedWriter(outputFile)) {
+        writeLeavesRec(root, w);
+    }
+}
+
+private void writeLeavesRec(Gene thisGene, BufferedWriter writer) throws IOException {
+
+    if (thisGene == null) return;
+
+    // leaf
+    if (thisGene.getChildren().size() == 0) {
+
+        writer.write(">");
+        writer.write((thisGene.getName()));
+        writer.newLine();
+
+        String seq = thisGene.getSequence();
+
+        for (int i = 0; i < seq.length(); i += 60) {
+            int end = Math.min(i + 60, seq.length());
+            writer.write(seq, i, end - i);
+            writer.newLine();
+        }
+
+        return;
+    }
+
+    for (Gene child : thisGene.getChildren()) {
+        writeLeavesRec(child, writer);
+    }
+}
+
+
+ public void toFasta(String folderPath) throws IOException {
+
+    Path dir = Path.of(folderPath);
+    Files.createDirectories(dir);
+
+    Path fastafile = dir.resolve(name + ".fasta");
+
+    try (BufferedWriter w = Files.newBufferedWriter(fastafile)) {
+
+        w.write(">");
+        w.write(name);
+        w.newLine();
+
+        for (int i = 0; i < sequence.length(); i += 60) {
+            int end = Math.min(i + 60, sequence.length());
+            w.write(sequence, i, end - i);
+            w.newLine();
+        }
+    }
+}
 
 }

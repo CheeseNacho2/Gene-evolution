@@ -1,0 +1,179 @@
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MSI (AVX2, FMA3, 15 GB RAM)
+Command: C:\Program Files\IQtree\iqtree-2.4.0-Windows\bin\iqtree2.exe -s Streptococcus_pneumoniae_D39.fasta -te Streptococcus_pneumoniae_D39.newick -m HKY -st DNA -redo
+Seed:    272145 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Mar 03 18:08:28 2026
+Kernel:  AVX+FMA - 1 threads (20 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 20 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Streptococcus_pneumoniae_D39.fasta ... Fasta format detected
+Reading fasta file: done in 0.321067 secs using 92.47% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 16 sequences with 2046116 columns, 16 distinct patterns
+1410085 parsimony-informative, 0 singleton sites, 636031 constant sites
+                                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.15e-005 secs
+   1  Streptococcus_pneumoniae_D39-A-A-A-A    0.00%    failed      0.01%
+   2  Streptococcus_pneumoniae_D39-A-A-A-B    0.00%    failed      0.01%
+   3  Streptococcus_pneumoniae_D39-A-A-B-A    0.00%    failed      0.01%
+   4  Streptococcus_pneumoniae_D39-A-A-B-B    0.00%    failed      0.01%
+   5  Streptococcus_pneumoniae_D39-A-B-A-A    0.00%    failed      0.01%
+   6  Streptococcus_pneumoniae_D39-A-B-A-B    0.00%    failed      0.01%
+   7  Streptococcus_pneumoniae_D39-A-B-B-A    0.00%    failed      0.01%
+   8  Streptococcus_pneumoniae_D39-A-B-B-B    0.00%    failed      0.01%
+   9  Streptococcus_pneumoniae_D39-B-A-A-A    0.00%    failed      0.01%
+  10  Streptococcus_pneumoniae_D39-B-A-A-B    0.00%    failed      0.01%
+  11  Streptococcus_pneumoniae_D39-B-A-B-A    0.00%    failed      0.01%
+  12  Streptococcus_pneumoniae_D39-B-A-B-B    0.00%    failed      0.01%
+  13  Streptococcus_pneumoniae_D39-B-B-A-A    0.00%    failed      0.01%
+  14  Streptococcus_pneumoniae_D39-B-B-A-B    0.00%    failed      0.01%
+  15  Streptococcus_pneumoniae_D39-B-B-B-A    0.00%    failed      0.01%
+  16  Streptococcus_pneumoniae_D39-B-B-B-B    0.00%    failed      0.01%
+****  TOTAL                                   0.00%  16 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: minimal branch length is reduced to 0.000000048873 for long alignment
+NOTE: Streptococcus_pneumoniae_D39-A-A-A-B is identical to Streptococcus_pneumoniae_D39-A-A-A-A but kept for subsequent analysis
+NOTE: Streptococcus_pneumoniae_D39-B-A-A-B is identical to Streptococcus_pneumoniae_D39-B-A-A-A but kept for subsequent analysis
+NOTE: 12 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Streptococcus_pneumoniae_D39-A-A-B-A (identical to Streptococcus_pneumoniae_D39-A-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-A-A-B-B (identical to Streptococcus_pneumoniae_D39-A-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-A-B-A-A (identical to Streptococcus_pneumoniae_D39-A-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-A-B-A-B (identical to Streptococcus_pneumoniae_D39-A-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-A-B-B-A (identical to Streptococcus_pneumoniae_D39-A-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-A-B-B-B (identical to Streptococcus_pneumoniae_D39-A-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-B-A-B-A (identical to Streptococcus_pneumoniae_D39-B-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-B-A-B-B (identical to Streptococcus_pneumoniae_D39-B-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-B-B-A-A (identical to Streptococcus_pneumoniae_D39-B-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-B-B-A-B (identical to Streptococcus_pneumoniae_D39-B-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-B-B-B-A (identical to Streptococcus_pneumoniae_D39-B-A-A-A) is ignored but added at the end
+NOTE: Streptococcus_pneumoniae_D39-B-B-B-B (identical to Streptococcus_pneumoniae_D39-B-A-A-A) is ignored but added at the end
+Alignment was printed to Streptococcus_pneumoniae_D39.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to Streptococcus_pneumoniae_D39.fasta.uniqueseq.phy
+Reading input tree file Streptococcus_pneumoniae_D39.newick ... rooted tree
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -9761940.186
+2. Current log-likelihood: -5557365.660
+3. Current log-likelihood: -5556557.484
+4. Current log-likelihood: -5556223.537
+5. Current log-likelihood: -5556057.757
+6. Current log-likelihood: -5555959.676
+7. Current log-likelihood: -5555896.237
+8. Current log-likelihood: -5555852.567
+9. Current log-likelihood: -5555821.088
+10. Current log-likelihood: -5555797.582
+11. Current log-likelihood: -5555779.522
+12. Current log-likelihood: -5555765.325
+13. Current log-likelihood: -5555753.957
+14. Current log-likelihood: -5555744.711
+15. Current log-likelihood: -5555737.089
+16. Current log-likelihood: -5555730.733
+17. Current log-likelihood: -5555725.379
+18. Current log-likelihood: -5555720.829
+19. Current log-likelihood: -5555716.933
+20. Current log-likelihood: -5555713.571
+21. Current log-likelihood: -5555710.653
+22. Current log-likelihood: -5555708.106
+23. Current log-likelihood: -5555705.871
+24. Current log-likelihood: -5555703.901
+25. Current log-likelihood: -5555702.156
+26. Current log-likelihood: -5555700.605
+27. Current log-likelihood: -5555699.221
+28. Current log-likelihood: -5555697.982
+29. Current log-likelihood: -5555696.870
+30. Current log-likelihood: -5555695.868
+31. Current log-likelihood: -5555694.963
+32. Current log-likelihood: -5555694.145
+33. Current log-likelihood: -5555693.401
+34. Current log-likelihood: -5555692.726
+35. Current log-likelihood: -5555692.110
+36. Current log-likelihood: -5555691.548
+37. Current log-likelihood: -5555691.033
+38. Current log-likelihood: -5555690.562
+39. Current log-likelihood: -5555690.130
+40. Current log-likelihood: -5555689.732
+41. Current log-likelihood: -5555689.366
+42. Current log-likelihood: -5555689.029
+43. Current log-likelihood: -5555688.717
+44. Current log-likelihood: -5555688.429
+45. Current log-likelihood: -5555688.163
+46. Current log-likelihood: -5555687.916
+47. Current log-likelihood: -5555687.688
+48. Current log-likelihood: -5555687.475
+49. Current log-likelihood: -5555687.278
+50. Current log-likelihood: -5555687.094
+51. Current log-likelihood: -5555686.924
+52. Current log-likelihood: -5555686.764
+53. Current log-likelihood: -5555686.616
+54. Current log-likelihood: -5555686.478
+55. Current log-likelihood: -5555686.348
+56. Current log-likelihood: -5555686.227
+57. Current log-likelihood: -5555686.114
+58. Current log-likelihood: -5555686.008
+59. Current log-likelihood: -5555685.909
+60. Current log-likelihood: -5555685.817
+61. Current log-likelihood: -5555685.729
+62. Current log-likelihood: -5555685.648
+63. Current log-likelihood: -5555685.571
+64. Current log-likelihood: -5555685.499
+65. Current log-likelihood: -5555685.431
+66. Current log-likelihood: -5555685.368
+67. Current log-likelihood: -5555685.308
+68. Current log-likelihood: -5555685.252
+69. Current log-likelihood: -5555685.199
+70. Current log-likelihood: -5555685.149
+71. Current log-likelihood: -5555685.102
+72. Current log-likelihood: -5555685.057
+73. Current log-likelihood: -5555685.015
+74. Current log-likelihood: -5555684.976
+75. Current log-likelihood: -5555684.939
+76. Current log-likelihood: -5555684.903
+77. Current log-likelihood: -5555684.870
+78. Current log-likelihood: -5555684.839
+79. Current log-likelihood: -5555684.809
+80. Current log-likelihood: -5555684.781
+81. Current log-likelihood: -5555684.755
+82. Current log-likelihood: -5555684.729
+83. Current log-likelihood: -5555684.706
+84. Current log-likelihood: -5555684.683
+85. Current log-likelihood: -5555684.662
+86. Current log-likelihood: -5555684.642
+87. Current log-likelihood: -5555684.623
+88. Current log-likelihood: -5555684.605
+89. Current log-likelihood: -5555684.587
+90. Current log-likelihood: -5555684.571
+91. Current log-likelihood: -5555684.556
+92. Current log-likelihood: -5555684.541
+93. Current log-likelihood: -5555684.527
+94. Current log-likelihood: -5555684.514
+95. Current log-likelihood: -5555684.501
+96. Current log-likelihood: -5555684.490
+97. Current log-likelihood: -5555684.478
+98. Current log-likelihood: -5555684.468
+99. Current log-likelihood: -5555684.457
+Optimal log-likelihood: -5555684.457
+Rate parameters:  A-C: 1.00000  A-G: 4.93023  A-T: 1.00000  C-G: 1.00000  C-T: 4.93023  G-T: 1.00000
+Base frequencies:  A: 0.302  C: 0.198  G: 0.202  T: 0.298
+Parameters optimization took 99 rounds (0.122 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -5555684.457
+Total tree length: 2.856
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.031 sec (0h:0m:0s)
+Total wall-clock time used: 0.146 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Streptococcus_pneumoniae_D39.fasta.iqtree
+  Maximum-likelihood tree:       Streptococcus_pneumoniae_D39.fasta.treefile
+  Screen log file:               Streptococcus_pneumoniae_D39.fasta.log
+
+Date and Time: Tue Mar 03 18:08:30 2026

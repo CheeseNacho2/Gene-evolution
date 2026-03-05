@@ -7,12 +7,15 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;   
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import org.apache.commons.math3.distribution.GammaDistribution;
 
@@ -54,9 +57,22 @@ class EvoSimulation {
         rootGenes.put(name, rootGene);
     }
 
-    public void newick(Gene gene){
-        newickformat.put(gene, toNewick(gene) + ";");
+    public void newick(Gene gene, String path) throws IOException {
+
+    String text = toNewick(gene) + ";";
+    newickformat.put(gene, text);
+
+    Path dir = Path.of(path);
+    Files.createDirectories(dir);
+
+    Path newickfile = dir.resolve(gene.getName() + ".newick");
+
+    try (BufferedWriter w = Files.newBufferedWriter(newickfile)) {
+        w.write(text);
     }
+}
+
+
 
     //Class for getting a variable-sized array with Gamma Distributed values 
     public static double[] gammaDistributeArray(double shape, int element_count){
@@ -66,7 +82,6 @@ class EvoSimulation {
         for (int i = 0; i < element_count; i++ ){
             gamma_distributed_array[i] = gamma.sample();
         }
-
         return gamma_distributed_array;
     }
 
@@ -81,7 +96,7 @@ class EvoSimulation {
     }
     if (!"Jukes-Cantor".equals(model) && !"HKY".equals(model)) {
         model = "Jukes-Cantor";
-        System.out.println("Gene was created using Jukes-Cantor model due to unknown model input.");
+        //System.out.println("Gene was created using Jukes-Cantor model due to unknown model input.");
     }
      try (BufferedReader reader = new BufferedReader(new InputStreamReader(filestream))) {
 
@@ -128,13 +143,13 @@ class EvoSimulation {
     // One instance of simulation - making one time step - it is a general method,
     // we will need to make
     // a method to calculate the mutation rates
-    public static Gene simulateOne(Gene SimulGene, double branch_length) {
+    public static Gene simulateOne(Gene SimulGene, double branch_length) throws IOException {
         StringBuilder evolvedGC = new StringBuilder();
         double og_branch_length = branch_length;
         double[] gamma_distributed_array = gammaDistributeArray(0.6, SimulGene.getSequence().length());
         Random rand = new Random();
         for (int k = 0; k < (SimulGene.getSequence()).length(); k++) {
-            branch_length = gamma_distributed_array[k];
+            branch_length = og_branch_length*gamma_distributed_array[k];
             int randomValue = rand.nextInt(101);
             double transition = randomValue;
             Map<Double, String> transitMap = ((SimulGene.getMutationPattern())
@@ -167,7 +182,7 @@ class EvoSimulation {
 
     // Making multiple time steps - try make it work for different time steps each
     // time
-    public List<Gene> simulateMany(Gene SimuGene, double[] branch_lengths, String model) {
+    public List<Gene> simulateMany(Gene SimuGene, double[] branch_lengths, String model) throws IOException{
         List<Gene> newGenes = new ArrayList<Gene>();
         for (int k = 0; k < branch_lengths.length; k++) {
             newGenes.add(simulateOne(SimuGene, branch_lengths[k]));
@@ -274,7 +289,7 @@ class EvoSimulation {
 
 
 //Method for simulating via HKY85 method - uses equations for each transition
-public static Gene simulateOne(Gene evolving_gene, double branch_length, double transition_bias){
+public static Gene simulateOne(Gene evolving_gene, double branch_length, double transition_bias) throws IOException{
     StringBuilder evolvedGC = new StringBuilder();
     Map<String, Map<Double, String>> mutationRates = new HashMap<>();
     Map<String, Double> base_frequencies = new HashMap<>();
@@ -300,7 +315,7 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
                 String[] transversion_nucleotides = new String[2];
                 if (x.equals(y)) {
                     mutationRates.get(x).put(1.0 * 100, y);
-                    System.out.println("unchanged");
+                    //System.out.println("unchanged");
                 } 
                 else if(((x == ("A") || x == "G" ) && (y == "A" || y == "G")) || ((x == ("C") || x == "T" ) && (y == "C" || y == "T"))){
                     if(x == ("A") || x == "G" ){
@@ -319,13 +334,13 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
                     (base_frequencies.get(x) + base_frequencies.get(y));
                     mutationRates.get(x).put(transition_rate * 100 + probability_handler, y);
                     probability_handler += transition_rate * 100;
-                    System.out.println(transition_rate + "  transition from " + x + " to " + y);
+                    //System.out.println(transition_rate + "  transition from " + x + " to " + y);
                 }
                 else {
                     double transition_rate = base_frequencies.get(y)*(1.0 - Math.exp(-beta*branch_length));
                     mutationRates.get(x).put(transition_rate * 100 + probability_handler, y);
                     probability_handler += transition_rate * 100;
-                    System.out.println(transition_rate + "  transversion from"+ x + " to " + y);
+                    //System.out.println(transition_rate + "  transversion from"+ x + " to " + y);
                 }
                 
             }
@@ -375,7 +390,7 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
 
         // Chart displaying
         JFrame frame = new JFrame(chartTitle);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.add(new ChartPanel(chart));
         frame.pack();
         frame.setVisible(true);
@@ -383,20 +398,44 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
 
     public static void main(String args[]) throws IOException{
         EvoSimulation tester = new EvoSimulation();
-        Gene TestingSample = new Gene("Test", "ATACGTAGCATCGATCGATCGATCGACATCGATCGATCGATCGACTGCATCGATCGACTGCATCGACTACGATCGACTAGCTAAATCGCGTCGATCGATGCTAGTCAGCTGATCGATCGATCGAGCTAGCATCGATCAGCTAG",
-                JukesCantor("ATACGTAGCATCGATCGATCGATCGACATCGATCGATCGATCGACTGCATCGATCGACTGCATCGACTACGATCGACTAGCTAAATCGCGTCGATCGATGCTAGTCAGCTGATCGATCGATCGAGCTAGCATCGATCAGCTAG"));
+        String randomSequence = "ATACGTATCGAACTGATGCTAATCGAACTGAATCGAACTGAGCAGTGCAGTATCGAACTGAATCGAACTGAAAAAAGTCGAGCAGTGCAGTAAAAAGAGCAGTGCAGTAAAAAGATGTCGACGAGAGGAGAAGGATCTTATCAGCTAG";
+        Gene TestingSample = new Gene("Test", randomSequence , JukesCantor(randomSequence));
+        boolean exit = false;
         
         //MANUAL BRANCH INPUT
-        //Scanner in_scanner = new Scanner(System.in);
-        //System.out.println("Enter a branch length");
-        //double branch_length = in_scanner.nextDouble();
+        Scanner in_scanner = new Scanner(System.in);
+        
+ 
+       tester.createRootGene(TestingSample.getName(), TestingSample);
 
-        tester.createRootGene(TestingSample.getName(), TestingSample);
-
-        //
-        /*double[] b_lengths = new double[1001];
+       while(!exit){
+        System.out.println("Main Menu - type a number to choose an action\n1: Manual simulation of an example Gene\n2: Show Hamming Distance and JC Maximum Likelihood Graphs");
+        System.out.println("3: Show Binary Trees of example sequences\n4: Exit");
+        System.out.print("\nEnter your choice: ");
+        int choice = in_scanner.nextInt();
+        System.out.println();
+        if(choice == 1){
+            System.out.println("Your random sequence: " + randomSequence);
+            System.out.print("Enter a branch length: ");
+            double branch_length = in_scanner.nextDouble();
+            System.out.print("Enter a model (JC or HKY): ");
+            in_scanner.nextLine();
+            String model = in_scanner.nextLine();
+            if (model.equals("HKY")) {
+                System.out.print("Enter a transition bias: ");
+                double bias = in_scanner.nextDouble(); 
+                System.out.println("Your new sequence: " + simulateOne(TestingSample, branch_length, bias).getSequence() +"\n");
+        }
+            else{
+                System.out.println("Your new sequence: " + simulateOne(TestingSample, branch_length).getSequence() + "\n");                
+            }
+    }
+        else if(choice == 2){
+        double[] b_lengths = new double[1001];
         double[] max_likelihoods = new double[1001];
         double[] hamming_distances = new double[1001];
+        double[] avg_hamming_distances = new double[1001];
+         double[] avg_max_likelihoods = new double[1001];
 
         for (double k = 0; k < 10; k += 0.01){
         double branch_length = k;
@@ -405,25 +444,49 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         String root_gen = TestingSample.getSequence();
         double hamming_distance = 0;
             for (int i = 0; i < (root_gen.length()); i++){
-                //System.out.println(i);
                 if (new_gen.charAt(i) != (root_gen.charAt(i))){
+                    //System.out.print(new_gen.charAt(i) + "and" + root_gen.charAt(i) + " ");
                     hamming_distance += 1.0;
                 }
             }
         max_likelihoods[(int) Math.round(k*100)] = -0.75 * Math.log(1 - ((4.0/3.0) * (hamming_distance/root_gen.length())));
         hamming_distances[(int) Math.round(k*100)] = hamming_distance/root_gen.length();
-        //System.out.println(new_gen);
-        //System.out.println(root_gen);
+        for(int a = 1; a < hamming_distances.length;a++ ){
+            int n = a;
+            if (a > 49){
+                n = 50;
+            }
+            double avg_element = 0;
+            for (int inc = 0; inc < n; inc++){
+                avg_element += hamming_distances[a-inc];
+            }
+            avg_element = avg_element/n;
+            avg_hamming_distances[a] = avg_element;
         }
-        createXYChart("Maximum Likelihood graph", b_lengths, max_likelihoods, "Maximum Likelihood", "Branch length");
-        createXYChart("Hamming distance", b_lengths, hamming_distances, "Hamming distance", "Branch Length");
-        */
+        avg_hamming_distances[0] = hamming_distances[0];
+
+        for(int a = 1; a < hamming_distances.length;a++ ){
+            int n = a;
+            if (a > 49){
+                n = 50;
+            }
+            double avg_element = 0;
+            for (int inc = 0; inc < n; inc++){
+                avg_element += max_likelihoods[a-inc];
+            }
+            avg_element = avg_element/n;
+            avg_max_likelihoods[a] = avg_element;
+        }
+        avg_max_likelihoods[0] = max_likelihoods[0];
+        }
+        createXYChart("Maximum Likelihood graph", b_lengths, avg_max_likelihoods, "Maximum Likelihood", "Branch length");
+        createXYChart("Hamming distance", b_lengths, avg_hamming_distances, "Hamming distance", "Branch Length");
+    }
 
 
-        //in_scanner.close();
 
-        Gene evolvingGene = TestingSample;
-        Random rand = new Random();
+        //Gene evolvingGene = TestingSample;
+        //Random rand = new Random();
         /*for (int i = 0; i < 5; i++){
             double randomBranch = rand.nextInt(50)/10.0;
             double randomBranch2 = rand.nextInt(50)/10.0;
@@ -439,37 +502,55 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         }
         */
         
-        /*TreeBuilder.binaryTree( 0, 5, TestingSample);
-        tester.newick(TestingSample);
-        System.out.println(tester.getNewickFormat().get(TestingSample));
-        */
+        else if (choice == 3){
+        String savePath = "C:\\Users\\acko\\OneDrive\\Dokumenty\\GitHub\\Gene-evolution\\GeneEVO\\genesimulator\\src\\main\\resources";
+        TreeBuilder.binaryTree( 0, 5, TestingSample);
+        tester.newick(TestingSample, savePath);
+        
         simulateOne(TestingSample, 3, 5);
         Gene influenza = fastafile("sequences.fasta", "Jukes-Cantor");
-        System.out.println(influenza.getName());
-        System.out.println(influenza.getSequence());
-        Gene Sars_Cov_19 = fastafile("sequence (1).fasta", "HKY");
-        System.out.println(Sars_Cov_19.getName());
-        System.out.println(Sars_Cov_19.getSequence());
+        //System.out.println(influenza.getName());
+        //System.out.println(influenza.getSequence());
+        Gene Sars_Cov_19 = fastafile("sequence (1).fasta", "Jukes-Cantor");
+        //System.out.println(Sars_Cov_19.getName());
+        //System.out.println(Sars_Cov_19.getSequence());
         
         Gene streptococcus = fastafile("sequence (2).fasta", "HKY");
-        System.out.println(streptococcus.getName());
-        //System.out.println(streptococcus.getSequence());
 
         tester.createRootGene(influenza.getName(), influenza);
         tester.createRootGene(Sars_Cov_19.getName(), Sars_Cov_19);
         tester.createRootGene(streptococcus.getName(), streptococcus);
 
-        TreeBuilder.binaryTree( 0, 6, influenza);
-        tester.newick(influenza);
-        System.out.println(tester.getNewickFormat().get(influenza));
+
+        TreeBuilder.binaryTree( 0, 1, influenza);
+        tester.newick(influenza, savePath);
+        //System.out.println(tester.getNewickFormat().get(influenza));
 
         TreeBuilder.binaryTree( 0, 6, Sars_Cov_19);
-        tester.newick(Sars_Cov_19);
-        System.out.println(tester.getNewickFormat().get(Sars_Cov_19));
+        tester.newick(Sars_Cov_19, savePath);
+        //System.out.println(tester.getNewickFormat().get(Sars_Cov_19));
 
-        TreeBuilder.binaryTree( 0, 6, streptococcus);
-        tester.newick(streptococcus);
-        System.out.println(tester.getNewickFormat().get(streptococcus));
-        
+        TreeBuilder.binaryTree( 0, 3, streptococcus, 5);
+        tester.newick(streptococcus, savePath);
+        //System.out.println(tester.getNewickFormat().get(streptococcus));
+
+        influenza.writeLeavesToFasta(influenza, savePath + "\\" + influenza.getName() + ".fasta");
+        Sars_Cov_19.writeLeavesToFasta(Sars_Cov_19, savePath + "\\" + Sars_Cov_19.getName() + ".fasta");
+        streptococcus.writeLeavesToFasta(streptococcus, savePath + "\\" + streptococcus.getName() + ".fasta");
+        TestingSample.writeLeavesToFasta(TestingSample, savePath + "\\" + TestingSample.getName() + ".fasta");
+
+        System.out.println("Sequence trees have been written to newick files and alignments to fasta files");
     }
+
+    else if(choice == 4){
+        in_scanner.close();
+        exit = true;
+        break;
+    }
+
+    else{
+        System.out.println("Invalid input - Returning to Main Menu");
+    }
+}
+}
 }
