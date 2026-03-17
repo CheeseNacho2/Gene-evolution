@@ -288,7 +288,7 @@ class EvoSimulation {
     }
 
 
-//Method for simulating via HKY85 method - uses equations for each transition
+//Method for simulating via HKY85 method - uses equations for each transition and applies them in loops
 public static Gene simulateOne(Gene evolving_gene, double branch_length, double transition_bias) throws IOException{
     StringBuilder evolvedGC = new StringBuilder();
     Map<String, Map<Double, String>> mutationRates = new HashMap<>();
@@ -396,24 +396,48 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         frame.setVisible(true);
     }
 
+    /* Main method - currently has a simple UI and allows an input of a test gene. Shows the scaling of hamming distance against branch lengths 
+    and simulates over binary trees to produce newick and fasta files. */
     public static void main(String args[]) throws IOException{
+        
+        Scanner in_scanner = new Scanner(System.in);
+        String randomSequence;
+        System.out.println("Do you wish to use a random sequence? (Y/N)");
+        String randomGene = in_scanner.nextLine().toUpperCase();
         EvoSimulation tester = new EvoSimulation();
-        String randomSequence = "ATACGTATCGAACTGATGCTAATCGAACTGAATCGAACTGAGCAGTGCAGTATCGAACTGAATCGAACTGAAAAAAGTCGAGCAGTGCAGTAAAAAGAGCAGTGCAGTAAAAAGATGTCGACGAGAGGAGAAGGATCTTATCAGCTAG";
+
+        
+        //Test Gene creation - automatic or manual input
+        if(randomGene.equals("Y")){
+            randomSequence = "ATACGTATCGAACTGATGCTAATCGAACTGAATCGAACTGAGCAGTGCAGTATCGAACTGAATCGAACTGAAAAAAGTCGAGCAGTGCAGTAAAAAGAGCAGTGCAGTAAAAAGATGTCGACGAGAGGAGAAGGATCTTATCAGCTAG";
+        }
+        else{
+            if (!randomGene.equals("N")){
+                System.out.println("Manual input was selected");
+            }
+            System.out.println("Enter your sequence");
+            randomSequence = in_scanner.nextLine().toUpperCase();
+            if (!randomSequence.matches("[ACTG]+")) {
+            System.out.println("Invalid characters found in the sequence. A random sequence will be used.");
+            randomSequence = "ATACGTATCGAACTGATGCTAATCGAACTGAATCGAACTGAGCAGTGCAGTATCGAACTGAATCGAACTGAAAAAAGTCGAGCAGTGCAGTAAAAAGAGCAGTGCAGTAAAAAGATGTCGACGAGAGGAGAAGGATCTTATCAGCTAG";
+
+        }
+        }
+
         Gene TestingSample = new Gene("Test", randomSequence , JukesCantor(randomSequence));
         boolean exit = false;
-        
-        //MANUAL BRANCH INPUT
-        Scanner in_scanner = new Scanner(System.in);
-        
  
        tester.createRootGene(TestingSample.getName(), TestingSample);
 
+       //Program runs until exitted by user - Main Menu display
        while(!exit){
         System.out.println("Main Menu - type a number to choose an action\n1: Manual simulation of an example Gene\n2: Show Hamming Distance and JC Maximum Likelihood Graphs");
         System.out.println("3: Show Binary Trees of example sequences\n4: Exit");
         System.out.print("\nEnter your choice: ");
         int choice = in_scanner.nextInt();
         System.out.println();
+
+        //One manual simulation - user chooses the variables
         if(choice == 1){
             System.out.println("Your random sequence: " + randomSequence);
             System.out.print("Enter a branch length: ");
@@ -430,6 +454,8 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
                 System.out.println("Your new sequence: " + simulateOne(TestingSample, branch_length).getSequence() + "\n");                
             }
     }
+
+    //Graphs of maximum likelihood and hamming distance using averaging methods and 1001 datapoints
         else if(choice == 2){
         double[] b_lengths = new double[1001];
         double[] max_likelihoods = new double[1001];
@@ -502,6 +528,8 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         }
         */
         
+
+        //Binary tree simulation of 3 example genes - two viral, one bacterial and 1 test artificial gene
         else if (choice == 3){
         String savePath = "C:\\Users\\acko\\OneDrive\\Dokumenty\\GitHub\\Gene-evolution\\GeneEVO\\genesimulator\\src\\main\\resources";
         TreeBuilder.binaryTree( 0, 5, TestingSample);
@@ -522,7 +550,7 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         tester.createRootGene(streptococcus.getName(), streptococcus);
 
 
-        TreeBuilder.binaryTree( 0, 1, influenza);
+        TreeBuilder.binaryTree( 0, 5, influenza);
         tester.newick(influenza, savePath);
         //System.out.println(tester.getNewickFormat().get(influenza));
 
@@ -542,12 +570,14 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         System.out.println("Sequence trees have been written to newick files and alignments to fasta files");
     }
 
+    //Exit the program if chosen
     else if(choice == 4){
         in_scanner.close();
         exit = true;
         break;
     }
 
+    //Returns to Main menu if an invalid input has been entered
     else{
         System.out.println("Invalid input - Returning to Main Menu");
     }

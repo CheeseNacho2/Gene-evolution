@@ -80,11 +80,12 @@ class Gene{
         this.children = new ArrayList<>();
     }
 
-
+    //Adds a genetic child to the children list
     public void addChild(Gene child){
         children.add(child);
     }
 
+    //Sums all the leaves of the recursive method below into one fasta file.
     public void writeLeavesToFasta(Gene root, String path) throws IOException {
 
     Path outputFile = Path.of(path);
@@ -94,6 +95,7 @@ class Gene{
     }
 }
 
+//Recursive method to get allignment fasta files text - all the leaves of the evolution
 private void writeLeavesRec(Gene thisGene, BufferedWriter writer) throws IOException {
 
     if (thisGene == null) return;
@@ -122,6 +124,7 @@ private void writeLeavesRec(Gene thisGene, BufferedWriter writer) throws IOExcep
 }
 
 
+//This method write this single sequence and Gene information into a fasta file
  public void toFasta(String folderPath) throws IOException {
 
     Path dir = Path.of(folderPath);
