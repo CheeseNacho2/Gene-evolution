@@ -1,0 +1,127 @@
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MSI (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s alligned_belgium.fasta -m JC
+Seed:    591173 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 29 06:54:34 2026
+Kernel:  AVX+FMA - 1 threads (20 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 20 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file alligned_belgium.fasta ... Fasta format detected
+Reading fasta file: done in 0.0087922 secs
+Alignment most likely contains DNA/RNA sequences
+WARNING: 104 sites contain only gaps or ambiguous characters.
+Alignment has 32 sequences with 29903 columns, 344 distinct patterns
+153 parsimony-informative, 209 singleton sites, 29541 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.37e-005 secs
+   1  OQ242027.1    0.76%    passed     99.97%
+   2  OQ242023.1    0.74%    passed     99.81%
+   3  OQ242024.1    0.74%    passed     99.78%
+   4  OQ242041.1    0.74%    passed     99.92%
+   5  OQ242028.1    0.73%    passed     99.98%
+   6  OQ242042.1    0.72%    passed     99.98%
+   7  ON303665.1    1.26%    passed     99.99%
+   8  ON303667.1    1.26%    passed    100.00%
+   9  OQ242060.1    6.18%    passed     90.07%
+  10  ON303668.1    3.65%    passed     99.97%
+  11  ON303669.1    1.26%    passed     99.97%
+  12  ON303670.1    1.26%    passed     99.99%
+  13  ON303672.1    1.26%    passed     99.99%
+  14  ON303675.1    1.26%    passed     99.94%
+  15  ON303674.1    1.51%    passed    100.00%
+  16  ON303676.1    1.26%    passed     99.97%
+  17  ON303681.1    1.29%    passed     99.99%
+  18  ON303677.1    1.26%    passed     99.97%
+  19  ON303682.1    1.26%    passed    100.00%
+  20  ON303685.1    1.28%    passed     99.99%
+  21  ON303686.1    3.36%    passed     99.55%
+  22  ON303687.1    1.26%    passed     99.98%
+  23  ON303689.1    1.26%    passed     99.96%
+  24  ON303699.1    1.26%    passed     99.99%
+  25  ON303700.1    1.26%    passed     99.95%
+  26  ON303701.1    1.68%    passed     99.85%
+  27  OL672836.1    0.76%    passed     99.79%
+  28  OU280445.1    4.10%    passed     96.29%
+  29  MT072667.1   97.76%    failed      0.10%
+  30  MT747438.1    0.40%    passed     99.02%
+  31  MW368439.1    0.55%    passed     98.66%
+  32  MT072668.1   97.29%    passed     98.90%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL         7.52%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -45194.860
+Optimal log-likelihood: -45188.403
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 1 rounds (0.019 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0016751 secs
+Computing ML distances took 0.011343 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 5.46e-005 secs
+Computing RapidNJ tree took 0.007152 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -45211.228
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.092 second
+Computing log-likelihood of 98 initial trees ... 0.073 seconds
+Current best score: -45188.322
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -45188.318
+BETTER TREE FOUND at iteration 2: -45188.308
+Iteration 10 / LogL: -45188.310 / Time: 0h:0m:0s
+Iteration 20 / LogL: -45188.342 / Time: 0h:0m:0s
+Finish initializing candidate tree set (20)
+Current best tree score: -45188.308 / CPU time: 0.326
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -45188.391 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -45188.385 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -45188.309 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -45194.869 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -45200.363 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -45188.418 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -45195.734 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 100 / LogL: -45188.456 / Time: 0h:0m:1s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -45188.308
+Optimal log-likelihood: -45188.308
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 1 rounds (0.018 sec)
+BEST SCORE FOUND : -45188.308
+Total tree length: 0.013
+
+Total number of iterations: 103
+CPU time used for tree search: 1.281 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.093 sec (0h:0m:1s)
+Total CPU time used: 1.297 sec (0h:0m:1s)
+Total wall-clock time used: 1.255 sec (0h:0m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                alligned_belgium.fasta.iqtree
+  Maximum-likelihood tree:       alligned_belgium.fasta.treefile
+  Likelihood distances:          alligned_belgium.fasta.mldist
+  Screen log file:               alligned_belgium.fasta.log
+
+Date and Time: Sun Mar 29 06:54:36 2026

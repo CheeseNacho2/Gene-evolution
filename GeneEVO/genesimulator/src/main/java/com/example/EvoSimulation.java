@@ -182,7 +182,7 @@ class EvoSimulation {
 
     // Making multiple time steps - try make it work for different time steps each
     // time
-    public List<Gene> simulateMany(Gene SimuGene, double[] branch_lengths, String model) throws IOException{
+    public List<Gene> simulateMany(Gene SimuGene, double[] branch_lengths) throws IOException{
         List<Gene> newGenes = new ArrayList<Gene>();
         for (int k = 0; k < branch_lengths.length; k++) {
             newGenes.add(simulateOne(SimuGene, branch_lengths[k]));
@@ -191,7 +191,7 @@ class EvoSimulation {
     }
 
     //Method to create a string that represents a tree in Newick format - without the root
-    public static String toNewick(Gene gene) {
+    private static String toNewick(Gene gene) {
     if (gene.getChildren().isEmpty()) {
         return gene.getName() + ":" + String.format(Locale.UK, "%.3f", gene.getParental_distance());
     }
@@ -505,8 +505,8 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         }
         avg_max_likelihoods[0] = max_likelihoods[0];
         }
-        createXYChart("Maximum Likelihood graph", b_lengths, avg_max_likelihoods, "Maximum Likelihood", "Branch length");
-        createXYChart("Hamming distance", b_lengths, avg_hamming_distances, "Hamming distance", "Branch Length");
+        createXYChart("Maximum Likelihood graph", b_lengths, avg_max_likelihoods, "Maximum Likelihood", "Branch length[Substitutions per site]");
+        createXYChart("Hamming distance", b_lengths, avg_hamming_distances, "Hamming distance", "Branch Length[Substitutions per site]");
     }
 
 
@@ -550,11 +550,11 @@ public static Gene simulateOne(Gene evolving_gene, double branch_length, double 
         tester.createRootGene(streptococcus.getName(), streptococcus);
 
 
-        TreeBuilder.binaryTree( 0, 5, influenza);
+        TreeBuilder.binaryTree( 0, 10, influenza);
         tester.newick(influenza, savePath);
         //System.out.println(tester.getNewickFormat().get(influenza));
 
-        TreeBuilder.binaryTree( 0, 6, Sars_Cov_19);
+        TreeBuilder.binaryTree( 0, 4, Sars_Cov_19);
         tester.newick(Sars_Cov_19, savePath);
         //System.out.println(tester.getNewickFormat().get(Sars_Cov_19));
 

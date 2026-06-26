@@ -1,0 +1,160 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: alligned_belgium.fasta
+Type of analysis: tree reconstruction
+Random seed number: 591173
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 32 sequences with 29903 nucleotide sites
+Number of constant sites: 29541 (= 98.7894% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29541 (= 98.7894% of all sites)
+Number of parsimony informative sites: 153
+Number of distinct site patterns: 344
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: JC
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.0000
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 1.0000
+  G-T: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  A        -1    0.3333    0.3333    0.3333
+  C    0.3333        -1    0.3333    0.3333
+  G    0.3333    0.3333        -1    0.3333
+  T    0.3333    0.3333    0.3333        -1
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -45188.3081 (s.e. 191.1541)
+Unconstrained log-likelihood (without tree): -70379.1721
+Number of free parameters (#branches + #model parameters): 61
+Akaike information criterion (AIC) score: 90498.6162
+Corrected Akaike information criterion (AICc) score: 90498.8697
+Bayesian information criterion (BIC) score: 91005.2648
+
+Total tree length (sum of branch lengths): 0.0134
+Sum of internal branch lengths: 0.0038 (28.0649% of tree length)
+
+WARNING: 12 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'OQ242027.1' is drawn at root
+
++--OQ242027.1
+|
+|           +**OQ242023.1
+|  +--------|
+|  |        +**OQ242024.1
++--|
+|  |                      +**OQ242028.1
+|  |     +----------------|
+|  |     |                +**OQ242042.1
+|  |  +--|
+|  |  |  |                                                                 +--ON303665.1
+|  |  |  |                                                              +**|
+|  |  |  |                                                              |  |  +--ON303672.1
+|  |  |  |                                                              |  +--|
+|  |  |  |                                                              |     +--ON303699.1
+|  |  |  |                                                           +**|
+|  |  |  |                                                           |  |  +--ON303667.1
+|  |  |  |                                                           |  +**|
+|  |  |  |                                                           |     +-----ON303675.1
+|  |  |  |                                                        +--|
+|  |  |  |                                                        |  |  +--ON303685.1
+|  |  |  |                                                        |  +**|
+|  |  |  |                                                        |     +----ON303686.1
+|  |  |  |                                                     +--|
+|  |  |  |                                                     |  +--ON303701.1
+|  |  |  |                                                  +**|
+|  |  |  |                                                  |  |        +--ON303670.1
+|  |  |  |                                                  |  |     +--|
+|  |  |  |                                                  |  |     |  |  +--ON303676.1
+|  |  |  |                                                  |  |     |  +--|
+|  |  |  |                                                  |  |     |     +--ON303681.1
+|  |  |  |                                                  |  |  +**|
+|  |  |  |                                                  |  |  |  +---ON303674.1
+|  |  |  |                                                  |  +--|
+|  |  |  |                                                  |     +-------ON303677.1
+|  |  |  |                                               +**|
+|  |  |  |                                               |  +-----ON303682.1
+|  |  |  |                                            +**|
+|  |  |  |                                            |  |     +----ON303668.1
+|  |  |  |                                            |  |  +--|
+|  |  |  |                                            |  |  |  +--ON303687.1
+|  |  |  |                                            |  +--|
+|  |  |  |                                            |     +-------ON303700.1
+|  |  |  |                                      +-----|
+|  |  |  |                                      |     +--------ON303669.1
+|  |  |  |                              +-------|
+|  |  |  |                              |       +---------ON303689.1
+|  |  |  |                           +**|
+|  |  |  |                           |  |     +--------OU280445.1
+|  |  |  |                           |  |  +--|
+|  |  |  |                           |  |  |  |  +--MT747438.1
+|  |  |  |                           |  |  |  +**|
+|  |  |  |                           |  |  |     +---MW368439.1
+|  |  |  |                           |  +**|
+|  |  |  |                           |     +**MT072667.1
+|  |  |  |          +----------------|
+|  |  |  |          |                +**MT072668.1
+|  |  |  +----------|
+|  |  |             +-------OL672836.1
+|  +**|
+|     +--------OQ242060.1
+|
++---OQ242041.1
+
+Tree in newick format:
+
+(OQ242027.1:0.0001685128,((OQ242023.1:0.0000010000,OQ242024.1:0.0000010000):0.0005929439,(((OQ242028.1:0.0000010000,OQ242042.1:0.0000010000):0.0010753888,((((((((((((ON303665.1:0.0001015928,(ON303672.1:0.0001015984,ON303699.1:0.0002032071):0.0000334422):0.0000010000,(ON303667.1:0.0001015927,ON303675.1:0.0004064535):0.0000010000):0.0000010000,(ON303685.1:0.0001016162,ON303686.1:0.0003111529):0.0000010000):0.0000334422,ON303701.1:0.0002380649):0.0000668859,(((ON303670.1:0.0001693419,(ON303676.1:0.0002371061,ON303681.1:0.0001016271):0.0002370879):0.0000359122,ON303674.1:0.0003055949):0.0000010000,ON303677.1:0.0005081014):0.0001437041):0.0000010000,ON303682.1:0.0003725741):0.0000010000,((ON303668.1:0.0003120533,ON303687.1:0.0002370947):0.0000334422,ON303700.1:0.0005081122):0.0000334422):0.0000010000,ON303669.1:0.0005758742):0.0003936870,ON303689.1:0.0006478004):0.0004961511,((OU280445.1:0.0005572611,(MT747438.1:0.0000334422,MW368439.1:0.0002690383):0.0000010000):0.0000889473,MT072667.1:0.0000010000):0.0000010000):0.0000010000,MT072668.1:0.0000010000):0.0011125879,OL672836.1:0.0005537739):0.0007329464):0.0002133413,OQ242060.1:0.0005898736):0.0000010000):0.0001003311,OQ242041.1:0.0002695667);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t alligned_belgium.fasta.treefile -m "JC" --length 29903
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s alligned_belgium.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s alligned_belgium.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Mar 29 06:54:36 2026
+Total CPU time used: 1.29688 seconds (0h:0m:1s)
+Total wall-clock time used: 1.26109 seconds (0h:0m:1s)
+

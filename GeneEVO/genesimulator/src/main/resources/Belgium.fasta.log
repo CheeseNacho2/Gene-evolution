@@ -1,0 +1,46 @@
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MSI (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s Belgium.fasta -m JC
+Seed:    929592 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 29 06:50:02 2026
+Kernel:  AVX+FMA - 1 threads (20 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 20 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Belgium.fasta ... Fasta format detected
+Reading fasta file: done in 0.0085713 secs using 182.3% CPU
+ERROR: Sequence OQ242024.1 contains not enough characters (29682)
+ERROR: Sequence OQ242027.1 contains not enough characters (29675)
+ERROR: Sequence OQ242028.1 contains too many characters (29686)
+ERROR: Sequence OQ242042.1 contains too many characters (29687)
+ERROR: Sequence OQ242060.1 contains too many characters (29684)
+ERROR: Sequence ON303665.1 contains not enough characters (29527)
+ERROR: Sequence ON303667.1 contains not enough characters (29527)
+ERROR: Sequence ON303668.1 contains not enough characters (29521)
+ERROR: Sequence ON303669.1 contains not enough characters (29527)
+ERROR: Sequence ON303670.1 contains not enough characters (29527)
+ERROR: Sequence ON303672.1 contains not enough characters (29527)
+ERROR: Sequence ON303674.1 contains not enough characters (29518)
+ERROR: Sequence ON303675.1 contains not enough characters (29527)
+ERROR: Sequence ON303676.1 contains not enough characters (29527)
+ERROR: Sequence ON303677.1 contains not enough characters (29527)
+ERROR: Sequence ON303681.1 contains not enough characters (29518)
+ERROR: Sequence ON303682.1 contains not enough characters (29527)
+ERROR: Sequence ON303685.1 contains not enough characters (29520)
+ERROR: Sequence ON303686.1 contains not enough characters (29533)
+ERROR: Sequence ON303687.1 contains not enough characters (29527)
+ERROR: Sequence ON303689.1 contains not enough characters (29527)
+ERROR: Sequence ON303699.1 contains not enough characters (29527)
+ERROR: Sequence ON303700.1 contains not enough characters (29527)
+ERROR: Sequence ON303701.1 contains not enough characters (29527)
+ERROR: Sequence OL672836.1 contains too many characters (29684)
+ERROR: Sequence OU280445.1 contains too many characters (29903)
+ERROR: Sequence MW368439.1 contains too many characters (29740)
+ERROR: Sequence MT747438.1 contains too many characters (29782)
+ERROR: Sequence MT072667.1 contains not enough characters (670)
+ERROR: Sequence MT072668.1 contains not enough characters (810)
+ERROR: 

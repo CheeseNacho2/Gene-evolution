@@ -3,172 +3,76 @@ Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
 Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
 
 Host:    MSI (AVX2, FMA3, 15 GB RAM)
-Command: iqtree2 -s Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.fasta -te Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.newick -m JC
-Seed:    185409 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Tue Mar 17 11:31:51 2026
+Command: iqtree2 -s Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.fasta -te Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.newick -m JC -redo
+Seed:    791445 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 29 06:55:01 2026
 Kernel:  AVX+FMA - 1 threads (20 CPU cores detected)
 
 HINT: Use -nt option to specify number of threads because your CPU has 20 cores!
 HINT: -nt AUTO will automatically determine the best number of threads to use.
 
 Reading alignment file Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.fasta ... Fasta format detected
-Reading fasta file: done in 0.0393542 secs using 39.7% CPU
+Reading fasta file: done in 0.0102694 secs
 Alignment most likely contains DNA/RNA sequences
-Alignment has 128 sequences with 29903 columns, 29903 distinct patterns
+Alignment has 32 sequences with 29903 columns, 29903 distinct patterns
 29903 parsimony-informative, 0 singleton sites, 0 constant sites
-                                                                                  Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.0219425 secs using 71.21% CPU
-   1  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-A-A-A    0.00%    passed     40.00%
-   2  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-A-A-B    0.00%    passed     55.62%
-   3  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-A-B-A    0.00%    passed     35.36%
-   4  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-A-B-B    0.00%    passed      8.80%
-   5  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-B-A-A    0.00%    passed     20.44%
-   6  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-B-A-B    0.00%    passed     38.17%
-   7  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-B-B-A    0.00%    passed     10.63%
-   8  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-B-B-B    0.00%    passed     38.28%
-   9  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-A-A-A    0.00%    passed      6.08%
-  10  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-A-A-B    0.00%    passed     11.48%
-  11  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-A-B-A    0.00%    passed     49.09%
-  12  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-A-B-B    0.00%    failed      1.34%
-  13  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-B-A-A    0.00%    failed      0.93%
-  14  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-B-A-B    0.00%    passed     28.00%
-  15  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-B-B-A    0.00%    passed     68.31%
-  16  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-B-B-B    0.00%    passed     68.98%
-  17  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-A-A-A    0.00%    passed      9.51%
-  18  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-A-A-B    0.00%    passed      5.35%
-  19  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-A-B-A    0.00%    passed     29.23%
-  20  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-A-B-B    0.00%    failed      0.09%
-  21  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-B-A-A    0.00%    passed     34.68%
-  22  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-B-A-B    0.00%    passed     92.27%
-  23  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-B-B-A    0.00%    passed     51.64%
-  24  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-B-B-B    0.00%    failed      3.06%
-  25  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-A-A-A    0.00%    failed      1.42%
-  26  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-A-A-B    0.00%    passed     71.52%
-  27  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-A-B-A    0.00%    passed     39.04%
-  28  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-A-B-B    0.00%    passed     30.03%
-  29  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-B-A-A    0.00%    passed     17.70%
-  30  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-B-A-B    0.00%    passed     11.14%
-  31  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-B-B-A    0.00%    passed     60.93%
-  32  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-B-B-B    0.00%    passed     50.02%
-  33  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-A-A-A    0.00%    passed     29.72%
-  34  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-A-A-B    0.00%    passed     79.23%
-  35  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-A-B-A    0.00%    passed     66.80%
-  36  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-A-B-B    0.00%    passed     28.82%
-  37  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-B-A-A    0.00%    passed     94.74%
-  38  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-B-A-B    0.00%    passed     75.07%
-  39  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-B-B-A    0.00%    passed     70.30%
-  40  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-B-B-B    0.00%    passed     92.81%
-  41  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-A-A-A    0.00%    failed      1.98%
-  42  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-A-A-B    0.00%    failed      0.01%
-  43  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-A-B-A    0.00%    passed     41.05%
-  44  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-A-B-B    0.00%    passed     86.29%
-  45  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-B-A-A    0.00%    passed     69.52%
-  46  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-B-A-B    0.00%    passed     55.74%
-  47  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-B-B-A    0.00%    passed     37.41%
-  48  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-B-B-B    0.00%    passed     21.36%
-  49  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-A-A-A    0.00%    passed     59.26%
-  50  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-A-A-B    0.00%    passed     99.04%
-  51  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-A-B-A    0.00%    passed     20.17%
-  52  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-A-B-B    0.00%    passed     26.69%
-  53  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-B-A-A    0.00%    passed     33.78%
-  54  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-B-A-B    0.00%    failed      0.32%
-  55  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-B-B-A    0.00%    passed      9.41%
-  56  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-B-B-B    0.00%    passed     15.13%
-  57  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-A-A-A    0.00%    failed      2.77%
-  58  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-A-A-B    0.00%    passed     93.80%
-  59  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-A-B-A    0.00%    passed     52.78%
-  60  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-A-B-B    0.00%    passed     17.38%
-  61  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-B-A-A    0.00%    passed     87.49%
-  62  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-B-A-B    0.00%    passed     46.52%
-  63  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-B-B-A    0.00%    passed     15.74%
-  64  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-B-B-B    0.00%    passed     54.29%
-  65  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-A-A-A    0.00%    failed      0.01%
-  66  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-A-A-B    0.00%    passed      9.94%
-  67  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-A-B-A    0.00%    failed      0.85%
-  68  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-A-B-B    0.00%    passed     93.27%
-  69  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-B-A-A    0.00%    passed     84.69%
-  70  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-B-A-B    0.00%    failed      0.55%
-  71  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-B-B-A    0.00%    passed      7.92%
-  72  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-B-B-B    0.00%    passed     36.40%
-  73  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-A-A-A    0.00%    passed      9.17%
-  74  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-A-A-B    0.00%    passed     58.71%
-  75  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-A-B-A    0.00%    passed     73.62%
-  76  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-A-B-B    0.00%    passed     37.16%
-  77  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-B-A-A    0.00%    passed     78.72%
-  78  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-B-A-B    0.00%    passed     62.13%
-  79  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-B-B-A    0.00%    passed     98.94%
-  80  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-B-B-B    0.00%    passed     79.39%
-  81  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-A-A-A    0.00%    passed     16.06%
-  82  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-A-A-B    0.00%    passed     86.92%
-  83  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-A-B-A    0.00%    passed     90.96%
-  84  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-A-B-B    0.00%    passed     35.09%
-  85  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-B-A-A    0.00%    passed     25.73%
-  86  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-B-A-B    0.00%    passed     12.74%
-  87  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-B-B-A    0.00%    failed      0.00%
-  88  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-B-B-B    0.00%    failed      4.58%
-  89  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-A-A-A    0.00%    passed     13.42%
-  90  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-A-A-B    0.00%    failed      0.10%
-  91  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-A-B-A    0.00%    passed     90.87%
-  92  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-A-B-B    0.00%    passed     64.25%
-  93  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-B-A-A    0.00%    passed     50.46%
-  94  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-B-A-B    0.00%    passed     46.98%
-  95  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-B-B-A    0.00%    passed     67.73%
-  96  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-B-B-B    0.00%    failed      0.83%
-  97  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-A-A-A    0.00%    failed      4.73%
-  98  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-A-A-B    0.00%    failed      0.00%
-  99  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-A-B-A    0.00%    passed     58.20%
- 100  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-A-B-B    0.00%    passed     17.17%
- 101  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-B-A-A    0.00%    passed     35.75%
- 102  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-B-A-B    0.00%    passed     62.02%
- 103  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-B-B-A    0.00%    failed      1.53%
- 104  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-B-B-B    0.00%    passed     39.81%
- 105  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-A-A-A    0.00%    passed     44.36%
- 106  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-A-A-B    0.00%    passed     41.82%
- 107  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-A-B-A    0.00%    passed     38.49%
- 108  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-A-B-B    0.00%    passed     15.14%
- 109  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-B-A-A    0.00%    passed     14.43%
- 110  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-B-A-B    0.00%    passed     79.42%
- 111  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-B-B-A    0.00%    passed     25.91%
- 112  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-B-B-B    0.00%    passed     70.93%
- 113  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-A-A-A    0.00%    passed     41.54%
- 114  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-A-A-B    0.00%    passed     86.36%
- 115  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-A-B-A    0.00%    passed     29.24%
- 116  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-A-B-B    0.00%    passed     11.19%
- 117  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-B-A-A    0.00%    passed     15.15%
- 118  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-B-A-B    0.00%    passed     63.48%
- 119  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-B-B-A    0.00%    passed      7.06%
- 120  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-B-B-B    0.00%    passed     30.29%
- 121  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-A-A-A    0.00%    passed     58.66%
- 122  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-A-A-B    0.00%    passed     20.73%
- 123  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-A-B-A    0.00%    passed     82.16%
- 124  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-A-B-B    0.00%    passed     52.77%
- 125  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-B-A-A    0.00%    passed     63.93%
- 126  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-B-A-B    0.00%    passed     72.00%
- 127  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-B-B-A    0.00%    passed     83.09%
- 128  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-B-B-B    0.00%    passed     65.14%
-****  TOTAL                                                                               0.00%  19 sequences failed composition chi2 test (p-value<5%; df=3)
+                                                                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.004715 secs
+   1  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-A    0.00%    passed     40.63%
+   2  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-A-B    0.00%    passed     49.11%
+   3  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-A    0.00%    passed     98.74%
+   4  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-A-B-B    0.00%    failed      0.17%
+   5  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-A    0.00%    passed     44.27%
+   6  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-A-B    0.00%    passed     40.40%
+   7  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-A    0.00%    passed     31.85%
+   8  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-A-B-B-B    0.00%    failed      1.02%
+   9  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-A    0.00%    passed      8.24%
+  10  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-A-B    0.00%    failed      2.68%
+  11  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-A    0.00%    failed      1.97%
+  12  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-A-B-B    0.00%    failed      0.02%
+  13  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-A    0.00%    passed     68.71%
+  14  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-A-B    0.00%    failed      2.37%
+  15  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-A    0.00%    failed      0.84%
+  16  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-A-B-B-B-B    0.00%    passed     65.87%
+  17  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-A    0.00%    passed     92.92%
+  18  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-A-B    0.00%    passed      7.29%
+  19  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-A    0.00%    passed     99.18%
+  20  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-A-B-B    0.00%    passed     61.38%
+  21  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-A    0.00%    passed     99.51%
+  22  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-A-B    0.00%    passed     37.42%
+  23  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-A    0.00%    passed     30.62%
+  24  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-A-B-B-B    0.00%    passed     44.13%
+  25  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-A    0.00%    passed     25.88%
+  26  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-A-B    0.00%    failed      0.63%
+  27  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-A    0.00%    failed      0.86%
+  28  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-A-B-B    0.00%    passed     45.77%
+  29  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-A    0.00%    passed     57.52%
+  30  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-A-B    0.00%    passed     42.77%
+  31  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-A    0.00%    passed     95.59%
+  32  Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1-B-B-B-B-B    0.00%    passed     75.17%
+****  TOTAL                                                                           0.00%  9 sequences failed composition chi2 test (p-value<5%; df=3)
 Reading input tree file Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.newick ... rooted tree
 
-NOTE: 124 MB RAM (0 GB) is required!
+NOTE: 31 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -4839016.209
-Optimal log-likelihood: -4642550.275
+1. Initial log-likelihood: -1237342.257
+Optimal log-likelihood: -1191774.913
 Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
 Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
-Parameters optimization took 1 rounds (2.042 sec)
+Parameters optimization took 1 rounds (0.421 sec)
 Wrote distance file to... 
-BEST SCORE FOUND : -4642550.275
-Total tree length: 83.330
+BEST SCORE FOUND : -1191774.913
+Total tree length: 23.222
 
 Total number of iterations: 0
 CPU time used for tree search: 0.000 sec (0h:0m:0s)
 Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
-Total CPU time used: 2.031 sec (0h:0m:2s)
-Total wall-clock time used: 2.149 sec (0h:0m:2s)
+Total CPU time used: 0.406 sec (0h:0m:0s)
+Total wall-clock time used: 0.498 sec (0h:0m:0s)
 
 Analysis results written to: 
   IQ-TREE report:                Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.fasta.iqtree
   Maximum-likelihood tree:       Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.fasta.treefile
   Screen log file:               Severe_acute_respiratory_syndrome_coronavirus_2_isolate_Wuhan-Hu-1.fasta.log
 
-Date and Time: Tue Mar 17 11:31:54 2026
+Date and Time: Sun Mar 29 06:55:02 2026

@@ -1,0 +1,2094 @@
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MSI (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s _Influenza_B_virus_RNA_1.fasta -te _Influenza_B_virus_RNA_1.newick -m JC -redo
+Seed:    670044 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 29 06:17:17 2026
+Kernel:  AVX+FMA - 1 threads (20 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 20 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file _Influenza_B_virus_RNA_1.fasta ... Fasta format detected
+Reading fasta file: done in 0.0497464 secs using 31.41% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 2048 sequences with 2368 columns, 2368 distinct patterns
+2368 parsimony-informative, 0 singleton sites, 0 constant sites
+                                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0177219 secs using 88.17% CPU
+   1  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-A-A-A    0.00%    passed     26.41%
+   2  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-A-A-B    0.00%    passed     34.93%
+   3  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-A-B-A    0.00%    passed     35.74%
+   4  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-A-B-B    0.00%    passed     39.91%
+   5  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-B-A-A    0.00%    passed     67.27%
+   6  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-B-A-B    0.00%    passed     70.52%
+   7  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-B-B-A    0.00%    passed     20.09%
+   8  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-A-B-B-B    0.00%    failed      0.16%
+   9  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-A-A-A    0.00%    passed     70.18%
+  10  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-A-A-B    0.00%    passed      7.05%
+  11  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-A-B-A    0.00%    passed     33.41%
+  12  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-A-B-B    0.00%    passed     76.15%
+  13  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-B-A-A    0.00%    passed     47.02%
+  14  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-B-A-B    0.00%    passed     30.99%
+  15  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-B-B-A    0.00%    passed     50.55%
+  16  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-A-B-B-B-B    0.00%    passed     54.67%
+  17  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-A-A-A    0.00%    failed      0.60%
+  18  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-A-A-B    0.00%    passed     26.39%
+  19  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-A-B-A    0.00%    passed     17.91%
+  20  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-A-B-B    0.00%    passed     61.35%
+  21  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-B-A-A    0.00%    passed     75.01%
+  22  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-B-A-B    0.00%    passed     77.89%
+  23  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-B-B-A    0.00%    passed     29.73%
+  24  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-A-B-B-B    0.00%    passed     30.91%
+  25  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-A-A-A    0.00%    passed     31.85%
+  26  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-A-A-B    0.00%    passed     28.01%
+  27  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-A-B-A    0.00%    passed     43.14%
+  28  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-A-B-B    0.00%    passed      9.59%
+  29  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-B-A-A    0.00%    failed      2.40%
+  30  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-B-A-B    0.00%    passed     25.81%
+  31  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-B-B-A    0.00%    passed     18.85%
+  32  _Influenza_B_virus_RNA_1-A-A-A-A-A-A-B-B-B-B-B    0.00%    passed     92.28%
+  33  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-A-A-A    0.00%    passed     28.66%
+  34  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-A-A-B    0.00%    passed     93.03%
+  35  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-A-B-A    0.00%    passed     78.34%
+  36  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-A-B-B    0.00%    passed     95.84%
+  37  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-B-A-A    0.00%    failed      3.09%
+  38  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-B-A-B    0.00%    failed      0.92%
+  39  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-B-B-A    0.00%    passed     17.65%
+  40  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-A-B-B-B    0.00%    passed     16.84%
+  41  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-A-A-A    0.00%    passed     58.85%
+  42  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-A-A-B    0.00%    failed      3.01%
+  43  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-A-B-A    0.00%    passed     73.10%
+  44  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-A-B-B    0.00%    passed     28.82%
+  45  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-B-A-A    0.00%    passed     78.06%
+  46  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-B-A-B    0.00%    passed     60.07%
+  47  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-B-B-A    0.00%    passed     17.47%
+  48  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-A-B-B-B-B    0.00%    passed     74.38%
+  49  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-A-A-A    0.00%    passed     24.26%
+  50  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-A-A-B    0.00%    passed     68.65%
+  51  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-A-B-A    0.00%    passed     58.36%
+  52  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-A-B-B    0.00%    passed     66.83%
+  53  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-B-A-A    0.00%    failed      3.41%
+  54  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-B-A-B    0.00%    passed     24.09%
+  55  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-B-B-A    0.00%    passed     18.16%
+  56  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-A-B-B-B    0.00%    passed     84.78%
+  57  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-A-A-A    0.00%    passed     11.67%
+  58  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-A-A-B    0.00%    passed      6.17%
+  59  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-A-B-A    0.00%    passed     85.73%
+  60  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-A-B-B    0.00%    passed     37.79%
+  61  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-B-A-A    0.00%    passed     45.02%
+  62  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-B-A-B    0.00%    passed     94.16%
+  63  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-B-B-A    0.00%    passed     91.20%
+  64  _Influenza_B_virus_RNA_1-A-A-A-A-A-B-B-B-B-B-B    0.00%    passed     80.76%
+  65  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-A-A-A    0.00%    failed      4.51%
+  66  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-A-A-B    0.00%    passed     76.13%
+  67  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-A-B-A    0.00%    passed      8.24%
+  68  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-A-B-B    0.00%    failed      0.36%
+  69  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-B-A-A    0.00%    passed     67.41%
+  70  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-B-A-B    0.00%    passed     85.52%
+  71  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-B-B-A    0.00%    passed     56.24%
+  72  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-A-B-B-B    0.00%    passed     86.66%
+  73  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-A-A-A    0.00%    passed      9.44%
+  74  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-A-A-B    0.00%    passed     39.88%
+  75  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-A-B-A    0.00%    passed     37.45%
+  76  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-A-B-B    0.00%    passed     23.36%
+  77  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-B-A-A    0.00%    passed     94.06%
+  78  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-B-A-B    0.00%    passed     85.43%
+  79  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-B-B-A    0.00%    passed     23.80%
+  80  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-A-B-B-B-B    0.00%    passed     10.09%
+  81  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-A-A-A    0.00%    passed     24.47%
+  82  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-A-A-B    0.00%    passed     75.52%
+  83  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-A-B-A    0.00%    passed      9.04%
+  84  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-A-B-B    0.00%    passed     18.30%
+  85  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-B-A-A    0.00%    passed     32.29%
+  86  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-B-A-B    0.00%    passed     85.85%
+  87  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-B-B-A    0.00%    passed     69.52%
+  88  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-A-B-B-B    0.00%    passed     39.03%
+  89  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-A-A-A    0.00%    passed     95.01%
+  90  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-A-A-B    0.00%    passed     32.28%
+  91  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-A-B-A    0.00%    passed     91.75%
+  92  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-A-B-B    0.00%    passed     18.27%
+  93  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-B-A-A    0.00%    passed     42.74%
+  94  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-B-A-B    0.00%    passed     23.05%
+  95  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-B-B-A    0.00%    passed     24.77%
+  96  _Influenza_B_virus_RNA_1-A-A-A-A-B-A-B-B-B-B-B    0.00%    passed     11.62%
+  97  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-A-A-A    0.00%    passed     76.41%
+  98  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-A-A-B    0.00%    passed     42.49%
+  99  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-A-B-A    0.00%    passed     32.83%
+ 100  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-A-B-B    0.00%    passed     69.37%
+ 101  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-B-A-A    0.00%    passed     75.79%
+ 102  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-B-A-B    0.00%    passed     90.84%
+ 103  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-B-B-A    0.00%    passed     77.49%
+ 104  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-A-B-B-B    0.00%    passed     88.23%
+ 105  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-A-A-A    0.00%    passed      9.11%
+ 106  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-A-A-B    0.00%    passed     20.83%
+ 107  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-A-B-A    0.00%    passed     16.85%
+ 108  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-A-B-B    0.00%    passed     80.19%
+ 109  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-B-A-A    0.00%    passed     16.84%
+ 110  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-B-A-B    0.00%    passed     95.66%
+ 111  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-B-B-A    0.00%    passed     79.69%
+ 112  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-A-B-B-B-B    0.00%    passed     36.41%
+ 113  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-A-A-A    0.00%    failed      2.85%
+ 114  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-A-A-B    0.00%    passed     21.80%
+ 115  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-A-B-A    0.00%    passed     26.53%
+ 116  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-A-B-B    0.00%    passed     42.37%
+ 117  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-B-A-A    0.00%    passed     62.40%
+ 118  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-B-A-B    0.00%    passed     51.90%
+ 119  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-B-B-A    0.00%    passed     99.43%
+ 120  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-A-B-B-B    0.00%    passed     97.91%
+ 121  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-A-A-A    0.00%    passed     62.01%
+ 122  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-A-A-B    0.00%    passed     30.26%
+ 123  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-A-B-A    0.00%    passed     88.10%
+ 124  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-A-B-B    0.00%    passed     19.32%
+ 125  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-B-A-A    0.00%    passed     82.96%
+ 126  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-B-A-B    0.00%    passed     33.83%
+ 127  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-B-B-A    0.00%    passed      7.86%
+ 128  _Influenza_B_virus_RNA_1-A-A-A-A-B-B-B-B-B-B-B    0.00%    passed     16.11%
+ 129  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-A-A-A    0.00%    passed     56.90%
+ 130  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-A-A-B    0.00%    passed     55.90%
+ 131  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-A-B-A    0.00%    passed     37.90%
+ 132  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-A-B-B    0.00%    passed     66.10%
+ 133  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-B-A-A    0.00%    failed      3.82%
+ 134  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-B-A-B    0.00%    passed     88.97%
+ 135  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-B-B-A    0.00%    failed      2.06%
+ 136  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-A-B-B-B    0.00%    passed      9.37%
+ 137  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-A-A-A    0.00%    passed     18.82%
+ 138  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-A-A-B    0.00%    passed      8.95%
+ 139  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-A-B-A    0.00%    passed     61.78%
+ 140  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-A-B-B    0.00%    passed     86.07%
+ 141  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-B-A-A    0.00%    passed     50.22%
+ 142  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-B-A-B    0.00%    passed     22.05%
+ 143  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-B-B-A    0.00%    passed     11.91%
+ 144  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-A-B-B-B-B    0.00%    passed      7.61%
+ 145  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-A-A-A    0.00%    passed     52.89%
+ 146  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-A-A-B    0.00%    passed      9.70%
+ 147  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-A-B-A    0.00%    passed     33.32%
+ 148  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-A-B-B    0.00%    passed     57.62%
+ 149  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-B-A-A    0.00%    passed     94.64%
+ 150  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-B-A-B    0.00%    passed     82.36%
+ 151  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-B-B-A    0.00%    passed     82.30%
+ 152  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-A-B-B-B    0.00%    passed     61.10%
+ 153  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-A-A-A    0.00%    passed     84.14%
+ 154  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-A-A-B    0.00%    passed     10.32%
+ 155  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-A-B-A    0.00%    passed     31.61%
+ 156  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-A-B-B    0.00%    passed     27.30%
+ 157  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-B-A-A    0.00%    failed      0.94%
+ 158  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-B-A-B    0.00%    passed     48.14%
+ 159  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-B-B-A    0.00%    passed      6.87%
+ 160  _Influenza_B_virus_RNA_1-A-A-A-B-A-A-B-B-B-B-B    0.00%    passed     60.08%
+ 161  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-A-A-A    0.00%    passed     99.02%
+ 162  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-A-A-B    0.00%    passed     29.23%
+ 163  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-A-B-A    0.00%    passed     35.76%
+ 164  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-A-B-B    0.00%    passed     20.28%
+ 165  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-B-A-A    0.00%    passed     49.23%
+ 166  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-B-A-B    0.00%    passed     58.05%
+ 167  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-B-B-A    0.00%    passed     93.55%
+ 168  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-A-B-B-B    0.00%    passed     90.40%
+ 169  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-A-A-A    0.00%    passed     75.72%
+ 170  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-A-A-B    0.00%    passed     88.31%
+ 171  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-A-B-A    0.00%    passed     57.38%
+ 172  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-A-B-B    0.00%    passed     65.22%
+ 173  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-B-A-A    0.00%    passed     43.99%
+ 174  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-B-A-B    0.00%    passed     43.44%
+ 175  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-B-B-A    0.00%    passed     18.65%
+ 176  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-A-B-B-B-B    0.00%    passed     70.78%
+ 177  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-A-A-A    0.00%    passed     37.34%
+ 178  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-A-A-B    0.00%    passed     19.96%
+ 179  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-A-B-A    0.00%    passed     19.50%
+ 180  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-A-B-B    0.00%    passed      5.71%
+ 181  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-B-A-A    0.00%    passed     78.02%
+ 182  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-B-A-B    0.00%    passed     42.78%
+ 183  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-B-B-A    0.00%    passed     63.33%
+ 184  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-A-B-B-B    0.00%    passed     16.95%
+ 185  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-A-A-A    0.00%    passed      8.48%
+ 186  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-A-A-B    0.00%    passed     87.69%
+ 187  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-A-B-A    0.00%    passed     44.50%
+ 188  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-A-B-B    0.00%    passed     21.47%
+ 189  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-B-A-A    0.00%    passed     11.01%
+ 190  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-B-A-B    0.00%    passed     35.83%
+ 191  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-B-B-A    0.00%    passed     35.33%
+ 192  _Influenza_B_virus_RNA_1-A-A-A-B-A-B-B-B-B-B-B    0.00%    passed     44.62%
+ 193  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-A-A-A    0.00%    passed     61.63%
+ 194  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-A-A-B    0.00%    passed     97.39%
+ 195  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-A-B-A    0.00%    passed     62.77%
+ 196  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-A-B-B    0.00%    passed     88.01%
+ 197  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-B-A-A    0.00%    passed     75.16%
+ 198  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-B-A-B    0.00%    passed     37.29%
+ 199  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-B-B-A    0.00%    passed     68.22%
+ 200  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-A-B-B-B    0.00%    passed     66.81%
+ 201  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-A-A-A    0.00%    passed     33.21%
+ 202  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-A-A-B    0.00%    passed     99.97%
+ 203  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-A-B-A    0.00%    passed     21.87%
+ 204  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-A-B-B    0.00%    passed     78.77%
+ 205  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-B-A-A    0.00%    passed     61.75%
+ 206  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-B-A-B    0.00%    failed      1.43%
+ 207  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-B-B-A    0.00%    passed     18.13%
+ 208  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-A-B-B-B-B    0.00%    passed     43.98%
+ 209  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-A-A-A    0.00%    passed     86.10%
+ 210  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-A-A-B    0.00%    passed     46.47%
+ 211  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-A-B-A    0.00%    passed     93.58%
+ 212  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-A-B-B    0.00%    passed     61.24%
+ 213  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-B-A-A    0.00%    passed     84.97%
+ 214  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-B-A-B    0.00%    passed      6.45%
+ 215  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-B-B-A    0.00%    passed     38.27%
+ 216  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-A-B-B-B    0.00%    passed     73.53%
+ 217  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-A-A-A    0.00%    passed     44.78%
+ 218  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-A-A-B    0.00%    passed     41.10%
+ 219  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-A-B-A    0.00%    passed     99.98%
+ 220  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-A-B-B    0.00%    passed     13.11%
+ 221  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-B-A-A    0.00%    passed     24.52%
+ 222  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-B-A-B    0.00%    passed     35.11%
+ 223  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-B-B-A    0.00%    passed     99.95%
+ 224  _Influenza_B_virus_RNA_1-A-A-A-B-B-A-B-B-B-B-B    0.00%    passed     58.66%
+ 225  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-A-A-A    0.00%    passed     95.36%
+ 226  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-A-A-B    0.00%    passed     24.12%
+ 227  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-A-B-A    0.00%    passed     26.82%
+ 228  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-A-B-B    0.00%    passed     68.43%
+ 229  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-B-A-A    0.00%    passed     50.43%
+ 230  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-B-A-B    0.00%    passed     83.45%
+ 231  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-B-B-A    0.00%    passed     17.00%
+ 232  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-A-B-B-B    0.00%    passed     38.80%
+ 233  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-A-A-A    0.00%    passed     66.36%
+ 234  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-A-A-B    0.00%    passed     11.22%
+ 235  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-A-B-A    0.00%    passed     38.89%
+ 236  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-A-B-B    0.00%    passed     99.92%
+ 237  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-B-A-A    0.00%    passed     20.94%
+ 238  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-B-A-B    0.00%    passed     46.35%
+ 239  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-B-B-A    0.00%    passed     29.76%
+ 240  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-A-B-B-B-B    0.00%    passed     12.03%
+ 241  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-A-A-A    0.00%    passed     31.84%
+ 242  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-A-A-B    0.00%    passed     86.14%
+ 243  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-A-B-A    0.00%    passed     89.39%
+ 244  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-A-B-B    0.00%    passed     62.97%
+ 245  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-B-A-A    0.00%    passed     95.28%
+ 246  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-B-A-B    0.00%    passed     84.70%
+ 247  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-B-B-A    0.00%    passed     11.46%
+ 248  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-A-B-B-B    0.00%    passed     11.83%
+ 249  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-A-A-A    0.00%    passed     35.81%
+ 250  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-A-A-B    0.00%    passed     88.97%
+ 251  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-A-B-A    0.00%    passed     80.21%
+ 252  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-A-B-B    0.00%    passed     98.24%
+ 253  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-B-A-A    0.00%    passed     80.81%
+ 254  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-B-A-B    0.00%    passed     63.13%
+ 255  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-B-B-A    0.00%    failed      2.48%
+ 256  _Influenza_B_virus_RNA_1-A-A-A-B-B-B-B-B-B-B-B    0.00%    passed     17.32%
+ 257  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-A-A-A    0.00%    passed     88.89%
+ 258  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-A-A-B    0.00%    passed     63.23%
+ 259  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-A-B-A    0.00%    passed     88.50%
+ 260  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-A-B-B    0.00%    passed     36.39%
+ 261  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-B-A-A    0.00%    passed     27.24%
+ 262  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-B-A-B    0.00%    passed      5.11%
+ 263  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-B-B-A    0.00%    passed     92.78%
+ 264  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-A-B-B-B    0.00%    passed     59.73%
+ 265  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-A-A-A    0.00%    passed     26.07%
+ 266  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-A-A-B    0.00%    passed     53.04%
+ 267  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-A-B-A    0.00%    failed      3.34%
+ 268  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-A-B-B    0.00%    passed     70.61%
+ 269  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-B-A-A    0.00%    passed     21.17%
+ 270  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-B-A-B    0.00%    passed     77.01%
+ 271  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-B-B-A    0.00%    passed     23.95%
+ 272  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-A-B-B-B-B    0.00%    passed     73.44%
+ 273  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-A-A-A    0.00%    passed     10.94%
+ 274  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-A-A-B    0.00%    passed     68.26%
+ 275  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-A-B-A    0.00%    passed     28.44%
+ 276  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-A-B-B    0.00%    failed      1.48%
+ 277  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-B-A-A    0.00%    passed     87.61%
+ 278  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-B-A-B    0.00%    passed     79.24%
+ 279  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-B-B-A    0.00%    passed     45.16%
+ 280  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-A-B-B-B    0.00%    passed     73.67%
+ 281  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-A-A-A    0.00%    passed     82.55%
+ 282  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-A-A-B    0.00%    passed     90.51%
+ 283  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-A-B-A    0.00%    passed     54.23%
+ 284  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-A-B-B    0.00%    passed     91.73%
+ 285  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-B-A-A    0.00%    passed     68.24%
+ 286  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-B-A-B    0.00%    passed     56.39%
+ 287  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-B-B-A    0.00%    passed     33.22%
+ 288  _Influenza_B_virus_RNA_1-A-A-B-A-A-A-B-B-B-B-B    0.00%    passed     14.92%
+ 289  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-A-A-A    0.00%    passed     62.70%
+ 290  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-A-A-B    0.00%    passed     38.73%
+ 291  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-A-B-A    0.00%    passed     17.10%
+ 292  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-A-B-B    0.00%    passed     73.97%
+ 293  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-B-A-A    0.00%    passed     57.22%
+ 294  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-B-A-B    0.00%    passed     29.44%
+ 295  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-B-B-A    0.00%    passed     86.29%
+ 296  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-A-B-B-B    0.00%    passed     47.90%
+ 297  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-A-A-A    0.00%    passed     78.90%
+ 298  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-A-A-B    0.00%    passed     34.69%
+ 299  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-A-B-A    0.00%    passed     31.46%
+ 300  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-A-B-B    0.00%    passed     74.50%
+ 301  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-B-A-A    0.00%    failed      0.70%
+ 302  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-B-A-B    0.00%    passed     86.32%
+ 303  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-B-B-A    0.00%    passed     47.94%
+ 304  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-A-B-B-B-B    0.00%    passed     12.54%
+ 305  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-A-A-A    0.00%    failed      0.28%
+ 306  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-A-A-B    0.00%    passed     18.55%
+ 307  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-A-B-A    0.00%    failed      0.87%
+ 308  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-A-B-B    0.00%    passed     15.78%
+ 309  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-B-A-A    0.00%    passed     48.74%
+ 310  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-B-A-B    0.00%    passed     80.42%
+ 311  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-B-B-A    0.00%    passed     87.93%
+ 312  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-A-B-B-B    0.00%    passed     35.99%
+ 313  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-A-A-A    0.00%    passed     37.60%
+ 314  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-A-A-B    0.00%    passed     85.44%
+ 315  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-A-B-A    0.00%    passed     81.72%
+ 316  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-A-B-B    0.00%    passed     59.87%
+ 317  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-B-A-A    0.00%    passed     95.29%
+ 318  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-B-A-B    0.00%    passed     29.45%
+ 319  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-B-B-A    0.00%    passed      8.23%
+ 320  _Influenza_B_virus_RNA_1-A-A-B-A-A-B-B-B-B-B-B    0.00%    passed     77.44%
+ 321  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-A-A-A    0.00%    passed     70.35%
+ 322  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-A-A-B    0.00%    passed     87.33%
+ 323  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-A-B-A    0.00%    passed     48.41%
+ 324  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-A-B-B    0.00%    passed     28.25%
+ 325  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-B-A-A    0.00%    passed     69.88%
+ 326  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-B-A-B    0.00%    passed     66.18%
+ 327  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-B-B-A    0.00%    passed     57.63%
+ 328  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-A-B-B-B    0.00%    passed     64.67%
+ 329  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-A-A-A    0.00%    passed     12.96%
+ 330  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-A-A-B    0.00%    passed     11.49%
+ 331  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-A-B-A    0.00%    passed     81.19%
+ 332  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-A-B-B    0.00%    passed     49.58%
+ 333  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-B-A-A    0.00%    passed     21.89%
+ 334  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-B-A-B    0.00%    passed     26.29%
+ 335  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-B-B-A    0.00%    passed     53.36%
+ 336  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-A-B-B-B-B    0.00%    passed     57.89%
+ 337  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-A-A-A    0.00%    passed     42.72%
+ 338  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-A-A-B    0.00%    passed     17.18%
+ 339  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-A-B-A    0.00%    passed     75.01%
+ 340  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-A-B-B    0.00%    passed     87.00%
+ 341  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-B-A-A    0.00%    passed     45.83%
+ 342  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-B-A-B    0.00%    passed     28.83%
+ 343  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-B-B-A    0.00%    passed     48.89%
+ 344  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-A-B-B-B    0.00%    passed     97.28%
+ 345  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-A-A-A    0.00%    passed     26.94%
+ 346  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-A-A-B    0.00%    passed     95.34%
+ 347  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-A-B-A    0.00%    passed     51.15%
+ 348  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-A-B-B    0.00%    passed     10.25%
+ 349  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-B-A-A    0.00%    passed     45.00%
+ 350  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-B-A-B    0.00%    passed     58.59%
+ 351  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-B-B-A    0.00%    passed     24.63%
+ 352  _Influenza_B_virus_RNA_1-A-A-B-A-B-A-B-B-B-B-B    0.00%    passed     64.29%
+ 353  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-A-A-A    0.00%    passed     76.90%
+ 354  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-A-A-B    0.00%    passed     22.00%
+ 355  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-A-B-A    0.00%    passed     54.88%
+ 356  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-A-B-B    0.00%    passed     53.82%
+ 357  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-B-A-A    0.00%    failed      4.85%
+ 358  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-B-A-B    0.00%    passed     35.67%
+ 359  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-B-B-A    0.00%    passed     96.74%
+ 360  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-A-B-B-B    0.00%    passed     89.28%
+ 361  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-A-A-A    0.00%    passed     21.01%
+ 362  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-A-A-B    0.00%    passed     83.05%
+ 363  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-A-B-A    0.00%    passed     53.15%
+ 364  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-A-B-B    0.00%    passed     22.37%
+ 365  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-B-A-A    0.00%    passed     32.20%
+ 366  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-B-A-B    0.00%    passed     10.02%
+ 367  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-B-B-A    0.00%    passed     95.38%
+ 368  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-A-B-B-B-B    0.00%    passed     41.53%
+ 369  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-A-A-A    0.00%    passed     14.42%
+ 370  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-A-A-B    0.00%    passed     74.65%
+ 371  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-A-B-A    0.00%    failed      4.38%
+ 372  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-A-B-B    0.00%    passed      8.43%
+ 373  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-B-A-A    0.00%    passed     58.07%
+ 374  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-B-A-B    0.00%    passed     81.31%
+ 375  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-B-B-A    0.00%    passed     64.53%
+ 376  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-A-B-B-B    0.00%    passed     19.82%
+ 377  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-A-A-A    0.00%    passed     95.28%
+ 378  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-A-A-B    0.00%    passed     60.44%
+ 379  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-A-B-A    0.00%    failed      2.35%
+ 380  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-A-B-B    0.00%    failed      3.29%
+ 381  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-B-A-A    0.00%    passed     41.84%
+ 382  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-B-A-B    0.00%    passed     10.11%
+ 383  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-B-B-A    0.00%    passed     94.33%
+ 384  _Influenza_B_virus_RNA_1-A-A-B-A-B-B-B-B-B-B-B    0.00%    passed     84.63%
+ 385  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-A-A-A    0.00%    passed     54.14%
+ 386  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-A-A-B    0.00%    passed     24.02%
+ 387  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-A-B-A    0.00%    passed     22.79%
+ 388  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-A-B-B    0.00%    passed     69.75%
+ 389  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-B-A-A    0.00%    passed     90.62%
+ 390  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-B-A-B    0.00%    passed     43.67%
+ 391  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-B-B-A    0.00%    passed     95.94%
+ 392  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-A-B-B-B    0.00%    passed     46.41%
+ 393  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-A-A-A    0.00%    passed     55.64%
+ 394  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-A-A-B    0.00%    passed     79.19%
+ 395  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-A-B-A    0.00%    passed     98.15%
+ 396  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-A-B-B    0.00%    passed     92.99%
+ 397  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-B-A-A    0.00%    passed     20.82%
+ 398  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-B-A-B    0.00%    passed     35.61%
+ 399  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-B-B-A    0.00%    passed     85.55%
+ 400  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-A-B-B-B-B    0.00%    passed     82.01%
+ 401  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-A-A-A    0.00%    passed     68.76%
+ 402  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-A-A-B    0.00%    passed     93.27%
+ 403  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-A-B-A    0.00%    passed     45.40%
+ 404  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-A-B-B    0.00%    passed     11.09%
+ 405  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-B-A-A    0.00%    passed     93.13%
+ 406  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-B-A-B    0.00%    passed     98.49%
+ 407  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-B-B-A    0.00%    failed      1.67%
+ 408  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-A-B-B-B    0.00%    failed      1.71%
+ 409  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-A-A-A    0.00%    passed     51.75%
+ 410  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-A-A-B    0.00%    passed     62.21%
+ 411  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-A-B-A    0.00%    passed     44.73%
+ 412  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-A-B-B    0.00%    passed     91.72%
+ 413  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-B-A-A    0.00%    passed     80.26%
+ 414  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-B-A-B    0.00%    passed     76.94%
+ 415  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-B-B-A    0.00%    passed     15.36%
+ 416  _Influenza_B_virus_RNA_1-A-A-B-B-A-A-B-B-B-B-B    0.00%    passed     19.26%
+ 417  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-A-A-A    0.00%    passed     97.14%
+ 418  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-A-A-B    0.00%    passed     79.01%
+ 419  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-A-B-A    0.00%    passed     59.11%
+ 420  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-A-B-B    0.00%    passed     34.56%
+ 421  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-B-A-A    0.00%    passed     38.18%
+ 422  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-B-A-B    0.00%    passed     82.03%
+ 423  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-B-B-A    0.00%    passed     46.74%
+ 424  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-A-B-B-B    0.00%    passed     62.33%
+ 425  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-A-A-A    0.00%    passed     24.77%
+ 426  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-A-A-B    0.00%    passed     73.83%
+ 427  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-A-B-A    0.00%    passed     36.91%
+ 428  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-A-B-B    0.00%    passed     32.40%
+ 429  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-B-A-A    0.00%    passed     41.30%
+ 430  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-B-A-B    0.00%    passed     93.69%
+ 431  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-B-B-A    0.00%    passed     13.91%
+ 432  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-A-B-B-B-B    0.00%    passed     85.00%
+ 433  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-A-A-A    0.00%    failed      3.67%
+ 434  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-A-A-B    0.00%    passed     18.01%
+ 435  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-A-B-A    0.00%    passed     58.51%
+ 436  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-A-B-B    0.00%    passed     37.76%
+ 437  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-B-A-A    0.00%    passed     34.62%
+ 438  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-B-A-B    0.00%    passed     67.48%
+ 439  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-B-B-A    0.00%    passed     22.35%
+ 440  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-A-B-B-B    0.00%    passed     81.33%
+ 441  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-A-A-A    0.00%    passed     52.43%
+ 442  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-A-A-B    0.00%    passed     96.86%
+ 443  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-A-B-A    0.00%    passed     19.39%
+ 444  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-A-B-B    0.00%    passed     45.03%
+ 445  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-B-A-A    0.00%    passed     61.82%
+ 446  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-B-A-B    0.00%    passed     51.77%
+ 447  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-B-B-A    0.00%    failed      3.13%
+ 448  _Influenza_B_virus_RNA_1-A-A-B-B-A-B-B-B-B-B-B    0.00%    passed     34.99%
+ 449  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-A-A-A    0.00%    passed     80.92%
+ 450  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-A-A-B    0.00%    passed     94.07%
+ 451  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-A-B-A    0.00%    passed     29.70%
+ 452  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-A-B-B    0.00%    passed     90.37%
+ 453  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-B-A-A    0.00%    passed     71.57%
+ 454  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-B-A-B    0.00%    passed     35.50%
+ 455  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-B-B-A    0.00%    passed     31.91%
+ 456  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-A-B-B-B    0.00%    passed     16.07%
+ 457  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-A-A-A    0.00%    passed     70.32%
+ 458  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-A-A-B    0.00%    passed     72.49%
+ 459  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-A-B-A    0.00%    passed     51.46%
+ 460  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-A-B-B    0.00%    passed     81.74%
+ 461  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-B-A-A    0.00%    passed     39.85%
+ 462  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-B-A-B    0.00%    passed     80.03%
+ 463  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-B-B-A    0.00%    failed      0.12%
+ 464  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-A-B-B-B-B    0.00%    passed     10.79%
+ 465  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-A-A-A    0.00%    passed     37.94%
+ 466  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-A-A-B    0.00%    passed     58.76%
+ 467  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-A-B-A    0.00%    passed     49.38%
+ 468  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-A-B-B    0.00%    passed     17.05%
+ 469  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-B-A-A    0.00%    passed     66.52%
+ 470  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-B-A-B    0.00%    passed     62.20%
+ 471  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-B-B-A    0.00%    passed     46.06%
+ 472  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-A-B-B-B    0.00%    passed     11.44%
+ 473  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-A-A-A    0.00%    passed     99.17%
+ 474  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-A-A-B    0.00%    passed     15.78%
+ 475  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-A-B-A    0.00%    passed     12.65%
+ 476  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-A-B-B    0.00%    passed     63.23%
+ 477  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-B-A-A    0.00%    passed     43.24%
+ 478  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-B-A-B    0.00%    passed     59.19%
+ 479  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-B-B-A    0.00%    passed     18.30%
+ 480  _Influenza_B_virus_RNA_1-A-A-B-B-B-A-B-B-B-B-B    0.00%    passed     27.06%
+ 481  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-A-A-A    0.00%    failed      1.88%
+ 482  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-A-A-B    0.00%    passed     10.15%
+ 483  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-A-B-A    0.00%    passed     72.32%
+ 484  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-A-B-B    0.00%    passed     72.45%
+ 485  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-B-A-A    0.00%    passed     99.59%
+ 486  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-B-A-B    0.00%    passed     33.90%
+ 487  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-B-B-A    0.00%    passed     41.27%
+ 488  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-A-B-B-B    0.00%    passed     67.14%
+ 489  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-A-A-A    0.00%    passed     25.20%
+ 490  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-A-A-B    0.00%    passed     34.56%
+ 491  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-A-B-A    0.00%    passed     27.68%
+ 492  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-A-B-B    0.00%    passed     15.33%
+ 493  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-B-A-A    0.00%    failed      0.80%
+ 494  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-B-A-B    0.00%    passed     10.86%
+ 495  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-B-B-A    0.00%    passed     95.97%
+ 496  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-A-B-B-B-B    0.00%    passed     13.21%
+ 497  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-A-A-A    0.00%    passed     26.32%
+ 498  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-A-A-B    0.00%    passed     17.22%
+ 499  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-A-B-A    0.00%    passed     15.96%
+ 500  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-A-B-B    0.00%    passed     22.25%
+ 501  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-B-A-A    0.00%    passed     20.31%
+ 502  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-B-A-B    0.00%    passed      7.77%
+ 503  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-B-B-A    0.00%    passed     49.90%
+ 504  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-A-B-B-B    0.00%    passed     46.39%
+ 505  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-A-A-A    0.00%    passed     34.32%
+ 506  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-A-A-B    0.00%    passed     61.23%
+ 507  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-A-B-A    0.00%    passed     43.36%
+ 508  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-A-B-B    0.00%    passed     29.05%
+ 509  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-B-A-A    0.00%    passed     96.99%
+ 510  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-B-A-B    0.00%    passed     13.86%
+ 511  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-B-B-A    0.00%    passed     10.16%
+ 512  _Influenza_B_virus_RNA_1-A-A-B-B-B-B-B-B-B-B-B    0.00%    passed     15.64%
+ 513  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-A-A-A    0.00%    passed     13.75%
+ 514  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-A-A-B    0.00%    passed     36.55%
+ 515  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-A-B-A    0.00%    failed      2.11%
+ 516  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-A-B-B    0.00%    failed      0.54%
+ 517  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-B-A-A    0.00%    passed      8.21%
+ 518  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-B-A-B    0.00%    passed     52.93%
+ 519  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-B-B-A    0.00%    passed     10.19%
+ 520  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-A-B-B-B    0.00%    passed     16.64%
+ 521  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-A-A-A    0.00%    passed     32.43%
+ 522  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-A-A-B    0.00%    failed      0.88%
+ 523  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-A-B-A    0.00%    passed     80.92%
+ 524  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-A-B-B    0.00%    passed     36.59%
+ 525  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-B-A-A    0.00%    passed      5.83%
+ 526  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-B-A-B    0.00%    failed      1.51%
+ 527  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-B-B-A    0.00%    passed     30.48%
+ 528  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-A-B-B-B-B    0.00%    passed     47.05%
+ 529  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-A-A-A    0.00%    passed     16.47%
+ 530  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-A-A-B    0.00%    passed     50.75%
+ 531  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-A-B-A    0.00%    failed      2.57%
+ 532  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-A-B-B    0.00%    failed      1.38%
+ 533  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-B-A-A    0.00%    passed     27.57%
+ 534  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-B-A-B    0.00%    passed     53.48%
+ 535  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-B-B-A    0.00%    passed     22.30%
+ 536  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-A-B-B-B    0.00%    passed     30.54%
+ 537  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-A-A-A    0.00%    passed     32.57%
+ 538  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-A-A-B    0.00%    passed     93.49%
+ 539  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-A-B-A    0.00%    passed     73.71%
+ 540  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-A-B-B    0.00%    passed     58.64%
+ 541  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-B-A-A    0.00%    passed     30.47%
+ 542  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-B-A-B    0.00%    passed     93.33%
+ 543  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-B-B-A    0.00%    failed      4.68%
+ 544  _Influenza_B_virus_RNA_1-A-B-A-A-A-A-B-B-B-B-B    0.00%    passed     76.30%
+ 545  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-A-A-A    0.00%    failed      1.51%
+ 546  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-A-A-B    0.00%    passed     94.31%
+ 547  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-A-B-A    0.00%    passed     78.30%
+ 548  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-A-B-B    0.00%    passed     42.59%
+ 549  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-B-A-A    0.00%    passed     19.20%
+ 550  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-B-A-B    0.00%    passed     42.53%
+ 551  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-B-B-A    0.00%    passed     32.07%
+ 552  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-A-B-B-B    0.00%    passed     20.93%
+ 553  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-A-A-A    0.00%    passed     61.46%
+ 554  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-A-A-B    0.00%    passed     22.03%
+ 555  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-A-B-A    0.00%    passed     98.60%
+ 556  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-A-B-B    0.00%    passed     72.40%
+ 557  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-B-A-A    0.00%    passed     39.37%
+ 558  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-B-A-B    0.00%    passed     55.51%
+ 559  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-B-B-A    0.00%    passed     11.42%
+ 560  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-A-B-B-B-B    0.00%    passed     37.31%
+ 561  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-A-A-A    0.00%    passed     35.68%
+ 562  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-A-A-B    0.00%    passed     42.77%
+ 563  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-A-B-A    0.00%    passed     49.91%
+ 564  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-A-B-B    0.00%    passed     74.34%
+ 565  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-B-A-A    0.00%    passed     64.66%
+ 566  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-B-A-B    0.00%    passed     41.47%
+ 567  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-B-B-A    0.00%    passed     45.13%
+ 568  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-A-B-B-B    0.00%    passed     42.58%
+ 569  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-A-A-A    0.00%    passed     95.33%
+ 570  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-A-A-B    0.00%    passed     25.59%
+ 571  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-A-B-A    0.00%    failed      1.40%
+ 572  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-A-B-B    0.00%    passed     26.83%
+ 573  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-B-A-A    0.00%    passed     92.76%
+ 574  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-B-A-B    0.00%    failed      3.93%
+ 575  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-B-B-A    0.00%    passed     17.86%
+ 576  _Influenza_B_virus_RNA_1-A-B-A-A-A-B-B-B-B-B-B    0.00%    passed     10.65%
+ 577  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-A-A-A    0.00%    passed     84.62%
+ 578  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-A-A-B    0.00%    passed     77.77%
+ 579  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-A-B-A    0.00%    passed     99.87%
+ 580  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-A-B-B    0.00%    passed     53.77%
+ 581  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-B-A-A    0.00%    passed     45.04%
+ 582  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-B-A-B    0.00%    passed     93.26%
+ 583  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-B-B-A    0.00%    passed     43.80%
+ 584  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-A-B-B-B    0.00%    failed      0.50%
+ 585  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-A-A-A    0.00%    passed     50.58%
+ 586  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-A-A-B    0.00%    passed     51.50%
+ 587  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-A-B-A    0.00%    passed     21.40%
+ 588  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-A-B-B    0.00%    passed     98.24%
+ 589  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-B-A-A    0.00%    passed     98.60%
+ 590  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-B-A-B    0.00%    passed     93.39%
+ 591  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-B-B-A    0.00%    passed     57.13%
+ 592  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-A-B-B-B-B    0.00%    passed     74.98%
+ 593  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-A-A-A    0.00%    passed      7.99%
+ 594  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-A-A-B    0.00%    failed      1.67%
+ 595  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-A-B-A    0.00%    failed      1.71%
+ 596  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-A-B-B    0.00%    passed     20.08%
+ 597  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-B-A-A    0.00%    passed     86.91%
+ 598  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-B-A-B    0.00%    passed     72.87%
+ 599  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-B-B-A    0.00%    failed      1.46%
+ 600  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-A-B-B-B    0.00%    passed     10.25%
+ 601  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-A-A-A    0.00%    passed     10.90%
+ 602  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-A-A-B    0.00%    passed     20.39%
+ 603  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-A-B-A    0.00%    passed     88.41%
+ 604  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-A-B-B    0.00%    passed     26.44%
+ 605  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-B-A-A    0.00%    passed     66.61%
+ 606  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-B-A-B    0.00%    passed     44.79%
+ 607  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-B-B-A    0.00%    passed     23.36%
+ 608  _Influenza_B_virus_RNA_1-A-B-A-A-B-A-B-B-B-B-B    0.00%    passed     15.71%
+ 609  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-A-A-A    0.00%    passed     62.63%
+ 610  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-A-A-B    0.00%    failed      1.64%
+ 611  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-A-B-A    0.00%    passed     12.98%
+ 612  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-A-B-B    0.00%    passed     77.06%
+ 613  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-B-A-A    0.00%    passed     15.96%
+ 614  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-B-A-B    0.00%    failed      2.64%
+ 615  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-B-B-A    0.00%    passed     29.11%
+ 616  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-A-B-B-B    0.00%    passed     75.40%
+ 617  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-A-A-A    0.00%    passed     98.18%
+ 618  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-A-A-B    0.00%    passed     26.13%
+ 619  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-A-B-A    0.00%    passed     54.95%
+ 620  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-A-B-B    0.00%    passed     98.17%
+ 621  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-B-A-A    0.00%    passed     98.67%
+ 622  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-B-A-B    0.00%    passed     88.05%
+ 623  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-B-B-A    0.00%    passed     49.47%
+ 624  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-A-B-B-B-B    0.00%    passed     32.16%
+ 625  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-A-A-A    0.00%    passed     94.64%
+ 626  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-A-A-B    0.00%    passed     38.03%
+ 627  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-A-B-A    0.00%    passed     96.51%
+ 628  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-A-B-B    0.00%    passed     76.34%
+ 629  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-B-A-A    0.00%    passed     58.54%
+ 630  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-B-A-B    0.00%    passed     12.15%
+ 631  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-B-B-A    0.00%    passed     56.10%
+ 632  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-A-B-B-B    0.00%    passed     55.06%
+ 633  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-A-A-A    0.00%    passed     95.18%
+ 634  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-A-A-B    0.00%    passed     94.08%
+ 635  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-A-B-A    0.00%    passed     10.65%
+ 636  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-A-B-B    0.00%    passed      7.39%
+ 637  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-B-A-A    0.00%    passed     10.91%
+ 638  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-B-A-B    0.00%    passed     59.33%
+ 639  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-B-B-A    0.00%    passed     50.53%
+ 640  _Influenza_B_virus_RNA_1-A-B-A-A-B-B-B-B-B-B-B    0.00%    passed     26.68%
+ 641  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-A-A-A    0.00%    passed     36.39%
+ 642  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-A-A-B    0.00%    passed     50.73%
+ 643  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-A-B-A    0.00%    passed     10.34%
+ 644  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-A-B-B    0.00%    passed     33.42%
+ 645  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-B-A-A    0.00%    passed     75.56%
+ 646  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-B-A-B    0.00%    passed     85.75%
+ 647  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-B-B-A    0.00%    passed     49.14%
+ 648  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-A-B-B-B    0.00%    passed     54.40%
+ 649  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-A-A-A    0.00%    passed     48.22%
+ 650  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-A-A-B    0.00%    passed     48.94%
+ 651  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-A-B-A    0.00%    failed      1.29%
+ 652  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-A-B-B    0.00%    passed     13.36%
+ 653  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-B-A-A    0.00%    passed     95.47%
+ 654  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-B-A-B    0.00%    passed     24.08%
+ 655  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-B-B-A    0.00%    passed     66.36%
+ 656  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-A-B-B-B-B    0.00%    passed     69.82%
+ 657  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-A-A-A    0.00%    passed     57.98%
+ 658  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-A-A-B    0.00%    passed     65.82%
+ 659  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-A-B-A    0.00%    passed     22.75%
+ 660  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-A-B-B    0.00%    passed     81.82%
+ 661  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-B-A-A    0.00%    passed     27.84%
+ 662  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-B-A-B    0.00%    passed     14.09%
+ 663  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-B-B-A    0.00%    passed     12.75%
+ 664  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-A-B-B-B    0.00%    passed     27.34%
+ 665  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-A-A-A    0.00%    passed     13.67%
+ 666  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-A-A-B    0.00%    failed      4.72%
+ 667  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-A-B-A    0.00%    passed     52.09%
+ 668  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-A-B-B    0.00%    failed      3.49%
+ 669  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-B-A-A    0.00%    passed     23.30%
+ 670  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-B-A-B    0.00%    passed     48.80%
+ 671  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-B-B-A    0.00%    passed     52.01%
+ 672  _Influenza_B_virus_RNA_1-A-B-A-B-A-A-B-B-B-B-B    0.00%    passed     99.62%
+ 673  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-A-A-A    0.00%    passed      6.27%
+ 674  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-A-A-B    0.00%    passed     52.60%
+ 675  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-A-B-A    0.00%    failed      3.56%
+ 676  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-A-B-B    0.00%    passed     25.80%
+ 677  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-B-A-A    0.00%    passed     38.76%
+ 678  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-B-A-B    0.00%    passed     55.33%
+ 679  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-B-B-A    0.00%    passed     68.88%
+ 680  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-A-B-B-B    0.00%    passed     82.46%
+ 681  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-A-A-A    0.00%    passed     46.01%
+ 682  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-A-A-B    0.00%    passed     73.65%
+ 683  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-A-B-A    0.00%    passed     17.43%
+ 684  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-A-B-B    0.00%    passed     79.29%
+ 685  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-B-A-A    0.00%    passed     96.88%
+ 686  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-B-A-B    0.00%    passed     72.75%
+ 687  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-B-B-A    0.00%    passed     99.39%
+ 688  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-A-B-B-B-B    0.00%    passed     22.83%
+ 689  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-A-A-A    0.00%    passed     81.80%
+ 690  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-A-A-B    0.00%    passed     34.09%
+ 691  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-A-B-A    0.00%    passed     56.49%
+ 692  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-A-B-B    0.00%    passed     85.41%
+ 693  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-B-A-A    0.00%    passed     63.11%
+ 694  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-B-A-B    0.00%    passed     60.65%
+ 695  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-B-B-A    0.00%    passed     34.39%
+ 696  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-A-B-B-B    0.00%    passed     57.78%
+ 697  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-A-A-A    0.00%    passed      8.55%
+ 698  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-A-A-B    0.00%    passed     53.66%
+ 699  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-A-B-A    0.00%    passed     52.46%
+ 700  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-A-B-B    0.00%    passed     62.10%
+ 701  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-B-A-A    0.00%    passed     28.52%
+ 702  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-B-A-B    0.00%    passed     30.55%
+ 703  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-B-B-A    0.00%    passed     53.41%
+ 704  _Influenza_B_virus_RNA_1-A-B-A-B-A-B-B-B-B-B-B    0.00%    passed     71.11%
+ 705  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-A-A-A    0.00%    passed     48.15%
+ 706  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-A-A-B    0.00%    passed     80.64%
+ 707  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-A-B-A    0.00%    passed     59.16%
+ 708  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-A-B-B    0.00%    passed     22.10%
+ 709  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-B-A-A    0.00%    passed     30.91%
+ 710  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-B-A-B    0.00%    passed     81.83%
+ 711  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-B-B-A    0.00%    passed     60.67%
+ 712  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-A-B-B-B    0.00%    passed     80.23%
+ 713  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-A-A-A    0.00%    passed     65.77%
+ 714  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-A-A-B    0.00%    passed     29.79%
+ 715  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-A-B-A    0.00%    passed     46.17%
+ 716  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-A-B-B    0.00%    passed     60.86%
+ 717  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-B-A-A    0.00%    passed     73.55%
+ 718  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-B-A-B    0.00%    passed      9.23%
+ 719  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-B-B-A    0.00%    passed     67.41%
+ 720  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-A-B-B-B-B    0.00%    passed     41.29%
+ 721  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-A-A-A    0.00%    passed     70.87%
+ 722  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-A-A-B    0.00%    passed     45.68%
+ 723  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-A-B-A    0.00%    passed     10.74%
+ 724  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-A-B-B    0.00%    passed     77.91%
+ 725  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-B-A-A    0.00%    passed     39.04%
+ 726  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-B-A-B    0.00%    passed     38.00%
+ 727  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-B-B-A    0.00%    passed     62.59%
+ 728  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-A-B-B-B    0.00%    passed     41.75%
+ 729  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-A-A-A    0.00%    passed     69.98%
+ 730  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-A-A-B    0.00%    passed     10.57%
+ 731  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-A-B-A    0.00%    failed      4.61%
+ 732  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-A-B-B    0.00%    passed      7.48%
+ 733  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-B-A-A    0.00%    passed     50.81%
+ 734  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-B-A-B    0.00%    passed     13.40%
+ 735  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-B-B-A    0.00%    passed     76.39%
+ 736  _Influenza_B_virus_RNA_1-A-B-A-B-B-A-B-B-B-B-B    0.00%    passed     61.65%
+ 737  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-A-A-A    0.00%    passed     14.78%
+ 738  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-A-A-B    0.00%    passed     25.83%
+ 739  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-A-B-A    0.00%    passed     37.14%
+ 740  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-A-B-B    0.00%    passed      7.01%
+ 741  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-B-A-A    0.00%    passed     86.70%
+ 742  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-B-A-B    0.00%    passed     67.13%
+ 743  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-B-B-A    0.00%    passed     26.11%
+ 744  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-A-B-B-B    0.00%    passed     98.45%
+ 745  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-A-A-A    0.00%    passed      5.36%
+ 746  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-A-A-B    0.00%    passed     90.06%
+ 747  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-A-B-A    0.00%    passed     49.47%
+ 748  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-A-B-B    0.00%    passed     86.34%
+ 749  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-B-A-A    0.00%    passed     60.43%
+ 750  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-B-A-B    0.00%    passed     31.75%
+ 751  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-B-B-A    0.00%    passed     87.25%
+ 752  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-A-B-B-B-B    0.00%    passed     16.09%
+ 753  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-A-A-A    0.00%    passed     11.80%
+ 754  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-A-A-B    0.00%    passed     19.49%
+ 755  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-A-B-A    0.00%    passed     16.77%
+ 756  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-A-B-B    0.00%    passed     48.28%
+ 757  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-B-A-A    0.00%    passed     67.71%
+ 758  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-B-A-B    0.00%    passed     81.64%
+ 759  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-B-B-A    0.00%    passed     88.33%
+ 760  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-A-B-B-B    0.00%    passed     25.16%
+ 761  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-A-A-A    0.00%    passed     81.04%
+ 762  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-A-A-B    0.00%    passed     10.01%
+ 763  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-A-B-A    0.00%    passed     71.49%
+ 764  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-A-B-B    0.00%    passed     88.98%
+ 765  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-B-A-A    0.00%    passed     51.55%
+ 766  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-B-A-B    0.00%    passed     31.46%
+ 767  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-B-B-A    0.00%    passed     75.06%
+ 768  _Influenza_B_virus_RNA_1-A-B-A-B-B-B-B-B-B-B-B    0.00%    passed     92.94%
+ 769  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-A-A-A    0.00%    failed      0.07%
+ 770  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-A-A-B    0.00%    passed     87.30%
+ 771  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-A-B-A    0.00%    passed     24.92%
+ 772  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-A-B-B    0.00%    passed     51.86%
+ 773  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-B-A-A    0.00%    passed     83.17%
+ 774  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-B-A-B    0.00%    passed     69.91%
+ 775  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-B-B-A    0.00%    passed      7.88%
+ 776  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-A-B-B-B    0.00%    passed     87.98%
+ 777  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-A-A-A    0.00%    passed     41.08%
+ 778  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-A-A-B    0.00%    passed     93.35%
+ 779  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-A-B-A    0.00%    passed     83.66%
+ 780  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-A-B-B    0.00%    passed     67.83%
+ 781  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-B-A-A    0.00%    passed     16.29%
+ 782  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-B-A-B    0.00%    passed     48.75%
+ 783  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-B-B-A    0.00%    passed     23.41%
+ 784  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-A-B-B-B-B    0.00%    passed     32.34%
+ 785  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-A-A-A    0.00%    failed      4.05%
+ 786  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-A-A-B    0.00%    passed     24.00%
+ 787  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-A-B-A    0.00%    passed     54.67%
+ 788  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-A-B-B    0.00%    passed     84.76%
+ 789  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-B-A-A    0.00%    passed     89.88%
+ 790  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-B-A-B    0.00%    passed     73.45%
+ 791  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-B-B-A    0.00%    passed      7.58%
+ 792  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-A-B-B-B    0.00%    passed     40.70%
+ 793  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-A-A-A    0.00%    passed     51.73%
+ 794  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-A-A-B    0.00%    passed     51.14%
+ 795  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-A-B-A    0.00%    passed     97.71%
+ 796  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-A-B-B    0.00%    passed     21.00%
+ 797  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-B-A-A    0.00%    passed     49.99%
+ 798  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-B-A-B    0.00%    passed     98.54%
+ 799  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-B-B-A    0.00%    passed     87.93%
+ 800  _Influenza_B_virus_RNA_1-A-B-B-A-A-A-B-B-B-B-B    0.00%    passed     18.15%
+ 801  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-A-A-A    0.00%    passed     42.27%
+ 802  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-A-A-B    0.00%    passed     96.41%
+ 803  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-A-B-A    0.00%    passed     37.41%
+ 804  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-A-B-B    0.00%    passed     65.24%
+ 805  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-B-A-A    0.00%    passed     85.00%
+ 806  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-B-A-B    0.00%    passed     42.75%
+ 807  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-B-B-A    0.00%    passed     51.14%
+ 808  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-A-B-B-B    0.00%    passed     98.02%
+ 809  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-A-A-A    0.00%    passed     26.68%
+ 810  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-A-A-B    0.00%    passed     41.88%
+ 811  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-A-B-A    0.00%    passed     46.70%
+ 812  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-A-B-B    0.00%    passed     42.57%
+ 813  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-B-A-A    0.00%    passed     49.03%
+ 814  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-B-A-B    0.00%    passed     47.34%
+ 815  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-B-B-A    0.00%    passed     43.08%
+ 816  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-A-B-B-B-B    0.00%    passed      7.98%
+ 817  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-A-A-A    0.00%    passed     51.89%
+ 818  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-A-A-B    0.00%    passed     89.82%
+ 819  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-A-B-A    0.00%    passed     42.97%
+ 820  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-A-B-B    0.00%    passed     73.08%
+ 821  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-B-A-A    0.00%    passed     18.76%
+ 822  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-B-A-B    0.00%    passed     15.49%
+ 823  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-B-B-A    0.00%    passed     72.69%
+ 824  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-A-B-B-B    0.00%    passed     39.94%
+ 825  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-A-A-A    0.00%    passed     90.09%
+ 826  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-A-A-B    0.00%    passed     31.79%
+ 827  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-A-B-A    0.00%    passed     80.64%
+ 828  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-A-B-B    0.00%    passed     15.42%
+ 829  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-B-A-A    0.00%    passed     67.19%
+ 830  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-B-A-B    0.00%    passed     71.26%
+ 831  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-B-B-A    0.00%    passed     64.42%
+ 832  _Influenza_B_virus_RNA_1-A-B-B-A-A-B-B-B-B-B-B    0.00%    failed      1.21%
+ 833  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-A-A-A    0.00%    passed     31.67%
+ 834  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-A-A-B    0.00%    passed     94.38%
+ 835  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-A-B-A    0.00%    passed     79.30%
+ 836  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-A-B-B    0.00%    passed     45.40%
+ 837  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-B-A-A    0.00%    passed     57.80%
+ 838  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-B-A-B    0.00%    passed     63.09%
+ 839  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-B-B-A    0.00%    passed     25.42%
+ 840  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-A-B-B-B    0.00%    passed     71.25%
+ 841  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-A-A-A    0.00%    passed     99.79%
+ 842  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-A-A-B    0.00%    passed     25.74%
+ 843  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-A-B-A    0.00%    passed     67.94%
+ 844  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-A-B-B    0.00%    passed     61.62%
+ 845  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-B-A-A    0.00%    passed     42.20%
+ 846  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-B-A-B    0.00%    passed     92.77%
+ 847  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-B-B-A    0.00%    passed     74.27%
+ 848  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-A-B-B-B-B    0.00%    passed     87.37%
+ 849  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-A-A-A    0.00%    passed     93.55%
+ 850  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-A-A-B    0.00%    passed     30.62%
+ 851  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-A-B-A    0.00%    passed     12.89%
+ 852  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-A-B-B    0.00%    passed     72.49%
+ 853  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-B-A-A    0.00%    passed     98.20%
+ 854  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-B-A-B    0.00%    passed     52.26%
+ 855  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-B-B-A    0.00%    passed     33.57%
+ 856  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-A-B-B-B    0.00%    passed     65.24%
+ 857  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-A-A-A    0.00%    passed     49.68%
+ 858  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-A-A-B    0.00%    passed     22.55%
+ 859  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-A-B-A    0.00%    passed     86.41%
+ 860  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-A-B-B    0.00%    passed     84.19%
+ 861  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-B-A-A    0.00%    passed     23.80%
+ 862  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-B-A-B    0.00%    passed     85.22%
+ 863  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-B-B-A    0.00%    passed     27.21%
+ 864  _Influenza_B_virus_RNA_1-A-B-B-A-B-A-B-B-B-B-B    0.00%    passed     55.78%
+ 865  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-A-A-A    0.00%    passed     66.75%
+ 866  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-A-A-B    0.00%    passed     96.04%
+ 867  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-A-B-A    0.00%    passed     69.05%
+ 868  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-A-B-B    0.00%    passed     58.34%
+ 869  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-B-A-A    0.00%    passed     63.34%
+ 870  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-B-A-B    0.00%    passed     66.89%
+ 871  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-B-B-A    0.00%    passed     64.48%
+ 872  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-A-B-B-B    0.00%    passed     29.89%
+ 873  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-A-A-A    0.00%    passed     27.19%
+ 874  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-A-A-B    0.00%    passed     25.80%
+ 875  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-A-B-A    0.00%    passed     54.51%
+ 876  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-A-B-B    0.00%    passed     19.33%
+ 877  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-B-A-A    0.00%    passed     10.68%
+ 878  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-B-A-B    0.00%    passed     92.63%
+ 879  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-B-B-A    0.00%    passed     74.68%
+ 880  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-A-B-B-B-B    0.00%    passed     76.20%
+ 881  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-A-A-A    0.00%    failed      0.71%
+ 882  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-A-A-B    0.00%    passed     41.21%
+ 883  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-A-B-A    0.00%    passed     25.46%
+ 884  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-A-B-B    0.00%    passed     57.14%
+ 885  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-B-A-A    0.00%    passed     33.72%
+ 886  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-B-A-B    0.00%    passed     98.24%
+ 887  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-B-B-A    0.00%    passed     34.52%
+ 888  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-A-B-B-B    0.00%    failed      1.56%
+ 889  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-A-A-A    0.00%    passed     32.49%
+ 890  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-A-A-B    0.00%    failed      1.87%
+ 891  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-A-B-A    0.00%    passed     53.31%
+ 892  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-A-B-B    0.00%    passed     61.39%
+ 893  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-B-A-A    0.00%    passed     77.91%
+ 894  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-B-A-B    0.00%    passed     77.97%
+ 895  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-B-B-A    0.00%    passed     21.87%
+ 896  _Influenza_B_virus_RNA_1-A-B-B-A-B-B-B-B-B-B-B    0.00%    passed     47.52%
+ 897  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-A-A-A    0.00%    failed      3.79%
+ 898  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-A-A-B    0.00%    passed     39.34%
+ 899  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-A-B-A    0.00%    passed     74.02%
+ 900  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-A-B-B    0.00%    passed     86.84%
+ 901  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-B-A-A    0.00%    passed     10.81%
+ 902  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-B-A-B    0.00%    passed     39.38%
+ 903  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-B-B-A    0.00%    passed     72.05%
+ 904  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-A-B-B-B    0.00%    passed     54.54%
+ 905  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-A-A-A    0.00%    passed     48.09%
+ 906  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-A-A-B    0.00%    passed     36.06%
+ 907  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-A-B-A    0.00%    passed     86.13%
+ 908  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-A-B-B    0.00%    passed     92.78%
+ 909  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-B-A-A    0.00%    passed     51.55%
+ 910  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-B-A-B    0.00%    passed     96.72%
+ 911  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-B-B-A    0.00%    passed     42.26%
+ 912  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-A-B-B-B-B    0.00%    passed     36.63%
+ 913  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-A-A-A    0.00%    passed     44.63%
+ 914  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-A-A-B    0.00%    passed     58.99%
+ 915  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-A-B-A    0.00%    passed     84.29%
+ 916  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-A-B-B    0.00%    passed     18.90%
+ 917  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-B-A-A    0.00%    passed     74.58%
+ 918  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-B-A-B    0.00%    passed     57.82%
+ 919  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-B-B-A    0.00%    passed     55.36%
+ 920  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-A-B-B-B    0.00%    passed     85.44%
+ 921  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-A-A-A    0.00%    passed     69.89%
+ 922  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-A-A-B    0.00%    passed     12.46%
+ 923  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-A-B-A    0.00%    passed      5.27%
+ 924  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-A-B-B    0.00%    passed     89.68%
+ 925  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-B-A-A    0.00%    failed      2.10%
+ 926  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-B-A-B    0.00%    passed     25.02%
+ 927  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-B-B-A    0.00%    passed     89.32%
+ 928  _Influenza_B_virus_RNA_1-A-B-B-B-A-A-B-B-B-B-B    0.00%    passed     89.82%
+ 929  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-A-A-A    0.00%    passed     85.28%
+ 930  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-A-A-B    0.00%    passed      5.64%
+ 931  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-A-B-A    0.00%    passed     18.52%
+ 932  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-A-B-B    0.00%    failed      2.30%
+ 933  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-B-A-A    0.00%    passed      7.31%
+ 934  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-B-A-B    0.00%    passed     69.67%
+ 935  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-B-B-A    0.00%    passed     36.38%
+ 936  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-A-B-B-B    0.00%    passed     63.62%
+ 937  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-A-A-A    0.00%    passed     46.94%
+ 938  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-A-A-B    0.00%    passed     81.37%
+ 939  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-A-B-A    0.00%    passed     89.93%
+ 940  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-A-B-B    0.00%    passed     73.14%
+ 941  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-B-A-A    0.00%    passed     88.99%
+ 942  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-B-A-B    0.00%    passed     84.35%
+ 943  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-B-B-A    0.00%    passed     86.95%
+ 944  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-A-B-B-B-B    0.00%    passed     42.78%
+ 945  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-A-A-A    0.00%    passed     82.40%
+ 946  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-A-A-B    0.00%    passed     93.30%
+ 947  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-A-B-A    0.00%    passed     24.49%
+ 948  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-A-B-B    0.00%    passed     40.70%
+ 949  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-B-A-A    0.00%    passed     68.16%
+ 950  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-B-A-B    0.00%    passed     70.16%
+ 951  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-B-B-A    0.00%    passed     78.62%
+ 952  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-A-B-B-B    0.00%    failed      4.73%
+ 953  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-A-A-A    0.00%    passed     52.44%
+ 954  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-A-A-B    0.00%    passed     77.00%
+ 955  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-A-B-A    0.00%    passed     14.28%
+ 956  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-A-B-B    0.00%    passed     41.56%
+ 957  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-B-A-A    0.00%    passed     66.30%
+ 958  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-B-A-B    0.00%    passed     19.83%
+ 959  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-B-B-A    0.00%    passed     77.17%
+ 960  _Influenza_B_virus_RNA_1-A-B-B-B-A-B-B-B-B-B-B    0.00%    passed     89.34%
+ 961  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-A-A-A    0.00%    passed     54.58%
+ 962  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-A-A-B    0.00%    passed     65.90%
+ 963  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-A-B-A    0.00%    passed     20.65%
+ 964  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-A-B-B    0.00%    passed     34.70%
+ 965  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-B-A-A    0.00%    passed     58.81%
+ 966  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-B-A-B    0.00%    passed     74.09%
+ 967  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-B-B-A    0.00%    passed      8.81%
+ 968  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-A-B-B-B    0.00%    passed      5.03%
+ 969  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-A-A-A    0.00%    passed     86.18%
+ 970  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-A-A-B    0.00%    passed     69.84%
+ 971  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-A-B-A    0.00%    passed     91.17%
+ 972  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-A-B-B    0.00%    passed     59.68%
+ 973  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-B-A-A    0.00%    passed     16.12%
+ 974  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-B-A-B    0.00%    passed      6.05%
+ 975  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-B-B-A    0.00%    passed     13.37%
+ 976  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-A-B-B-B-B    0.00%    passed     30.80%
+ 977  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-A-A-A    0.00%    passed      7.60%
+ 978  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-A-A-B    0.00%    passed     30.36%
+ 979  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-A-B-A    0.00%    passed     47.78%
+ 980  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-A-B-B    0.00%    passed     64.90%
+ 981  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-B-A-A    0.00%    passed     26.30%
+ 982  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-B-A-B    0.00%    passed     51.15%
+ 983  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-B-B-A    0.00%    passed     88.11%
+ 984  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-A-B-B-B    0.00%    passed     93.17%
+ 985  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-A-A-A    0.00%    passed     40.89%
+ 986  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-A-A-B    0.00%    passed     52.94%
+ 987  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-A-B-A    0.00%    passed      6.93%
+ 988  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-A-B-B    0.00%    passed      7.21%
+ 989  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-B-A-A    0.00%    failed      4.83%
+ 990  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-B-A-B    0.00%    passed     43.19%
+ 991  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-B-B-A    0.00%    passed     60.09%
+ 992  _Influenza_B_virus_RNA_1-A-B-B-B-B-A-B-B-B-B-B    0.00%    passed     63.37%
+ 993  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-A-A-A    0.00%    failed      0.36%
+ 994  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-A-A-B    0.00%    failed      4.76%
+ 995  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-A-B-A    0.00%    passed     72.05%
+ 996  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-A-B-B    0.00%    passed     61.18%
+ 997  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-B-A-A    0.00%    passed     74.32%
+ 998  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-B-A-B    0.00%    passed     34.31%
+ 999  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-B-B-A    0.00%    passed     58.60%
+1000  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-A-B-B-B    0.00%    passed     31.19%
+1001  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-A-A-A    0.00%    passed     64.79%
+1002  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-A-A-B    0.00%    passed     94.87%
+1003  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-A-B-A    0.00%    passed     36.30%
+1004  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-A-B-B    0.00%    passed     22.43%
+1005  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-B-A-A    0.00%    passed      5.80%
+1006  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-B-A-B    0.00%    failed      0.82%
+1007  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-B-B-A    0.00%    passed     27.53%
+1008  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-A-B-B-B-B    0.00%    passed      5.37%
+1009  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-A-A-A    0.00%    passed     61.72%
+1010  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-A-A-B    0.00%    passed     94.91%
+1011  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-A-B-A    0.00%    passed     68.54%
+1012  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-A-B-B    0.00%    passed     30.50%
+1013  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-B-A-A    0.00%    passed     65.07%
+1014  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-B-A-B    0.00%    passed     23.25%
+1015  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-B-B-A    0.00%    passed     92.54%
+1016  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-A-B-B-B    0.00%    passed     71.39%
+1017  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-A-A-A    0.00%    passed     45.73%
+1018  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-A-A-B    0.00%    passed     48.23%
+1019  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-A-B-A    0.00%    passed     26.86%
+1020  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-A-B-B    0.00%    passed     79.17%
+1021  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-B-A-A    0.00%    passed     99.99%
+1022  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-B-A-B    0.00%    passed     93.16%
+1023  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-B-B-A    0.00%    passed     91.17%
+1024  _Influenza_B_virus_RNA_1-A-B-B-B-B-B-B-B-B-B-B    0.00%    passed     82.01%
+1025  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-A-A-A    0.00%    passed     56.07%
+1026  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-A-A-B    0.00%    passed     12.83%
+1027  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-A-B-A    0.00%    passed     50.93%
+1028  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-A-B-B    0.00%    passed     21.20%
+1029  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-B-A-A    0.00%    passed      7.45%
+1030  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-B-A-B    0.00%    passed     79.55%
+1031  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-B-B-A    0.00%    passed     63.85%
+1032  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-A-B-B-B    0.00%    passed     11.90%
+1033  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-A-A-A    0.00%    passed     87.21%
+1034  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-A-A-B    0.00%    failed      0.71%
+1035  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-A-B-A    0.00%    passed     86.21%
+1036  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-A-B-B    0.00%    passed     47.91%
+1037  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-B-A-A    0.00%    passed     71.18%
+1038  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-B-A-B    0.00%    passed     44.97%
+1039  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-B-B-A    0.00%    passed     87.77%
+1040  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-A-B-B-B-B    0.00%    passed     96.88%
+1041  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-A-A-A    0.00%    passed     24.72%
+1042  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-A-A-B    0.00%    passed     47.27%
+1043  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-A-B-A    0.00%    passed     40.99%
+1044  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-A-B-B    0.00%    passed     44.38%
+1045  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-B-A-A    0.00%    passed     73.04%
+1046  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-B-A-B    0.00%    passed     64.09%
+1047  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-B-B-A    0.00%    passed     40.68%
+1048  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-A-B-B-B    0.00%    passed     47.33%
+1049  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-A-A-A    0.00%    passed     69.70%
+1050  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-A-A-B    0.00%    passed     25.33%
+1051  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-A-B-A    0.00%    passed     27.51%
+1052  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-A-B-B    0.00%    passed     22.62%
+1053  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-B-A-A    0.00%    failed      2.15%
+1054  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-B-A-B    0.00%    passed      9.42%
+1055  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-B-B-A    0.00%    passed     86.07%
+1056  _Influenza_B_virus_RNA_1-B-A-A-A-A-A-B-B-B-B-B    0.00%    passed     95.96%
+1057  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-A-A-A    0.00%    passed     45.12%
+1058  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-A-A-B    0.00%    passed     18.09%
+1059  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-A-B-A    0.00%    passed     38.85%
+1060  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-A-B-B    0.00%    passed     52.17%
+1061  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-B-A-A    0.00%    passed     74.68%
+1062  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-B-A-B    0.00%    passed     77.70%
+1063  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-B-B-A    0.00%    passed     62.48%
+1064  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-A-B-B-B    0.00%    passed     45.93%
+1065  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-A-A-A    0.00%    passed     56.94%
+1066  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-A-A-B    0.00%    passed     58.53%
+1067  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-A-B-A    0.00%    passed     43.00%
+1068  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-A-B-B    0.00%    failed      3.70%
+1069  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-B-A-A    0.00%    failed      2.25%
+1070  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-B-A-B    0.00%    passed      6.71%
+1071  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-B-B-A    0.00%    passed     67.44%
+1072  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-A-B-B-B-B    0.00%    passed     57.45%
+1073  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-A-A-A    0.00%    passed     94.16%
+1074  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-A-A-B    0.00%    passed     30.46%
+1075  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-A-B-A    0.00%    passed     77.95%
+1076  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-A-B-B    0.00%    passed     93.39%
+1077  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-B-A-A    0.00%    passed     69.68%
+1078  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-B-A-B    0.00%    passed     43.62%
+1079  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-B-B-A    0.00%    passed     95.60%
+1080  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-A-B-B-B    0.00%    passed     66.89%
+1081  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-A-A-A    0.00%    passed     55.05%
+1082  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-A-A-B    0.00%    passed     75.81%
+1083  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-A-B-A    0.00%    passed     43.30%
+1084  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-A-B-B    0.00%    passed     39.06%
+1085  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-B-A-A    0.00%    passed     56.03%
+1086  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-B-A-B    0.00%    passed     53.89%
+1087  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-B-B-A    0.00%    passed     74.89%
+1088  _Influenza_B_virus_RNA_1-B-A-A-A-A-B-B-B-B-B-B    0.00%    passed      5.76%
+1089  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-A-A-A    0.00%    passed     78.59%
+1090  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-A-A-B    0.00%    passed     69.64%
+1091  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-A-B-A    0.00%    passed     68.44%
+1092  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-A-B-B    0.00%    passed     87.58%
+1093  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-B-A-A    0.00%    passed     28.10%
+1094  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-B-A-B    0.00%    passed     93.44%
+1095  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-B-B-A    0.00%    passed      9.56%
+1096  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-A-B-B-B    0.00%    passed     17.88%
+1097  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-A-A-A    0.00%    passed     46.14%
+1098  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-A-A-B    0.00%    passed     70.22%
+1099  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-A-B-A    0.00%    passed     63.99%
+1100  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-A-B-B    0.00%    passed     60.60%
+1101  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-B-A-A    0.00%    passed     33.65%
+1102  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-B-A-B    0.00%    passed      7.37%
+1103  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-B-B-A    0.00%    passed     64.06%
+1104  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-A-B-B-B-B    0.00%    passed      5.32%
+1105  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-A-A-A    0.00%    passed     82.44%
+1106  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-A-A-B    0.00%    passed     28.89%
+1107  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-A-B-A    0.00%    passed     53.24%
+1108  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-A-B-B    0.00%    passed     35.49%
+1109  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-B-A-A    0.00%    passed     98.49%
+1110  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-B-A-B    0.00%    passed     72.30%
+1111  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-B-B-A    0.00%    passed     87.21%
+1112  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-A-B-B-B    0.00%    passed     14.11%
+1113  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-A-A-A    0.00%    passed     25.64%
+1114  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-A-A-B    0.00%    passed      6.71%
+1115  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-A-B-A    0.00%    passed     25.56%
+1116  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-A-B-B    0.00%    passed     21.07%
+1117  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-B-A-A    0.00%    passed     43.19%
+1118  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-B-A-B    0.00%    passed     50.16%
+1119  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-B-B-A    0.00%    passed     18.12%
+1120  _Influenza_B_virus_RNA_1-B-A-A-A-B-A-B-B-B-B-B    0.00%    passed      9.01%
+1121  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-A-A-A    0.00%    passed     60.98%
+1122  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-A-A-B    0.00%    passed     21.38%
+1123  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-A-B-A    0.00%    passed     82.64%
+1124  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-A-B-B    0.00%    passed     14.26%
+1125  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-B-A-A    0.00%    passed     76.73%
+1126  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-B-A-B    0.00%    passed     54.52%
+1127  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-B-B-A    0.00%    passed     24.10%
+1128  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-A-B-B-B    0.00%    passed     34.08%
+1129  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-A-A-A    0.00%    passed     31.62%
+1130  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-A-A-B    0.00%    passed     62.99%
+1131  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-A-B-A    0.00%    passed     14.07%
+1132  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-A-B-B    0.00%    passed     27.34%
+1133  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-B-A-A    0.00%    passed     60.72%
+1134  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-B-A-B    0.00%    failed      0.59%
+1135  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-B-B-A    0.00%    passed     46.46%
+1136  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-A-B-B-B-B    0.00%    passed     47.19%
+1137  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-A-A-A    0.00%    failed      0.30%
+1138  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-A-A-B    0.00%    passed     37.71%
+1139  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-A-B-A    0.00%    passed     70.24%
+1140  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-A-B-B    0.00%    passed     68.28%
+1141  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-B-A-A    0.00%    passed     72.95%
+1142  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-B-A-B    0.00%    failed      3.88%
+1143  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-B-B-A    0.00%    passed     60.03%
+1144  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-A-B-B-B    0.00%    passed      8.69%
+1145  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-A-A-A    0.00%    passed     88.23%
+1146  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-A-A-B    0.00%    passed     91.10%
+1147  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-A-B-A    0.00%    passed     99.83%
+1148  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-A-B-B    0.00%    passed     11.27%
+1149  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-B-A-A    0.00%    passed     32.78%
+1150  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-B-A-B    0.00%    passed     45.48%
+1151  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-B-B-A    0.00%    passed      6.24%
+1152  _Influenza_B_virus_RNA_1-B-A-A-A-B-B-B-B-B-B-B    0.00%    passed     78.14%
+1153  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-A-A-A    0.00%    passed     74.88%
+1154  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-A-A-B    0.00%    passed     53.94%
+1155  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-A-B-A    0.00%    passed     25.35%
+1156  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-A-B-B    0.00%    passed     35.58%
+1157  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-B-A-A    0.00%    passed     58.42%
+1158  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-B-A-B    0.00%    passed     77.76%
+1159  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-B-B-A    0.00%    passed     36.20%
+1160  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-A-B-B-B    0.00%    passed     71.32%
+1161  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-A-A-A    0.00%    passed     70.73%
+1162  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-A-A-B    0.00%    passed     72.18%
+1163  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-A-B-A    0.00%    passed     19.28%
+1164  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-A-B-B    0.00%    passed     67.48%
+1165  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-B-A-A    0.00%    passed     72.67%
+1166  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-B-A-B    0.00%    passed     37.54%
+1167  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-B-B-A    0.00%    passed     88.38%
+1168  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-A-B-B-B-B    0.00%    passed     48.10%
+1169  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-A-A-A    0.00%    passed     42.89%
+1170  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-A-A-B    0.00%    passed     16.58%
+1171  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-A-B-A    0.00%    passed     16.42%
+1172  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-A-B-B    0.00%    passed     54.33%
+1173  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-B-A-A    0.00%    passed     43.30%
+1174  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-B-A-B    0.00%    passed     53.60%
+1175  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-B-B-A    0.00%    passed     11.27%
+1176  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-A-B-B-B    0.00%    passed     37.61%
+1177  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-A-A-A    0.00%    passed     51.61%
+1178  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-A-A-B    0.00%    passed     49.56%
+1179  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-A-B-A    0.00%    passed     68.20%
+1180  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-A-B-B    0.00%    passed     32.64%
+1181  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-B-A-A    0.00%    passed     55.40%
+1182  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-B-A-B    0.00%    passed     72.48%
+1183  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-B-B-A    0.00%    passed     28.90%
+1184  _Influenza_B_virus_RNA_1-B-A-A-B-A-A-B-B-B-B-B    0.00%    failed      2.45%
+1185  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-A-A-A    0.00%    passed     25.24%
+1186  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-A-A-B    0.00%    passed     29.88%
+1187  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-A-B-A    0.00%    passed     49.35%
+1188  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-A-B-B    0.00%    passed     53.12%
+1189  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-B-A-A    0.00%    passed     84.86%
+1190  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-B-A-B    0.00%    passed     97.94%
+1191  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-B-B-A    0.00%    passed     97.78%
+1192  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-A-B-B-B    0.00%    passed     24.34%
+1193  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-A-A-A    0.00%    passed     62.08%
+1194  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-A-A-B    0.00%    passed      9.28%
+1195  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-A-B-A    0.00%    passed     31.06%
+1196  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-A-B-B    0.00%    passed     32.33%
+1197  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-B-A-A    0.00%    passed      5.12%
+1198  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-B-A-B    0.00%    passed     76.77%
+1199  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-B-B-A    0.00%    passed     56.17%
+1200  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-A-B-B-B-B    0.00%    passed     36.74%
+1201  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-A-A-A    0.00%    failed      1.15%
+1202  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-A-A-B    0.00%    failed      0.80%
+1203  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-A-B-A    0.00%    passed     43.67%
+1204  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-A-B-B    0.00%    failed      4.63%
+1205  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-B-A-A    0.00%    passed     40.55%
+1206  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-B-A-B    0.00%    passed     70.23%
+1207  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-B-B-A    0.00%    passed     46.39%
+1208  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-A-B-B-B    0.00%    passed     93.76%
+1209  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-A-A-A    0.00%    passed     31.54%
+1210  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-A-A-B    0.00%    passed     67.03%
+1211  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-A-B-A    0.00%    passed     60.03%
+1212  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-A-B-B    0.00%    passed     36.19%
+1213  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-B-A-A    0.00%    passed     84.92%
+1214  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-B-A-B    0.00%    passed     57.79%
+1215  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-B-B-A    0.00%    passed     10.12%
+1216  _Influenza_B_virus_RNA_1-B-A-A-B-A-B-B-B-B-B-B    0.00%    passed      7.43%
+1217  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-A-A-A    0.00%    passed     34.34%
+1218  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-A-A-B    0.00%    passed     64.60%
+1219  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-A-B-A    0.00%    passed     83.59%
+1220  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-A-B-B    0.00%    passed     89.31%
+1221  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-B-A-A    0.00%    passed      7.38%
+1222  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-B-A-B    0.00%    passed     93.18%
+1223  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-B-B-A    0.00%    passed     41.32%
+1224  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-A-B-B-B    0.00%    passed     69.71%
+1225  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-A-A-A    0.00%    passed     12.66%
+1226  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-A-A-B    0.00%    passed     42.07%
+1227  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-A-B-A    0.00%    passed     84.61%
+1228  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-A-B-B    0.00%    passed     70.86%
+1229  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-B-A-A    0.00%    passed     49.73%
+1230  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-B-A-B    0.00%    passed     15.85%
+1231  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-B-B-A    0.00%    passed     59.35%
+1232  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-A-B-B-B-B    0.00%    passed     82.87%
+1233  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-A-A-A    0.00%    passed     22.24%
+1234  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-A-A-B    0.00%    passed      8.80%
+1235  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-A-B-A    0.00%    passed     51.26%
+1236  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-A-B-B    0.00%    passed     35.00%
+1237  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-B-A-A    0.00%    passed     17.32%
+1238  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-B-A-B    0.00%    passed     17.05%
+1239  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-B-B-A    0.00%    passed     52.55%
+1240  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-A-B-B-B    0.00%    passed     27.78%
+1241  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-A-A-A    0.00%    passed     47.87%
+1242  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-A-A-B    0.00%    passed     65.92%
+1243  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-A-B-A    0.00%    passed     59.58%
+1244  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-A-B-B    0.00%    passed     51.72%
+1245  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-B-A-A    0.00%    passed      8.56%
+1246  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-B-A-B    0.00%    passed     44.06%
+1247  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-B-B-A    0.00%    passed      7.53%
+1248  _Influenza_B_virus_RNA_1-B-A-A-B-B-A-B-B-B-B-B    0.00%    passed     76.02%
+1249  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-A-A-A    0.00%    passed     59.48%
+1250  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-A-A-B    0.00%    passed     11.49%
+1251  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-A-B-A    0.00%    passed     44.37%
+1252  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-A-B-B    0.00%    passed     65.61%
+1253  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-B-A-A    0.00%    passed     29.06%
+1254  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-B-A-B    0.00%    passed     43.05%
+1255  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-B-B-A    0.00%    passed     45.20%
+1256  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-A-B-B-B    0.00%    passed     48.17%
+1257  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-A-A-A    0.00%    passed     73.51%
+1258  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-A-A-B    0.00%    passed     46.71%
+1259  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-A-B-A    0.00%    passed     44.96%
+1260  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-A-B-B    0.00%    passed     46.28%
+1261  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-B-A-A    0.00%    passed     90.32%
+1262  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-B-A-B    0.00%    passed     11.07%
+1263  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-B-B-A    0.00%    passed     52.55%
+1264  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-A-B-B-B-B    0.00%    passed     95.41%
+1265  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-A-A-A    0.00%    passed     28.58%
+1266  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-A-A-B    0.00%    passed     57.68%
+1267  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-A-B-A    0.00%    passed     17.86%
+1268  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-A-B-B    0.00%    passed      8.89%
+1269  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-B-A-A    0.00%    passed     98.32%
+1270  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-B-A-B    0.00%    passed     14.75%
+1271  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-B-B-A    0.00%    passed     90.24%
+1272  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-A-B-B-B    0.00%    passed     92.75%
+1273  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-A-A-A    0.00%    passed     75.64%
+1274  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-A-A-B    0.00%    passed     94.45%
+1275  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-A-B-A    0.00%    passed     42.02%
+1276  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-A-B-B    0.00%    passed     12.42%
+1277  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-B-A-A    0.00%    passed     29.74%
+1278  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-B-A-B    0.00%    passed     29.33%
+1279  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-B-B-A    0.00%    passed     79.45%
+1280  _Influenza_B_virus_RNA_1-B-A-A-B-B-B-B-B-B-B-B    0.00%    passed     75.85%
+1281  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-A-A-A    0.00%    passed     46.88%
+1282  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-A-A-B    0.00%    passed     51.13%
+1283  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-A-B-A    0.00%    passed     77.31%
+1284  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-A-B-B    0.00%    passed     60.58%
+1285  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-B-A-A    0.00%    passed     48.74%
+1286  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-B-A-B    0.00%    passed     94.14%
+1287  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-B-B-A    0.00%    passed     68.87%
+1288  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-A-B-B-B    0.00%    passed     32.65%
+1289  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-A-A-A    0.00%    passed     41.71%
+1290  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-A-A-B    0.00%    passed     95.13%
+1291  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-A-B-A    0.00%    passed     99.24%
+1292  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-A-B-B    0.00%    passed     72.13%
+1293  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-B-A-A    0.00%    passed     15.57%
+1294  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-B-A-B    0.00%    passed      6.89%
+1295  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-B-B-A    0.00%    passed     46.14%
+1296  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-A-B-B-B-B    0.00%    passed     59.70%
+1297  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-A-A-A    0.00%    failed      4.60%
+1298  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-A-A-B    0.00%    passed     47.36%
+1299  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-A-B-A    0.00%    failed      1.40%
+1300  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-A-B-B    0.00%    passed      6.37%
+1301  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-B-A-A    0.00%    passed     91.29%
+1302  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-B-A-B    0.00%    passed      5.26%
+1303  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-B-B-A    0.00%    passed     71.11%
+1304  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-A-B-B-B    0.00%    passed     66.74%
+1305  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-A-A-A    0.00%    passed     15.62%
+1306  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-A-A-B    0.00%    passed     18.07%
+1307  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-A-B-A    0.00%    passed     10.99%
+1308  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-A-B-B    0.00%    passed     66.58%
+1309  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-B-A-A    0.00%    passed     80.72%
+1310  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-B-A-B    0.00%    passed     94.80%
+1311  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-B-B-A    0.00%    passed     69.85%
+1312  _Influenza_B_virus_RNA_1-B-A-B-A-A-A-B-B-B-B-B    0.00%    passed     18.63%
+1313  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-A-A-A    0.00%    passed     34.13%
+1314  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-A-A-B    0.00%    passed     56.33%
+1315  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-A-B-A    0.00%    passed     48.31%
+1316  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-A-B-B    0.00%    passed     91.11%
+1317  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-B-A-A    0.00%    passed      8.48%
+1318  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-B-A-B    0.00%    passed     37.44%
+1319  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-B-B-A    0.00%    passed     91.56%
+1320  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-A-B-B-B    0.00%    passed     64.45%
+1321  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-A-A-A    0.00%    passed     70.38%
+1322  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-A-A-B    0.00%    passed     69.74%
+1323  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-A-B-A    0.00%    passed     57.70%
+1324  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-A-B-B    0.00%    passed     84.51%
+1325  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-B-A-A    0.00%    passed     98.17%
+1326  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-B-A-B    0.00%    passed     90.64%
+1327  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-B-B-A    0.00%    passed     92.81%
+1328  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-A-B-B-B-B    0.00%    passed     19.85%
+1329  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-A-A-A    0.00%    passed     36.21%
+1330  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-A-A-B    0.00%    passed     44.79%
+1331  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-A-B-A    0.00%    passed     14.82%
+1332  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-A-B-B    0.00%    passed     73.11%
+1333  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-B-A-A    0.00%    passed     71.00%
+1334  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-B-A-B    0.00%    passed     92.85%
+1335  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-B-B-A    0.00%    passed     94.65%
+1336  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-A-B-B-B    0.00%    passed     88.79%
+1337  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-A-A-A    0.00%    passed     46.13%
+1338  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-A-A-B    0.00%    passed     38.60%
+1339  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-A-B-A    0.00%    passed     60.37%
+1340  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-A-B-B    0.00%    passed     76.62%
+1341  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-B-A-A    0.00%    passed     96.12%
+1342  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-B-A-B    0.00%    passed     83.63%
+1343  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-B-B-A    0.00%    passed     68.71%
+1344  _Influenza_B_virus_RNA_1-B-A-B-A-A-B-B-B-B-B-B    0.00%    passed     84.75%
+1345  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-A-A-A    0.00%    passed     66.24%
+1346  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-A-A-B    0.00%    passed     20.60%
+1347  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-A-B-A    0.00%    passed     13.93%
+1348  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-A-B-B    0.00%    passed     71.49%
+1349  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-B-A-A    0.00%    passed     47.65%
+1350  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-B-A-B    0.00%    passed     49.58%
+1351  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-B-B-A    0.00%    passed     20.87%
+1352  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-A-B-B-B    0.00%    passed     99.54%
+1353  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-A-A-A    0.00%    passed     99.57%
+1354  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-A-A-B    0.00%    passed     69.04%
+1355  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-A-B-A    0.00%    passed     32.26%
+1356  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-A-B-B    0.00%    passed      8.44%
+1357  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-B-A-A    0.00%    passed     39.99%
+1358  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-B-A-B    0.00%    passed      6.57%
+1359  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-B-B-A    0.00%    passed     95.91%
+1360  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-A-B-B-B-B    0.00%    passed     51.65%
+1361  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-A-A-A    0.00%    passed     17.53%
+1362  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-A-A-B    0.00%    passed     93.18%
+1363  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-A-B-A    0.00%    passed     74.82%
+1364  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-A-B-B    0.00%    passed     13.98%
+1365  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-B-A-A    0.00%    passed     61.45%
+1366  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-B-A-B    0.00%    passed     37.29%
+1367  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-B-B-A    0.00%    passed     22.70%
+1368  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-A-B-B-B    0.00%    passed     99.26%
+1369  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-A-A-A    0.00%    passed     13.54%
+1370  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-A-A-B    0.00%    passed     34.09%
+1371  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-A-B-A    0.00%    passed     67.49%
+1372  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-A-B-B    0.00%    passed     69.76%
+1373  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-B-A-A    0.00%    passed     60.66%
+1374  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-B-A-B    0.00%    passed     25.90%
+1375  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-B-B-A    0.00%    passed     53.28%
+1376  _Influenza_B_virus_RNA_1-B-A-B-A-B-A-B-B-B-B-B    0.00%    passed     63.34%
+1377  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-A-A-A    0.00%    failed      3.74%
+1378  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-A-A-B    0.00%    passed     21.54%
+1379  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-A-B-A    0.00%    passed     59.57%
+1380  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-A-B-B    0.00%    passed     91.38%
+1381  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-B-A-A    0.00%    passed     90.03%
+1382  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-B-A-B    0.00%    passed     27.04%
+1383  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-B-B-A    0.00%    passed     21.10%
+1384  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-A-B-B-B    0.00%    passed     41.39%
+1385  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-A-A-A    0.00%    passed     99.69%
+1386  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-A-A-B    0.00%    passed     90.57%
+1387  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-A-B-A    0.00%    passed     20.44%
+1388  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-A-B-B    0.00%    passed     14.83%
+1389  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-B-A-A    0.00%    passed     31.11%
+1390  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-B-A-B    0.00%    failed      0.96%
+1391  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-B-B-A    0.00%    passed     91.08%
+1392  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-A-B-B-B-B    0.00%    passed     52.24%
+1393  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-A-A-A    0.00%    passed     10.25%
+1394  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-A-A-B    0.00%    passed     32.18%
+1395  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-A-B-A    0.00%    passed     12.91%
+1396  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-A-B-B    0.00%    passed     88.70%
+1397  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-B-A-A    0.00%    failed      3.88%
+1398  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-B-A-B    0.00%    passed     40.28%
+1399  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-B-B-A    0.00%    passed     13.65%
+1400  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-A-B-B-B    0.00%    passed     62.29%
+1401  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-A-A-A    0.00%    passed     81.75%
+1402  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-A-A-B    0.00%    passed     46.95%
+1403  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-A-B-A    0.00%    passed     99.23%
+1404  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-A-B-B    0.00%    passed     15.90%
+1405  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-B-A-A    0.00%    passed     59.49%
+1406  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-B-A-B    0.00%    passed     44.21%
+1407  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-B-B-A    0.00%    passed     83.71%
+1408  _Influenza_B_virus_RNA_1-B-A-B-A-B-B-B-B-B-B-B    0.00%    passed     65.87%
+1409  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-A-A-A    0.00%    failed      4.03%
+1410  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-A-A-B    0.00%    passed     77.65%
+1411  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-A-B-A    0.00%    passed     50.73%
+1412  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-A-B-B    0.00%    passed     90.69%
+1413  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-B-A-A    0.00%    passed     51.38%
+1414  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-B-A-B    0.00%    passed     56.61%
+1415  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-B-B-A    0.00%    passed     75.35%
+1416  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-A-B-B-B    0.00%    passed     98.55%
+1417  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-A-A-A    0.00%    passed     65.59%
+1418  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-A-A-B    0.00%    passed     71.76%
+1419  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-A-B-A    0.00%    passed     30.45%
+1420  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-A-B-B    0.00%    failed      0.94%
+1421  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-B-A-A    0.00%    passed     85.52%
+1422  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-B-A-B    0.00%    passed     73.68%
+1423  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-B-B-A    0.00%    passed     20.52%
+1424  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-A-B-B-B-B    0.00%    passed     23.69%
+1425  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-A-A-A    0.00%    passed     71.43%
+1426  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-A-A-B    0.00%    passed     76.76%
+1427  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-A-B-A    0.00%    passed     54.99%
+1428  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-A-B-B    0.00%    passed     74.91%
+1429  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-B-A-A    0.00%    passed     59.46%
+1430  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-B-A-B    0.00%    passed     20.22%
+1431  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-B-B-A    0.00%    passed     40.87%
+1432  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-A-B-B-B    0.00%    passed     35.17%
+1433  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-A-A-A    0.00%    passed     35.15%
+1434  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-A-A-B    0.00%    passed     53.73%
+1435  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-A-B-A    0.00%    passed     44.99%
+1436  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-A-B-B    0.00%    passed     12.09%
+1437  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-B-A-A    0.00%    passed      5.84%
+1438  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-B-A-B    0.00%    passed     15.71%
+1439  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-B-B-A    0.00%    passed     74.27%
+1440  _Influenza_B_virus_RNA_1-B-A-B-B-A-A-B-B-B-B-B    0.00%    passed     47.83%
+1441  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-A-A-A    0.00%    passed     97.59%
+1442  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-A-A-B    0.00%    passed     30.27%
+1443  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-A-B-A    0.00%    passed     21.40%
+1444  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-A-B-B    0.00%    passed     64.29%
+1445  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-B-A-A    0.00%    passed     20.87%
+1446  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-B-A-B    0.00%    passed     60.67%
+1447  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-B-B-A    0.00%    passed     94.74%
+1448  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-A-B-B-B    0.00%    passed     94.96%
+1449  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-A-A-A    0.00%    passed     39.85%
+1450  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-A-A-B    0.00%    passed     37.13%
+1451  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-A-B-A    0.00%    passed     14.28%
+1452  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-A-B-B    0.00%    passed     46.27%
+1453  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-B-A-A    0.00%    passed     28.80%
+1454  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-B-A-B    0.00%    passed     41.28%
+1455  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-B-B-A    0.00%    passed     35.49%
+1456  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-A-B-B-B-B    0.00%    passed     18.60%
+1457  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-A-A-A    0.00%    passed     80.20%
+1458  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-A-A-B    0.00%    passed     73.39%
+1459  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-A-B-A    0.00%    passed     96.44%
+1460  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-A-B-B    0.00%    passed     97.25%
+1461  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-B-A-A    0.00%    passed     95.86%
+1462  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-B-A-B    0.00%    passed     65.52%
+1463  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-B-B-A    0.00%    passed     86.26%
+1464  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-A-B-B-B    0.00%    passed     97.58%
+1465  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-A-A-A    0.00%    passed     32.14%
+1466  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-A-A-B    0.00%    passed     33.07%
+1467  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-A-B-A    0.00%    passed     17.65%
+1468  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-A-B-B    0.00%    passed     82.68%
+1469  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-B-A-A    0.00%    passed     93.15%
+1470  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-B-A-B    0.00%    passed     58.68%
+1471  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-B-B-A    0.00%    passed      8.75%
+1472  _Influenza_B_virus_RNA_1-B-A-B-B-A-B-B-B-B-B-B    0.00%    passed     33.07%
+1473  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-A-A-A    0.00%    passed     77.22%
+1474  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-A-A-B    0.00%    passed     27.50%
+1475  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-A-B-A    0.00%    passed     26.63%
+1476  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-A-B-B    0.00%    passed     67.43%
+1477  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-B-A-A    0.00%    passed      8.13%
+1478  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-B-A-B    0.00%    passed     33.64%
+1479  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-B-B-A    0.00%    passed     87.70%
+1480  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-A-B-B-B    0.00%    passed     49.65%
+1481  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-A-A-A    0.00%    passed     31.32%
+1482  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-A-A-B    0.00%    passed     71.42%
+1483  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-A-B-A    0.00%    passed     52.34%
+1484  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-A-B-B    0.00%    passed     41.03%
+1485  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-B-A-A    0.00%    passed     82.53%
+1486  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-B-A-B    0.00%    passed      6.80%
+1487  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-B-B-A    0.00%    passed     90.83%
+1488  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-A-B-B-B-B    0.00%    passed     48.33%
+1489  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-A-A-A    0.00%    passed     80.31%
+1490  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-A-A-B    0.00%    passed     92.37%
+1491  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-A-B-A    0.00%    passed     76.32%
+1492  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-A-B-B    0.00%    passed     48.91%
+1493  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-B-A-A    0.00%    passed     89.72%
+1494  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-B-A-B    0.00%    passed     63.96%
+1495  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-B-B-A    0.00%    passed     90.09%
+1496  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-A-B-B-B    0.00%    passed     61.58%
+1497  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-A-A-A    0.00%    passed     62.63%
+1498  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-A-A-B    0.00%    passed     32.53%
+1499  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-A-B-A    0.00%    passed     75.21%
+1500  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-A-B-B    0.00%    passed     37.95%
+1501  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-B-A-A    0.00%    passed     88.51%
+1502  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-B-A-B    0.00%    passed     91.27%
+1503  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-B-B-A    0.00%    passed     46.00%
+1504  _Influenza_B_virus_RNA_1-B-A-B-B-B-A-B-B-B-B-B    0.00%    passed     37.19%
+1505  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-A-A-A    0.00%    passed      6.01%
+1506  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-A-A-B    0.00%    passed     11.22%
+1507  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-A-B-A    0.00%    passed     31.80%
+1508  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-A-B-B    0.00%    passed     13.58%
+1509  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-B-A-A    0.00%    passed     94.22%
+1510  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-B-A-B    0.00%    passed     45.65%
+1511  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-B-B-A    0.00%    passed     27.33%
+1512  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-A-B-B-B    0.00%    passed     93.05%
+1513  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-A-A-A    0.00%    passed     42.17%
+1514  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-A-A-B    0.00%    passed     75.46%
+1515  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-A-B-A    0.00%    passed     14.99%
+1516  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-A-B-B    0.00%    passed      9.50%
+1517  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-B-A-A    0.00%    passed     75.84%
+1518  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-B-A-B    0.00%    passed     59.31%
+1519  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-B-B-A    0.00%    passed     43.93%
+1520  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-A-B-B-B-B    0.00%    passed     84.23%
+1521  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-A-A-A    0.00%    passed     40.78%
+1522  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-A-A-B    0.00%    passed     16.56%
+1523  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-A-B-A    0.00%    passed     21.71%
+1524  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-A-B-B    0.00%    passed     78.59%
+1525  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-B-A-A    0.00%    passed     74.29%
+1526  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-B-A-B    0.00%    passed     37.52%
+1527  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-B-B-A    0.00%    passed     74.12%
+1528  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-A-B-B-B    0.00%    passed     77.21%
+1529  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-A-A-A    0.00%    passed      8.62%
+1530  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-A-A-B    0.00%    passed     14.31%
+1531  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-A-B-A    0.00%    passed     75.22%
+1532  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-A-B-B    0.00%    passed     44.94%
+1533  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-B-A-A    0.00%    passed     48.76%
+1534  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-B-A-B    0.00%    passed     58.53%
+1535  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-B-B-A    0.00%    passed     73.52%
+1536  _Influenza_B_virus_RNA_1-B-A-B-B-B-B-B-B-B-B-B    0.00%    passed     86.55%
+1537  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-A-A-A    0.00%    passed      5.06%
+1538  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-A-A-B    0.00%    passed     63.41%
+1539  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-A-B-A    0.00%    passed      9.04%
+1540  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-A-B-B    0.00%    passed     56.64%
+1541  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-B-A-A    0.00%    passed     55.02%
+1542  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-B-A-B    0.00%    passed      5.39%
+1543  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-B-B-A    0.00%    passed     57.11%
+1544  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-A-B-B-B    0.00%    passed     76.18%
+1545  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-A-A-A    0.00%    failed      3.29%
+1546  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-A-A-B    0.00%    passed     55.50%
+1547  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-A-B-A    0.00%    passed     63.81%
+1548  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-A-B-B    0.00%    passed     67.62%
+1549  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-B-A-A    0.00%    passed     13.24%
+1550  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-B-A-B    0.00%    passed     52.67%
+1551  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-B-B-A    0.00%    passed     37.94%
+1552  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-A-B-B-B-B    0.00%    passed     13.83%
+1553  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-A-A-A    0.00%    passed     40.43%
+1554  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-A-A-B    0.00%    passed     82.13%
+1555  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-A-B-A    0.00%    passed     58.48%
+1556  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-A-B-B    0.00%    passed     67.01%
+1557  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-B-A-A    0.00%    passed     79.80%
+1558  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-B-A-B    0.00%    passed     96.50%
+1559  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-B-B-A    0.00%    passed     33.92%
+1560  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-A-B-B-B    0.00%    passed     19.45%
+1561  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-A-A-A    0.00%    passed     78.57%
+1562  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-A-A-B    0.00%    passed     67.23%
+1563  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-A-B-A    0.00%    passed     55.51%
+1564  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-A-B-B    0.00%    passed     77.27%
+1565  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-B-A-A    0.00%    failed      4.42%
+1566  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-B-A-B    0.00%    failed      0.83%
+1567  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-B-B-A    0.00%    failed      1.93%
+1568  _Influenza_B_virus_RNA_1-B-B-A-A-A-A-B-B-B-B-B    0.00%    passed     47.70%
+1569  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-A-A-A    0.00%    passed     26.62%
+1570  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-A-A-B    0.00%    passed     90.40%
+1571  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-A-B-A    0.00%    passed     11.40%
+1572  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-A-B-B    0.00%    passed     24.04%
+1573  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-B-A-A    0.00%    passed     71.32%
+1574  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-B-A-B    0.00%    passed     79.36%
+1575  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-B-B-A    0.00%    passed     41.56%
+1576  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-A-B-B-B    0.00%    passed     26.52%
+1577  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-A-A-A    0.00%    passed     98.90%
+1578  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-A-A-B    0.00%    passed     44.75%
+1579  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-A-B-A    0.00%    passed     73.73%
+1580  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-A-B-B    0.00%    passed     37.10%
+1581  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-B-A-A    0.00%    passed     18.02%
+1582  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-B-A-B    0.00%    passed     93.06%
+1583  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-B-B-A    0.00%    passed     98.48%
+1584  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-A-B-B-B-B    0.00%    passed     20.97%
+1585  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-A-A-A    0.00%    passed     26.58%
+1586  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-A-A-B    0.00%    failed      2.37%
+1587  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-A-B-A    0.00%    passed     90.45%
+1588  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-A-B-B    0.00%    passed     92.65%
+1589  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-B-A-A    0.00%    passed     26.02%
+1590  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-B-A-B    0.00%    passed     11.19%
+1591  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-B-B-A    0.00%    passed     63.20%
+1592  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-A-B-B-B    0.00%    passed      9.52%
+1593  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-A-A-A    0.00%    passed     40.55%
+1594  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-A-A-B    0.00%    passed      8.59%
+1595  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-A-B-A    0.00%    passed     94.80%
+1596  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-A-B-B    0.00%    passed     60.02%
+1597  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-B-A-A    0.00%    passed      8.48%
+1598  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-B-A-B    0.00%    passed     68.28%
+1599  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-B-B-A    0.00%    passed     22.60%
+1600  _Influenza_B_virus_RNA_1-B-B-A-A-A-B-B-B-B-B-B    0.00%    passed     36.68%
+1601  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-A-A-A    0.00%    passed     35.27%
+1602  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-A-A-B    0.00%    passed     65.71%
+1603  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-A-B-A    0.00%    passed     85.68%
+1604  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-A-B-B    0.00%    passed     60.22%
+1605  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-B-A-A    0.00%    passed      9.70%
+1606  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-B-A-B    0.00%    passed     26.77%
+1607  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-B-B-A    0.00%    passed     81.93%
+1608  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-A-B-B-B    0.00%    passed     62.97%
+1609  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-A-A-A    0.00%    passed     84.06%
+1610  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-A-A-B    0.00%    passed     84.84%
+1611  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-A-B-A    0.00%    passed     51.49%
+1612  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-A-B-B    0.00%    passed     18.14%
+1613  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-B-A-A    0.00%    passed     33.21%
+1614  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-B-A-B    0.00%    passed     18.00%
+1615  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-B-B-A    0.00%    passed     99.26%
+1616  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-A-B-B-B-B    0.00%    passed     73.97%
+1617  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-A-A-A    0.00%    passed     71.39%
+1618  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-A-A-B    0.00%    passed     32.97%
+1619  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-A-B-A    0.00%    passed     58.89%
+1620  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-A-B-B    0.00%    passed     10.94%
+1621  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-B-A-A    0.00%    failed      4.99%
+1622  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-B-A-B    0.00%    passed     51.31%
+1623  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-B-B-A    0.00%    failed      4.91%
+1624  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-A-B-B-B    0.00%    passed     26.03%
+1625  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-A-A-A    0.00%    passed     81.48%
+1626  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-A-A-B    0.00%    passed     67.48%
+1627  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-A-B-A    0.00%    passed     25.25%
+1628  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-A-B-B    0.00%    passed     31.34%
+1629  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-B-A-A    0.00%    passed     22.16%
+1630  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-B-A-B    0.00%    passed      9.57%
+1631  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-B-B-A    0.00%    passed     76.24%
+1632  _Influenza_B_virus_RNA_1-B-B-A-A-B-A-B-B-B-B-B    0.00%    passed     40.25%
+1633  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-A-A-A    0.00%    passed     26.99%
+1634  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-A-A-B    0.00%    passed     77.01%
+1635  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-A-B-A    0.00%    passed     75.80%
+1636  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-A-B-B    0.00%    passed     16.35%
+1637  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-B-A-A    0.00%    passed     23.54%
+1638  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-B-A-B    0.00%    passed     57.57%
+1639  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-B-B-A    0.00%    passed     52.28%
+1640  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-A-B-B-B    0.00%    passed     85.91%
+1641  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-A-A-A    0.00%    passed     90.39%
+1642  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-A-A-B    0.00%    passed     45.34%
+1643  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-A-B-A    0.00%    passed     38.63%
+1644  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-A-B-B    0.00%    passed     53.84%
+1645  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-B-A-A    0.00%    passed      7.29%
+1646  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-B-A-B    0.00%    passed     55.63%
+1647  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-B-B-A    0.00%    passed     59.94%
+1648  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-A-B-B-B-B    0.00%    passed     33.50%
+1649  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-A-A-A    0.00%    passed     35.30%
+1650  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-A-A-B    0.00%    passed     63.91%
+1651  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-A-B-A    0.00%    passed      6.09%
+1652  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-A-B-B    0.00%    passed     76.69%
+1653  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-B-A-A    0.00%    passed     34.19%
+1654  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-B-A-B    0.00%    failed      3.14%
+1655  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-B-B-A    0.00%    passed     43.60%
+1656  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-A-B-B-B    0.00%    passed     63.37%
+1657  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-A-A-A    0.00%    passed     66.36%
+1658  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-A-A-B    0.00%    passed     48.16%
+1659  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-A-B-A    0.00%    passed     22.77%
+1660  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-A-B-B    0.00%    passed     11.46%
+1661  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-B-A-A    0.00%    passed     37.00%
+1662  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-B-A-B    0.00%    passed     74.94%
+1663  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-B-B-A    0.00%    passed     46.91%
+1664  _Influenza_B_virus_RNA_1-B-B-A-A-B-B-B-B-B-B-B    0.00%    passed     36.59%
+1665  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-A-A-A    0.00%    passed     37.31%
+1666  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-A-A-B    0.00%    passed     92.71%
+1667  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-A-B-A    0.00%    passed     41.90%
+1668  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-A-B-B    0.00%    failed      4.63%
+1669  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-B-A-A    0.00%    passed     85.63%
+1670  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-B-A-B    0.00%    passed     57.73%
+1671  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-B-B-A    0.00%    passed     76.33%
+1672  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-A-B-B-B    0.00%    passed     35.35%
+1673  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-A-A-A    0.00%    passed     13.86%
+1674  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-A-A-B    0.00%    passed     17.61%
+1675  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-A-B-A    0.00%    passed     54.37%
+1676  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-A-B-B    0.00%    passed     65.75%
+1677  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-B-A-A    0.00%    passed     88.33%
+1678  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-B-A-B    0.00%    passed     23.67%
+1679  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-B-B-A    0.00%    passed     40.45%
+1680  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-A-B-B-B-B    0.00%    passed     95.04%
+1681  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-A-A-A    0.00%    passed     17.04%
+1682  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-A-A-B    0.00%    passed     57.13%
+1683  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-A-B-A    0.00%    failed      1.15%
+1684  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-A-B-B    0.00%    passed     44.82%
+1685  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-B-A-A    0.00%    passed     73.27%
+1686  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-B-A-B    0.00%    passed     35.96%
+1687  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-B-B-A    0.00%    passed     84.13%
+1688  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-A-B-B-B    0.00%    passed     86.81%
+1689  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-A-A-A    0.00%    passed     32.12%
+1690  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-A-A-B    0.00%    passed     25.26%
+1691  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-A-B-A    0.00%    passed     27.50%
+1692  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-A-B-B    0.00%    passed     40.31%
+1693  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-B-A-A    0.00%    passed     38.70%
+1694  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-B-A-B    0.00%    passed     68.87%
+1695  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-B-B-A    0.00%    failed      0.59%
+1696  _Influenza_B_virus_RNA_1-B-B-A-B-A-A-B-B-B-B-B    0.00%    passed     13.12%
+1697  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-A-A-A    0.00%    failed      3.04%
+1698  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-A-A-B    0.00%    passed     40.99%
+1699  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-A-B-A    0.00%    passed     19.99%
+1700  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-A-B-B    0.00%    passed     28.76%
+1701  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-B-A-A    0.00%    passed     70.91%
+1702  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-B-A-B    0.00%    passed     13.63%
+1703  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-B-B-A    0.00%    passed     76.15%
+1704  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-A-B-B-B    0.00%    passed     61.17%
+1705  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-A-A-A    0.00%    passed     30.86%
+1706  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-A-A-B    0.00%    passed     37.28%
+1707  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-A-B-A    0.00%    passed     12.48%
+1708  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-A-B-B    0.00%    passed     92.21%
+1709  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-B-A-A    0.00%    passed     41.44%
+1710  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-B-A-B    0.00%    passed     36.62%
+1711  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-B-B-A    0.00%    passed      7.53%
+1712  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-A-B-B-B-B    0.00%    passed     22.28%
+1713  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-A-A-A    0.00%    passed     76.22%
+1714  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-A-A-B    0.00%    passed     22.79%
+1715  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-A-B-A    0.00%    passed     17.18%
+1716  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-A-B-B    0.00%    passed     24.51%
+1717  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-B-A-A    0.00%    passed     66.73%
+1718  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-B-A-B    0.00%    failed      2.54%
+1719  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-B-B-A    0.00%    passed      6.32%
+1720  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-A-B-B-B    0.00%    passed     38.68%
+1721  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-A-A-A    0.00%    passed     54.98%
+1722  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-A-A-B    0.00%    passed      9.48%
+1723  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-A-B-A    0.00%    passed     16.28%
+1724  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-A-B-B    0.00%    passed     98.48%
+1725  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-B-A-A    0.00%    passed     91.15%
+1726  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-B-A-B    0.00%    passed     30.14%
+1727  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-B-B-A    0.00%    passed     46.50%
+1728  _Influenza_B_virus_RNA_1-B-B-A-B-A-B-B-B-B-B-B    0.00%    passed     89.51%
+1729  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-A-A-A    0.00%    passed     46.42%
+1730  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-A-A-B    0.00%    passed     40.85%
+1731  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-A-B-A    0.00%    passed     33.58%
+1732  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-A-B-B    0.00%    passed     84.72%
+1733  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-B-A-A    0.00%    passed     44.52%
+1734  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-B-A-B    0.00%    passed     93.18%
+1735  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-B-B-A    0.00%    passed     99.86%
+1736  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-A-B-B-B    0.00%    passed     68.70%
+1737  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-A-A-A    0.00%    passed      6.07%
+1738  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-A-A-B    0.00%    passed     52.30%
+1739  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-A-B-A    0.00%    passed     21.26%
+1740  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-A-B-B    0.00%    passed     51.17%
+1741  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-B-A-A    0.00%    passed     76.85%
+1742  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-B-A-B    0.00%    passed     37.18%
+1743  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-B-B-A    0.00%    passed     19.77%
+1744  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-A-B-B-B-B    0.00%    passed     38.32%
+1745  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-A-A-A    0.00%    passed     59.38%
+1746  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-A-A-B    0.00%    passed     49.46%
+1747  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-A-B-A    0.00%    passed     75.66%
+1748  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-A-B-B    0.00%    passed     43.64%
+1749  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-B-A-A    0.00%    passed     29.50%
+1750  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-B-A-B    0.00%    passed     70.32%
+1751  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-B-B-A    0.00%    passed     16.03%
+1752  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-A-B-B-B    0.00%    passed     65.88%
+1753  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-A-A-A    0.00%    passed     45.58%
+1754  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-A-A-B    0.00%    passed     38.25%
+1755  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-A-B-A    0.00%    passed     28.57%
+1756  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-A-B-B    0.00%    passed     14.49%
+1757  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-B-A-A    0.00%    passed     37.65%
+1758  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-B-A-B    0.00%    passed     88.67%
+1759  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-B-B-A    0.00%    passed     14.13%
+1760  _Influenza_B_virus_RNA_1-B-B-A-B-B-A-B-B-B-B-B    0.00%    passed     61.39%
+1761  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-A-A-A    0.00%    passed     59.20%
+1762  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-A-A-B    0.00%    passed     23.96%
+1763  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-A-B-A    0.00%    passed     61.41%
+1764  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-A-B-B    0.00%    passed     20.35%
+1765  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-B-A-A    0.00%    passed     15.91%
+1766  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-B-A-B    0.00%    passed     74.79%
+1767  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-B-B-A    0.00%    passed     62.66%
+1768  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-A-B-B-B    0.00%    passed     67.34%
+1769  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-A-A-A    0.00%    passed     46.13%
+1770  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-A-A-B    0.00%    failed      2.96%
+1771  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-A-B-A    0.00%    passed      7.80%
+1772  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-A-B-B    0.00%    passed     31.79%
+1773  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-B-A-A    0.00%    passed     56.06%
+1774  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-B-A-B    0.00%    passed     47.52%
+1775  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-B-B-A    0.00%    passed     73.76%
+1776  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-A-B-B-B-B    0.00%    passed     44.21%
+1777  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-A-A-A    0.00%    passed     87.05%
+1778  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-A-A-B    0.00%    passed     65.25%
+1779  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-A-B-A    0.00%    passed     27.46%
+1780  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-A-B-B    0.00%    failed      1.86%
+1781  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-B-A-A    0.00%    passed     13.59%
+1782  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-B-A-B    0.00%    passed     86.07%
+1783  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-B-B-A    0.00%    passed     16.59%
+1784  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-A-B-B-B    0.00%    passed     63.78%
+1785  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-A-A-A    0.00%    passed     36.66%
+1786  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-A-A-B    0.00%    passed     65.43%
+1787  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-A-B-A    0.00%    passed     81.08%
+1788  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-A-B-B    0.00%    passed     17.01%
+1789  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-B-A-A    0.00%    passed     42.45%
+1790  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-B-A-B    0.00%    passed     36.05%
+1791  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-B-B-A    0.00%    passed     47.88%
+1792  _Influenza_B_virus_RNA_1-B-B-A-B-B-B-B-B-B-B-B    0.00%    passed      8.15%
+1793  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-A-A-A    0.00%    passed     15.14%
+1794  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-A-A-B    0.00%    passed     64.10%
+1795  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-A-B-A    0.00%    passed     30.77%
+1796  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-A-B-B    0.00%    passed     49.12%
+1797  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-B-A-A    0.00%    passed     38.82%
+1798  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-B-A-B    0.00%    passed     30.65%
+1799  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-B-B-A    0.00%    passed     65.82%
+1800  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-A-B-B-B    0.00%    passed     41.83%
+1801  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-A-A-A    0.00%    passed     12.55%
+1802  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-A-A-B    0.00%    passed     71.51%
+1803  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-A-B-A    0.00%    passed     39.95%
+1804  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-A-B-B    0.00%    passed     16.93%
+1805  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-B-A-A    0.00%    passed     36.64%
+1806  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-B-A-B    0.00%    passed     30.88%
+1807  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-B-B-A    0.00%    passed     52.00%
+1808  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-A-B-B-B-B    0.00%    passed     56.80%
+1809  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-A-A-A    0.00%    passed     44.78%
+1810  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-A-A-B    0.00%    passed     12.27%
+1811  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-A-B-A    0.00%    passed     65.83%
+1812  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-A-B-B    0.00%    passed     82.75%
+1813  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-B-A-A    0.00%    passed     89.92%
+1814  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-B-A-B    0.00%    passed     47.89%
+1815  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-B-B-A    0.00%    passed     45.59%
+1816  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-A-B-B-B    0.00%    passed     52.61%
+1817  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-A-A-A    0.00%    passed     91.75%
+1818  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-A-A-B    0.00%    passed     18.02%
+1819  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-A-B-A    0.00%    passed     70.87%
+1820  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-A-B-B    0.00%    passed     83.46%
+1821  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-B-A-A    0.00%    passed     41.62%
+1822  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-B-A-B    0.00%    passed     40.41%
+1823  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-B-B-A    0.00%    passed     80.68%
+1824  _Influenza_B_virus_RNA_1-B-B-B-A-A-A-B-B-B-B-B    0.00%    passed     81.90%
+1825  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-A-A-A    0.00%    passed     89.99%
+1826  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-A-A-B    0.00%    passed     67.00%
+1827  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-A-B-A    0.00%    passed     97.17%
+1828  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-A-B-B    0.00%    passed     53.74%
+1829  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-B-A-A    0.00%    passed     92.26%
+1830  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-B-A-B    0.00%    passed     20.23%
+1831  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-B-B-A    0.00%    passed     41.80%
+1832  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-A-B-B-B    0.00%    passed     29.25%
+1833  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-A-A-A    0.00%    passed     82.79%
+1834  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-A-A-B    0.00%    passed     69.69%
+1835  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-A-B-A    0.00%    passed     14.30%
+1836  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-A-B-B    0.00%    passed     76.62%
+1837  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-B-A-A    0.00%    failed      3.28%
+1838  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-B-A-B    0.00%    passed     67.15%
+1839  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-B-B-A    0.00%    passed     65.50%
+1840  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-A-B-B-B-B    0.00%    passed     74.11%
+1841  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-A-A-A    0.00%    passed     10.48%
+1842  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-A-A-B    0.00%    passed     89.27%
+1843  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-A-B-A    0.00%    failed      2.31%
+1844  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-A-B-B    0.00%    passed     13.34%
+1845  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-B-A-A    0.00%    passed     14.78%
+1846  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-B-A-B    0.00%    failed      1.81%
+1847  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-B-B-A    0.00%    passed     42.23%
+1848  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-A-B-B-B    0.00%    passed     16.27%
+1849  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-A-A-A    0.00%    passed     35.81%
+1850  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-A-A-B    0.00%    passed     41.95%
+1851  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-A-B-A    0.00%    passed     31.48%
+1852  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-A-B-B    0.00%    passed     27.21%
+1853  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-B-A-A    0.00%    passed     17.66%
+1854  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-B-A-B    0.00%    passed     55.62%
+1855  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-B-B-A    0.00%    passed     30.22%
+1856  _Influenza_B_virus_RNA_1-B-B-B-A-A-B-B-B-B-B-B    0.00%    passed     67.04%
+1857  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-A-A-A    0.00%    passed     61.46%
+1858  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-A-A-B    0.00%    passed     68.64%
+1859  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-A-B-A    0.00%    passed     21.50%
+1860  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-A-B-B    0.00%    passed     39.65%
+1861  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-B-A-A    0.00%    passed     26.08%
+1862  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-B-A-B    0.00%    failed      2.85%
+1863  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-B-B-A    0.00%    passed     84.70%
+1864  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-A-B-B-B    0.00%    passed     20.39%
+1865  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-A-A-A    0.00%    passed     65.04%
+1866  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-A-A-B    0.00%    passed     97.40%
+1867  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-A-B-A    0.00%    passed     23.48%
+1868  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-A-B-B    0.00%    passed     18.74%
+1869  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-B-A-A    0.00%    failed      0.16%
+1870  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-B-A-B    0.00%    passed     66.84%
+1871  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-B-B-A    0.00%    passed     84.86%
+1872  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-A-B-B-B-B    0.00%    passed     40.44%
+1873  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-A-A-A    0.00%    passed     22.01%
+1874  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-A-A-B    0.00%    failed      1.60%
+1875  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-A-B-A    0.00%    passed     86.07%
+1876  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-A-B-B    0.00%    passed     80.10%
+1877  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-B-A-A    0.00%    passed     82.93%
+1878  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-B-A-B    0.00%    passed     39.04%
+1879  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-B-B-A    0.00%    passed     93.63%
+1880  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-A-B-B-B    0.00%    passed     12.71%
+1881  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-A-A-A    0.00%    passed     71.07%
+1882  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-A-A-B    0.00%    passed     17.90%
+1883  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-A-B-A    0.00%    passed     62.99%
+1884  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-A-B-B    0.00%    passed     15.38%
+1885  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-B-A-A    0.00%    passed     21.45%
+1886  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-B-A-B    0.00%    failed      0.60%
+1887  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-B-B-A    0.00%    passed     13.90%
+1888  _Influenza_B_virus_RNA_1-B-B-B-A-B-A-B-B-B-B-B    0.00%    passed     78.16%
+1889  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-A-A-A    0.00%    passed     22.23%
+1890  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-A-A-B    0.00%    passed     50.60%
+1891  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-A-B-A    0.00%    passed     55.05%
+1892  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-A-B-B    0.00%    passed     79.48%
+1893  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-B-A-A    0.00%    passed     67.49%
+1894  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-B-A-B    0.00%    passed     69.54%
+1895  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-B-B-A    0.00%    passed     86.57%
+1896  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-A-B-B-B    0.00%    passed     52.19%
+1897  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-A-A-A    0.00%    passed     29.39%
+1898  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-A-A-B    0.00%    passed     65.99%
+1899  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-A-B-A    0.00%    passed     80.71%
+1900  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-A-B-B    0.00%    passed     22.18%
+1901  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-B-A-A    0.00%    passed     18.93%
+1902  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-B-A-B    0.00%    passed      6.58%
+1903  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-B-B-A    0.00%    passed     67.08%
+1904  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-A-B-B-B-B    0.00%    passed     43.56%
+1905  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-A-A-A    0.00%    passed     68.34%
+1906  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-A-A-B    0.00%    passed     29.32%
+1907  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-A-B-A    0.00%    passed     98.44%
+1908  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-A-B-B    0.00%    passed     73.72%
+1909  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-B-A-A    0.00%    passed     33.20%
+1910  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-B-A-B    0.00%    passed     15.97%
+1911  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-B-B-A    0.00%    failed      0.37%
+1912  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-A-B-B-B    0.00%    passed     88.90%
+1913  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-A-A-A    0.00%    passed     78.58%
+1914  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-A-A-B    0.00%    failed      4.83%
+1915  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-A-B-A    0.00%    passed     21.75%
+1916  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-A-B-B    0.00%    passed     95.07%
+1917  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-B-A-A    0.00%    passed     68.67%
+1918  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-B-A-B    0.00%    passed      9.66%
+1919  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-B-B-A    0.00%    passed     78.02%
+1920  _Influenza_B_virus_RNA_1-B-B-B-A-B-B-B-B-B-B-B    0.00%    passed     47.06%
+1921  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-A-A-A    0.00%    passed     99.92%
+1922  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-A-A-B    0.00%    passed     15.16%
+1923  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-A-B-A    0.00%    passed     94.53%
+1924  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-A-B-B    0.00%    passed     25.59%
+1925  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-B-A-A    0.00%    passed      9.61%
+1926  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-B-A-B    0.00%    passed     27.52%
+1927  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-B-B-A    0.00%    passed     57.72%
+1928  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-A-B-B-B    0.00%    passed     60.79%
+1929  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-A-A-A    0.00%    passed      5.80%
+1930  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-A-A-B    0.00%    passed     83.16%
+1931  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-A-B-A    0.00%    passed     47.02%
+1932  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-A-B-B    0.00%    passed     75.57%
+1933  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-B-A-A    0.00%    passed     40.05%
+1934  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-B-A-B    0.00%    passed     15.56%
+1935  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-B-B-A    0.00%    passed     92.67%
+1936  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-A-B-B-B-B    0.00%    passed     63.95%
+1937  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-A-A-A    0.00%    passed     23.31%
+1938  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-A-A-B    0.00%    failed      1.49%
+1939  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-A-B-A    0.00%    passed     92.80%
+1940  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-A-B-B    0.00%    passed     41.59%
+1941  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-B-A-A    0.00%    passed     26.31%
+1942  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-B-A-B    0.00%    passed     38.58%
+1943  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-B-B-A    0.00%    passed     92.29%
+1944  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-A-B-B-B    0.00%    passed     40.82%
+1945  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-A-A-A    0.00%    passed     44.90%
+1946  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-A-A-B    0.00%    passed     89.66%
+1947  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-A-B-A    0.00%    passed     91.45%
+1948  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-A-B-B    0.00%    passed     48.42%
+1949  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-B-A-A    0.00%    passed     26.50%
+1950  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-B-A-B    0.00%    passed     62.71%
+1951  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-B-B-A    0.00%    passed      6.41%
+1952  _Influenza_B_virus_RNA_1-B-B-B-B-A-A-B-B-B-B-B    0.00%    passed     18.20%
+1953  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-A-A-A    0.00%    passed     18.19%
+1954  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-A-A-B    0.00%    passed     50.10%
+1955  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-A-B-A    0.00%    passed     36.60%
+1956  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-A-B-B    0.00%    passed      6.96%
+1957  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-B-A-A    0.00%    passed     80.77%
+1958  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-B-A-B    0.00%    passed     24.17%
+1959  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-B-B-A    0.00%    passed     13.24%
+1960  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-A-B-B-B    0.00%    passed      6.76%
+1961  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-A-A-A    0.00%    passed     40.34%
+1962  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-A-A-B    0.00%    passed     41.72%
+1963  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-A-B-A    0.00%    passed      8.05%
+1964  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-A-B-B    0.00%    passed     85.63%
+1965  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-B-A-A    0.00%    passed     66.60%
+1966  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-B-A-B    0.00%    passed     84.46%
+1967  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-B-B-A    0.00%    passed     62.94%
+1968  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-A-B-B-B-B    0.00%    passed     10.53%
+1969  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-A-A-A    0.00%    passed      8.86%
+1970  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-A-A-B    0.00%    passed     81.88%
+1971  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-A-B-A    0.00%    passed     96.65%
+1972  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-A-B-B    0.00%    passed     43.05%
+1973  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-B-A-A    0.00%    passed     85.82%
+1974  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-B-A-B    0.00%    passed     86.53%
+1975  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-B-B-A    0.00%    passed     95.19%
+1976  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-A-B-B-B    0.00%    passed     56.04%
+1977  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-A-A-A    0.00%    passed     88.11%
+1978  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-A-A-B    0.00%    passed      9.84%
+1979  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-A-B-A    0.00%    passed     25.36%
+1980  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-A-B-B    0.00%    passed     53.65%
+1981  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-B-A-A    0.00%    failed      1.31%
+1982  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-B-A-B    0.00%    passed      9.68%
+1983  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-B-B-A    0.00%    passed     14.15%
+1984  _Influenza_B_virus_RNA_1-B-B-B-B-A-B-B-B-B-B-B    0.00%    passed     20.58%
+1985  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-A-A-A    0.00%    passed     16.89%
+1986  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-A-A-B    0.00%    passed     15.38%
+1987  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-A-B-A    0.00%    passed     39.14%
+1988  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-A-B-B    0.00%    passed     45.35%
+1989  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-B-A-A    0.00%    passed     26.11%
+1990  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-B-A-B    0.00%    passed     72.40%
+1991  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-B-B-A    0.00%    passed     92.65%
+1992  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-A-B-B-B    0.00%    passed     69.47%
+1993  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-A-A-A    0.00%    passed     87.77%
+1994  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-A-A-B    0.00%    passed     37.74%
+1995  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-A-B-A    0.00%    passed      7.48%
+1996  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-A-B-B    0.00%    passed     22.16%
+1997  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-B-A-A    0.00%    passed     44.98%
+1998  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-B-A-B    0.00%    passed     44.59%
+1999  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-B-B-A    0.00%    passed     87.15%
+2000  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-A-B-B-B-B    0.00%    passed     47.20%
+2001  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-A-A-A    0.00%    passed     67.78%
+2002  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-A-A-B    0.00%    passed     98.00%
+2003  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-A-B-A    0.00%    passed     83.63%
+2004  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-A-B-B    0.00%    passed     76.99%
+2005  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-B-A-A    0.00%    passed     35.29%
+2006  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-B-A-B    0.00%    passed     11.09%
+2007  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-B-B-A    0.00%    passed     59.81%
+2008  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-A-B-B-B    0.00%    passed     68.47%
+2009  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-A-A-A    0.00%    passed     88.73%
+2010  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-A-A-B    0.00%    passed     58.66%
+2011  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-A-B-A    0.00%    passed     42.30%
+2012  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-A-B-B    0.00%    passed     18.19%
+2013  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-B-A-A    0.00%    passed     73.31%
+2014  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-B-A-B    0.00%    passed     96.41%
+2015  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-B-B-A    0.00%    passed     15.92%
+2016  _Influenza_B_virus_RNA_1-B-B-B-B-B-A-B-B-B-B-B    0.00%    passed     10.56%
+2017  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-A-A-A    0.00%    passed     19.75%
+2018  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-A-A-B    0.00%    passed     94.63%
+2019  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-A-B-A    0.00%    failed      2.46%
+2020  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-A-B-B    0.00%    passed     31.02%
+2021  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-B-A-A    0.00%    passed     24.00%
+2022  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-B-A-B    0.00%    failed      3.27%
+2023  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-B-B-A    0.00%    passed     54.56%
+2024  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-A-B-B-B    0.00%    passed      7.52%
+2025  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-A-A-A    0.00%    passed     47.12%
+2026  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-A-A-B    0.00%    passed     54.38%
+2027  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-A-B-A    0.00%    passed     57.08%
+2028  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-A-B-B    0.00%    passed     43.61%
+2029  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-B-A-A    0.00%    passed     30.74%
+2030  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-B-A-B    0.00%    passed     45.08%
+2031  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-B-B-A    0.00%    passed     43.05%
+2032  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-A-B-B-B-B    0.00%    passed     86.28%
+2033  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-A-A-A    0.00%    passed     36.48%
+2034  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-A-A-B    0.00%    passed     50.09%
+2035  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-A-B-A    0.00%    passed     33.85%
+2036  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-A-B-B    0.00%    passed     11.15%
+2037  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-B-A-A    0.00%    passed     49.87%
+2038  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-B-A-B    0.00%    passed     12.06%
+2039  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-B-B-A    0.00%    passed     74.17%
+2040  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-A-B-B-B    0.00%    passed     94.91%
+2041  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-A-A-A    0.00%    passed     26.74%
+2042  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-A-A-B    0.00%    passed     12.06%
+2043  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-A-B-A    0.00%    passed     66.09%
+2044  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-A-B-B    0.00%    passed     57.41%
+2045  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-B-A-A    0.00%    passed     38.02%
+2046  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-B-A-B    0.00%    passed     98.58%
+2047  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-B-B-A    0.00%    passed     22.08%
+2048  _Influenza_B_virus_RNA_1-B-B-B-B-B-B-B-B-B-B-B    0.00%    passed     58.21%
+****  TOTAL                                             0.00%  112 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading input tree file _Influenza_B_virus_RNA_1.newick ... rooted tree
+
+NOTE: 157 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6189281.610
+Optimal log-likelihood: -5943068.287
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 1 rounds (9.065 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -5943068.287
+Total tree length: 1403.782
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 9.094 sec (0h:0m:9s)
+Total wall-clock time used: 9.244 sec (0h:0m:9s)
+
+Analysis results written to: 
+  IQ-TREE report:                _Influenza_B_virus_RNA_1.fasta.iqtree
+  Maximum-likelihood tree:       _Influenza_B_virus_RNA_1.fasta.treefile
+  Screen log file:               _Influenza_B_virus_RNA_1.fasta.log
+
+Date and Time: Sun Mar 29 06:17:41 2026

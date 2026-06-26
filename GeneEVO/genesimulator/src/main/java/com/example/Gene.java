@@ -23,19 +23,6 @@ class Gene{
 
 
     //Basic setters and getters
-    public void setsequence(String sequence){
-        this.sequence = sequence;
-    }
-
-
-    public void setMutationRate(Map<String, Map<Double, String>> mutationPattern){
-        this.mutationPattern = mutationPattern;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
 
     public String getName(){
         return name;
